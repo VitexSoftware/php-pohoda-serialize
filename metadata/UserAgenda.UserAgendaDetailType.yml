@@ -1,0 +1,16 @@
+Pohoda\UserAgenda\UserAgendaDetailType:
+    properties:
+        userAgendaItem:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaItem
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            accessor:
+                getter: getUserAgendaItem
+                setter: setUserAgendaItem
+            xml_list:
+                inline: true
+                entry_name: userAgendaItem
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            type: array<Pohoda\UserAgenda\UserAgendaItemType>

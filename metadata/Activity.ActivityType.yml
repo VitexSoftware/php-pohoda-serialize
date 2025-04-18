@@ -1,0 +1,39 @@
+Pohoda\Activity\ActivityType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        actionType:
+            expose: true
+            access_type: public_method
+            serialized_name: actionType
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/activity.xsd'
+            accessor:
+                getter: getActionType
+                setter: setActionType
+            xml_list:
+                inline: true
+                entry_name: actionType
+                namespace: 'http://www.stormware.cz/schema/version_2/activity.xsd'
+            type: array<Pohoda\Activity\ActionTypeType>
+        activityHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: activityHeader
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/activity.xsd'
+            accessor:
+                getter: getActivityHeader
+                setter: setActivityHeader
+            xml_list:
+                inline: true
+                entry_name: activityHeader
+                namespace: 'http://www.stormware.cz/schema/version_2/activity.xsd'
+            type: array<Pohoda\Activity\ActivityHeaderType>

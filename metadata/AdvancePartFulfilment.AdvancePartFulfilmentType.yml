@@ -1,0 +1,61 @@
+Pohoda\AdvancePartFulfilment\AdvancePartFulfilmentType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        record:
+            expose: true
+            access_type: public_method
+            serialized_name: record
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd'
+            accessor:
+                getter: getRecord
+                setter: setRecord
+            type: Pohoda\AdvancePartFulfilment\RecordAdvancePartFulfilmentType
+        percentTotalFulfilment:
+            expose: true
+            access_type: public_method
+            serialized_name: percentTotalFulfilment
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd'
+            accessor:
+                getter: getPercentTotalFulfilment
+                setter: setPercentTotalFulfilment
+            type: float
+        netOfVAT:
+            expose: true
+            access_type: public_method
+            serialized_name: netOfVAT
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd'
+            accessor:
+                getter: getNetOfVAT
+                setter: setNetOfVAT
+            type: bool
+        roundAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: roundAmount
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd'
+            accessor:
+                getter: getRoundAmount
+                setter: setRoundAmount
+            type: bool
+        fixedAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: fixedAmount
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd'
+            accessor:
+                getter: getFixedAmount
+                setter: setFixedAmount
+            type: float

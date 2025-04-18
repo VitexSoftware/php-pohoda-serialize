@@ -1,0 +1,12 @@
+Pohoda\ListContract\RestrictionDataType:
+    properties:
+        attachments:
+            expose: true
+            access_type: public_method
+            serialized_name: attachments
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list_contract.xsd'
+            accessor:
+                getter: getAttachments
+                setter: setAttachments
+            type: string

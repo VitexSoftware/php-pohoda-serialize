@@ -1,0 +1,50 @@
+Pohoda\List\ListAccountancyRequestType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        accountancyVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: accountancyVersion
+            accessor:
+                getter: getAccountancyVersion
+                setter: setAccountancyVersion
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            type: Pohoda\Filter\LimitType
+        requestAccountancy:
+            expose: true
+            access_type: public_method
+            serialized_name: requestAccountancy
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestAccountancy
+                setter: setRequestAccountancy
+            type: Pohoda\Filter\RequestAccountancyType
+        restrictionData:
+            expose: true
+            access_type: public_method
+            serialized_name: restrictionData
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRestrictionData
+                setter: setRestrictionData
+            type: Pohoda\List\RestrictionDocParamType

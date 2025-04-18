@@ -1,0 +1,16 @@
+Pohoda\Response\ErrorDetailType:
+    properties:
+        recordDuplicity:
+            expose: true
+            access_type: public_method
+            serialized_name: recordDuplicity
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/response.xsd'
+            accessor:
+                getter: getRecordDuplicity
+                setter: setRecordDuplicity
+            xml_list:
+                inline: true
+                entry_name: recordDuplicity
+                namespace: 'http://www.stormware.cz/schema/version_2/response.xsd'
+            type: array<Pohoda\Response\RecordDuplicityType>

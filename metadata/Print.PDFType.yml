@@ -1,0 +1,42 @@
+Pohoda\Print\PDFType:
+    properties:
+        fileName:
+            expose: true
+            access_type: public_method
+            serialized_name: fileName
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getFileName
+                setter: setFileName
+            type: string
+        sendMail:
+            expose: true
+            access_type: public_method
+            serialized_name: sendMail
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getSendMail
+                setter: setSendMail
+            type: Pohoda\Print\SendMailType
+        binaryData:
+            expose: true
+            access_type: public_method
+            serialized_name: binaryData
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getBinaryData
+                setter: setBinaryData
+            type: Pohoda\Print\BinaryDataType
+        isdoc:
+            expose: true
+            access_type: public_method
+            serialized_name: isdoc
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getIsdoc
+                setter: setIsdoc
+            type: Pohoda\Print\IsdocType

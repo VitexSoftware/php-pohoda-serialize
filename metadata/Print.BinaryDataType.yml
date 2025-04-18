@@ -1,0 +1,22 @@
+Pohoda\Print\BinaryDataType:
+    properties:
+        responseXml:
+            expose: true
+            access_type: public_method
+            serialized_name: responseXml
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getResponseXml
+                setter: setResponseXml
+            type: string
+        removeFile:
+            expose: true
+            access_type: public_method
+            serialized_name: removeFile
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getRemoveFile
+                setter: setRemoveFile
+            type: string

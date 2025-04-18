@@ -1,0 +1,42 @@
+Pohoda\Response\RecordDuplicityType:
+    properties:
+        agendaType:
+            expose: true
+            access_type: public_method
+            serialized_name: agendaType
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/response.xsd'
+            accessor:
+                getter: getAgendaType
+                setter: setAgendaType
+            type: string
+        dateCreate:
+            expose: true
+            access_type: public_method
+            serialized_name: dateCreate
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/response.xsd'
+            accessor:
+                getter: getDateCreate
+                setter: setDateCreate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/response.xsd'
+            accessor:
+                getter: getId
+                setter: setId
+            type: int
+        number:
+            expose: true
+            access_type: public_method
+            serialized_name: number
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/response.xsd'
+            accessor:
+                getter: getNumber
+                setter: setNumber
+            type: string

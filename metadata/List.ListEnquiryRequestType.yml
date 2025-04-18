@@ -1,0 +1,80 @@
+Pohoda\List\ListEnquiryRequestType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        enquiryType:
+            expose: true
+            access_type: public_method
+            serialized_name: enquiryType
+            accessor:
+                getter: getEnquiryType
+                setter: setEnquiryType
+            xml_attribute: true
+            type: string
+        enquiryVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: enquiryVersion
+            accessor:
+                getter: getEnquiryVersion
+                setter: setEnquiryVersion
+            xml_attribute: true
+            type: string
+        extSystem:
+            expose: true
+            access_type: public_method
+            serialized_name: extSystem
+            accessor:
+                getter: getExtSystem
+                setter: setExtSystem
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            xml_list:
+                inline: true
+                entry_name: limit
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\LimitType>
+        requestEnquiry:
+            expose: true
+            access_type: public_method
+            serialized_name: requestEnquiry
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestEnquiry
+                setter: setRequestEnquiry
+            xml_list:
+                inline: true
+                entry_name: requestEnquiry
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\RequestEnquiryType>
+        restrictionData:
+            expose: true
+            access_type: public_method
+            serialized_name: restrictionData
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRestrictionData
+                setter: setRestrictionData
+            xml_list:
+                inline: true
+                entry_name: restrictionData
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\List\RestrictionDocParamType>

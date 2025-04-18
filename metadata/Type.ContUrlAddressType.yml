@@ -1,0 +1,32 @@
+Pohoda\Type\ContUrlAddressType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: name
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        url:
+            expose: true
+            access_type: public_method
+            serialized_name: url
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            accessor:
+                getter: getUrl
+                setter: setUrl
+            type: string
+        dateOfChanged:
+            expose: true
+            access_type: public_method
+            serialized_name: dateOfChanged
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            accessor:
+                getter: getDateOfChanged
+                setter: setDateOfChanged
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

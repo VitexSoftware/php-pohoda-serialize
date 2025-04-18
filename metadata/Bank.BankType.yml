@@ -1,0 +1,61 @@
+Pohoda\Bank\BankType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        bankHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: bankHeader
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getBankHeader
+                setter: setBankHeader
+            type: Pohoda\Bank\BankHeaderType
+        bankDetail:
+            expose: true
+            access_type: public_method
+            serialized_name: bankDetail
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getBankDetail
+                setter: setBankDetail
+            type: Pohoda\Bank\BankDetailType
+        bankSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: bankSummary
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getBankSummary
+                setter: setBankSummary
+            type: Pohoda\Bank\BankSummaryType
+        linkedDocuments:
+            expose: true
+            access_type: public_method
+            serialized_name: linkedDocuments
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getLinkedDocuments
+                setter: setLinkedDocuments
+            type: Pohoda\Type\LinksType
+        attachments:
+            expose: true
+            access_type: public_method
+            serialized_name: attachments
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getAttachments
+                setter: setAttachments
+            type: Pohoda\Type\AttachmentsType

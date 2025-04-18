@@ -1,0 +1,30 @@
+Pohoda\Bank\BankDetailType:
+    properties:
+        bankItem:
+            expose: true
+            access_type: public_method
+            serialized_name: bankItem
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getBankItem
+                setter: setBankItem
+            xml_list:
+                inline: true
+                entry_name: bankItem
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            type: array<Pohoda\Bank\BankItemType>
+        bankLiquidationItem:
+            expose: true
+            access_type: public_method
+            serialized_name: bankLiquidationItem
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getBankLiquidationItem
+                setter: setBankLiquidationItem
+            xml_list:
+                inline: true
+                entry_name: bankLiquidationItem
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            type: array<Pohoda\Bank\BankliquidationItemType>

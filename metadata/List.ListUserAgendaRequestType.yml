@@ -1,0 +1,80 @@
+Pohoda\List\ListUserAgendaRequestType:
+    properties:
+        userAgendaId:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaId
+            accessor:
+                getter: getUserAgendaId
+                setter: setUserAgendaId
+            xml_attribute: true
+            type: int
+        userAgendaIds:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaIds
+            accessor:
+                getter: getUserAgendaIds
+                setter: setUserAgendaIds
+            xml_attribute: true
+            type: string
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        userAgendaVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaVersion
+            accessor:
+                getter: getUserAgendaVersion
+                setter: setUserAgendaVersion
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            xml_list:
+                inline: true
+                entry_name: limit
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\LimitType>
+        requestUserAgenda:
+            expose: true
+            access_type: public_method
+            serialized_name: requestUserAgenda
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestUserAgenda
+                setter: setRequestUserAgenda
+            xml_list:
+                inline: true
+                entry_name: requestUserAgenda
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\RequestUserAgendaType>
+        restrictionData:
+            expose: true
+            access_type: public_method
+            serialized_name: restrictionData
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRestrictionData
+                setter: setRestrictionData
+            xml_list:
+                inline: true
+                entry_name: restrictionData
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\List\RestrictionDocParamType>

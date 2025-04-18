@@ -1,0 +1,52 @@
+Pohoda\Bank\SettingsLiquidationType:
+    properties:
+        sourceAgenda:
+            expose: true
+            access_type: public_method
+            serialized_name: sourceAgenda
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getSourceAgenda
+                setter: setSourceAgenda
+            type: string
+        sourceDocument:
+            expose: true
+            access_type: public_method
+            serialized_name: sourceDocument
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getSourceDocument
+                setter: setSourceDocument
+            type: Pohoda\Type\SourceDocumentType
+        liquidationPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: liquidationPrice
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getLiquidationPrice
+                setter: setLiquidationPrice
+            type: float
+        liquidationRate:
+            expose: true
+            access_type: public_method
+            serialized_name: liquidationRate
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getLiquidationRate
+                setter: setLiquidationRate
+            type: float
+        liquidation:
+            expose: true
+            access_type: public_method
+            serialized_name: liquidation
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/bank.xsd'
+            accessor:
+                getter: getLiquidation
+                setter: setLiquidation
+            type: Pohoda\Bank\LiquidationType

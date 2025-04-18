@@ -1,0 +1,36 @@
+Pohoda\Type\FilesAttachmentsType:
+    properties:
+        companyDocumentsFolder:
+            expose: true
+            access_type: public_method
+            serialized_name: companyDocumentsFolder
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            accessor:
+                getter: getCompanyDocumentsFolder
+                setter: setCompanyDocumentsFolder
+            type: string
+        subFolder:
+            expose: true
+            access_type: public_method
+            serialized_name: subFolder
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            accessor:
+                getter: getSubFolder
+                setter: setSubFolder
+            type: string
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: file
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            accessor:
+                getter: getFile
+                setter: setFile
+            xml_list:
+                inline: true
+                entry_name: file
+                namespace: 'http://www.stormware.cz/schema/version_2/type.xsd'
+            type: array<Pohoda\Type\ContFileType>

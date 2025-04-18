@@ -1,0 +1,22 @@
+Pohoda\Filter\QueryFilterType:
+    properties:
+        filter:
+            expose: true
+            access_type: public_method
+            serialized_name: filter
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/filter.xsd'
+            accessor:
+                getter: getFilter
+                setter: setFilter
+            type: string
+        textName:
+            expose: true
+            access_type: public_method
+            serialized_name: textName
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/filter.xsd'
+            accessor:
+                getter: getTextName
+                setter: setTextName
+            type: string

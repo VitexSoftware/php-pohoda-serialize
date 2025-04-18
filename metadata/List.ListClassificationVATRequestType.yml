@@ -1,0 +1,48 @@
+Pohoda\List\ListClassificationVATRequestType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        classificationVATVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: classificationVATVersion
+            accessor:
+                getter: getClassificationVATVersion
+                setter: setClassificationVATVersion
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            xml_list:
+                inline: true
+                entry_name: limit
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\LimitType>
+        requestClassificationVAT:
+            expose: true
+            access_type: public_method
+            serialized_name: requestClassificationVAT
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestClassificationVAT
+                setter: setRequestClassificationVAT
+            xml_list:
+                inline: true
+                entry_name: requestClassificationVAT
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\List\RequestClassificationVATType>

@@ -1,0 +1,3 @@
+Pohoda\UserAgenda\UserAgenda:
+    xml_root_name: userAgenda
+    xml_root_namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'

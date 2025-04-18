@@ -1,0 +1,89 @@
+Pohoda\UserAgenda\UserAgendaType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        userAgendaId:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaId
+            accessor:
+                getter: getUserAgendaId
+                setter: setUserAgendaId
+            xml_attribute: true
+            type: int
+        userAgendaIds:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaIds
+            accessor:
+                getter: getUserAgendaIds
+                setter: setUserAgendaIds
+            xml_attribute: true
+            type: string
+        actionType:
+            expose: true
+            access_type: public_method
+            serialized_name: actionType
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            accessor:
+                getter: getActionType
+                setter: setActionType
+            type: Pohoda\UserAgenda\ActionTypeType
+        userAgendaHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaHeader
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            accessor:
+                getter: getUserAgendaHeader
+                setter: setUserAgendaHeader
+            type: Pohoda\UserAgenda\UserAgendaHeaderType
+        userAgendaDetail:
+            expose: true
+            access_type: public_method
+            serialized_name: userAgendaDetail
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            accessor:
+                getter: getUserAgendaDetail
+                setter: setUserAgendaDetail
+            type: array<Pohoda\UserAgenda\UserAgendaItemType>
+            xml_list:
+                inline: false
+                entry_name: userAgendaItem
+                skip_when_empty: true
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+        attachments:
+            expose: true
+            access_type: public_method
+            serialized_name: attachments
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            accessor:
+                getter: getAttachments
+                setter: setAttachments
+            type: Pohoda\Type\AttachmentsType
+        print:
+            expose: true
+            access_type: public_method
+            serialized_name: print
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/userAgenda.xsd'
+            accessor:
+                getter: getPrint
+                setter: setPrint
+            type: array<Pohoda\Print\PrinterSettingsType>
+            xml_list:
+                inline: false
+                entry_name: printerSettings
+                skip_when_empty: true
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'

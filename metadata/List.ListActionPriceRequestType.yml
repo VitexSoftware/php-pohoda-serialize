@@ -1,0 +1,48 @@
+Pohoda\List\ListActionPriceRequestType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        actionPricesVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: actionPricesVersion
+            accessor:
+                getter: getActionPricesVersion
+                setter: setActionPricesVersion
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            xml_list:
+                inline: true
+                entry_name: limit
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\LimitType>
+        requestActionPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: requestActionPrice
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestActionPrice
+                setter: setRequestActionPrice
+            xml_list:
+                inline: true
+                entry_name: requestActionPrice
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\RequestActionPriceType>

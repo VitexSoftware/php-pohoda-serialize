@@ -1,0 +1,82 @@
+Pohoda\Offer\OfferType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        offerHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: offerHeader
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            accessor:
+                getter: getOfferHeader
+                setter: setOfferHeader
+            xml_list:
+                inline: true
+                entry_name: offerHeader
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            type: array<Pohoda\Offer\OfferHeaderType>
+        offerDetail:
+            expose: true
+            access_type: public_method
+            serialized_name: offerDetail
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            accessor:
+                getter: getOfferDetail
+                setter: setOfferDetail
+            xml_list:
+                inline: true
+                entry_name: offerDetail
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            type: array<Pohoda\Offer\OfferDetailType>
+        offerSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: offerSummary
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            accessor:
+                getter: getOfferSummary
+                setter: setOfferSummary
+            xml_list:
+                inline: true
+                entry_name: offerSummary
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            type: array<Pohoda\Offer\OfferSummaryType>
+        attachments:
+            expose: true
+            access_type: public_method
+            serialized_name: attachments
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            accessor:
+                getter: getAttachments
+                setter: setAttachments
+            xml_list:
+                inline: true
+                entry_name: attachments
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            type: array<Pohoda\Type\AttachmentsType>
+        print:
+            expose: true
+            access_type: public_method
+            serialized_name: print
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/offer.xsd'
+            accessor:
+                getter: getPrint
+                setter: setPrint
+            type: array<Pohoda\Print\PrinterSettingsType>
+            xml_list:
+                inline: false
+                entry_name: printerSettings
+                skip_when_empty: false
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'

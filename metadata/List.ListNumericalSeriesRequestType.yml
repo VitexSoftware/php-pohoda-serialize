@@ -1,0 +1,48 @@
+Pohoda\List\ListNumericalSeriesRequestType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        numericalSeriesVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: numericalSeriesVersion
+            accessor:
+                getter: getNumericalSeriesVersion
+                setter: setNumericalSeriesVersion
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            xml_list:
+                inline: true
+                entry_name: limit
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\LimitType>
+        requestNumericalSeries:
+            expose: true
+            access_type: public_method
+            serialized_name: requestNumericalSeries
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestNumericalSeries
+                setter: setRequestNumericalSeries
+            xml_list:
+                inline: true
+                entry_name: requestNumericalSeries
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\RequestNumericalSeriesType>

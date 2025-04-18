@@ -1,0 +1,22 @@
+Pohoda\Documentresponse\AttachmentType:
+    properties:
+        idReport:
+            expose: true
+            access_type: public_method
+            serialized_name: idReport
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/documentresponse.xsd'
+            accessor:
+                getter: getIdReport
+                setter: setIdReport
+            type: int
+        data:
+            expose: true
+            access_type: public_method
+            serialized_name: data
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/documentresponse.xsd'
+            accessor:
+                getter: getData
+                setter: setData
+            type: Pohoda\Documentresponse\AttachmentType\DataAType

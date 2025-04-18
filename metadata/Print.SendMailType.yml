@@ -1,0 +1,112 @@
+Pohoda\Print\SendMailType:
+    properties:
+        to:
+            expose: true
+            access_type: public_method
+            serialized_name: to
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getTo
+                setter: setTo
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: email
+                skip_when_empty: true
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+        cc:
+            expose: true
+            access_type: public_method
+            serialized_name: cc
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getCc
+                setter: setCc
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: email
+                skip_when_empty: true
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+        bcc:
+            expose: true
+            access_type: public_method
+            serialized_name: bcc
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getBcc
+                setter: setBcc
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: email
+                skip_when_empty: true
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+        subject:
+            expose: true
+            access_type: public_method
+            serialized_name: subject
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getSubject
+                setter: setSubject
+            type: string
+        body:
+            expose: true
+            access_type: public_method
+            serialized_name: body
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getBody
+                setter: setBody
+            type: string
+        attachments:
+            expose: true
+            access_type: public_method
+            serialized_name: attachments
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getAttachments
+                setter: setAttachments
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: attachment
+                skip_when_empty: true
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+        priority:
+            expose: true
+            access_type: public_method
+            serialized_name: priority
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getPriority
+                setter: setPriority
+            type: string
+        returnReceipt:
+            expose: true
+            access_type: public_method
+            serialized_name: returnReceipt
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getReturnReceipt
+                setter: setReturnReceipt
+            type: string
+        disposNotif:
+            expose: true
+            access_type: public_method
+            serialized_name: disposNotif
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/print.xsd'
+            accessor:
+                getter: getDisposNotif
+                setter: setDisposNotif
+            type: string

@@ -1,0 +1,28 @@
+Pohoda\Documentresponse\AttachmentType\DataAType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\Base64Encoded
+        fileName:
+            expose: true
+            access_type: public_method
+            serialized_name: fileName
+            accessor:
+                getter: getFileName
+                setter: setFileName
+            xml_attribute: true
+            type: string
+        code:
+            expose: true
+            access_type: public_method
+            serialized_name: code
+            accessor:
+                getter: getCode
+                setter: setCode
+            xml_attribute: true
+            type: string

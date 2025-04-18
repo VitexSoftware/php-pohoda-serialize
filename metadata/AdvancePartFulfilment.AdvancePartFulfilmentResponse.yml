@@ -1,0 +1,3 @@
+Pohoda\AdvancePartFulfilment\AdvancePartFulfilmentResponse:
+    xml_root_name: advancePartFulfilmentResponse
+    xml_root_namespace: 'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd'

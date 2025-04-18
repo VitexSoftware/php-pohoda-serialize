@@ -1,0 +1,48 @@
+Pohoda\List\ListGlobalSettingsRequestType:
+    properties:
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: version
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            xml_attribute: true
+            type: string
+        globalSettingsVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: globalSettingsVersion
+            accessor:
+                getter: getGlobalSettingsVersion
+                setter: setGlobalSettingsVersion
+            xml_attribute: true
+            type: string
+        limit:
+            expose: true
+            access_type: public_method
+            serialized_name: limit
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getLimit
+                setter: setLimit
+            xml_list:
+                inline: true
+                entry_name: limit
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\Filter\LimitType>
+        requestGlobalSettings:
+            expose: true
+            access_type: public_method
+            serialized_name: requestGlobalSettings
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            accessor:
+                getter: getRequestGlobalSettings
+                setter: setRequestGlobalSettings
+            xml_list:
+                inline: true
+                entry_name: requestGlobalSettings
+                namespace: 'http://www.stormware.cz/schema/version_2/list.xsd'
+            type: array<Pohoda\List\RequestrequestGlobalSettingsType>

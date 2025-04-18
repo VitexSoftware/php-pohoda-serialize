@@ -1,0 +1,22 @@
+Pohoda\Filter\LimitType:
+    properties:
+        idFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: idFrom
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/filter.xsd'
+            accessor:
+                getter: getIdFrom
+                setter: setIdFrom
+            type: int
+        count:
+            expose: true
+            access_type: public_method
+            serialized_name: count
+            xml_element:
+                namespace: 'http://www.stormware.cz/schema/version_2/filter.xsd'
+            accessor:
+                getter: getCount
+                setter: setCount
+            type: int
