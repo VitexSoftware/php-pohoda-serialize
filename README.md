@@ -1,5 +1,7 @@
 # PohodaSer
 
+[![wakatime](https://wakatime.com/badge/user/5abba9ca-813e-43ac-9b5f-b1cfdf3dc1c7/project/7bf8c435-6fd3-4568-980a-e78253585143.svg)](https://wakatime.com/badge/user/5abba9ca-813e-43ac-9b5f-b1cfdf3dc1c7/project/7bf8c435-6fd3-4568-980a-e78253585143)
+
 Stormware's Pohoda XML/PHP serializer.
 
 This library provides a PHP-based solution for serializing and deserializing XML data for Stormware's Pohoda accounting software. It is designed to work with Pohoda's XML schema definitions (XSD) and simplifies the process of integrating Pohoda's data exchange into your PHP applications.

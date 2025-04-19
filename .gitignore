@@ -8,3 +8,9 @@ composer.phar
 /.vscode/
 /nbproject/
 /.build/
+/debian/files
+/debian/.debhelper/
+/debian/php-vitexsoftware-pohodaser/
+/debian/php-vitexsoftware-pohodaser.substvars
+/debian/debhelper-build-stamp
+/debian/php-vitexsoftware-pohodaser.debhelper.log
