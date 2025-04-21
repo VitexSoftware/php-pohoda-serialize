@@ -20,4 +20,14 @@ namespace Pohoda\AddressBook;
  */
 class Addressbook extends AddressbookType
 {
+    private \Pohoda\Response\ResponsePack $responsePack;
+    
+    public function __construct(\Pohoda\Response\ResponsePack $responsePack) {
+        $this->responsePack = $responsePack;
+    }
+    
+    protected function getResponsePack(): \Pohoda\Response\ResponsePack {
+        return $this->responsePack;
+    }
+    
 }
