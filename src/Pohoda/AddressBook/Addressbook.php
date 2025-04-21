@@ -20,14 +20,19 @@ namespace Pohoda\AddressBook;
  */
 class Addressbook extends AddressbookType
 {
-    private \Pohoda\Response\ResponsePack $responsePack;
-    
-    public function __construct(\Pohoda\Response\ResponsePack $responsePack) {
-        $this->responsePack = $responsePack;
+    use \Pohoda\Xml\ser;
+
+    /**
+     * 
+     * @return array<Pohoda\AddressBook\AddressbookType>
+     */
+    public function get(): array  {
+        $items = [];
+        foreach ($this->getItems() as $responsePackItem) {
+            foreach ($responsePackItem->getListAddressBook() as $listAddressBook) {
+                $items = array_merge($items, $listAddressBook->getAddressBook());
+            }
+        }
+        return $items;
     }
-    
-    protected function getResponsePack(): \Pohoda\Response\ResponsePack {
-        return $this->responsePack;
-    }
-    
 }

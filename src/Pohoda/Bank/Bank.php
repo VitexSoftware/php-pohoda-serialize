@@ -18,6 +18,21 @@ namespace Pohoda\Bank;
 /**
  * Class representing Bank.
  */
-class Bank extends BankType
-{
+class Bank extends BankType {
+
+    use \Pohoda\Xml\ser;
+
+    /**
+     * 
+     * @return array<Pohoda\Bank\BankType>
+     */
+    public function get(): array  {
+        $items = [];
+        foreach ($this->getItems() as $responsePackItem) {
+            foreach ($responsePackItem->getListBank() as $listBank) {
+                $items = array_merge($items, $listBank->getBank());
+            }
+        }
+        return $items;
+    }
 }
