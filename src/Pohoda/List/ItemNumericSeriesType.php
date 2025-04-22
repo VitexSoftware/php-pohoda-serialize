@@ -23,9 +23,7 @@ namespace Pohoda\List;
 class ItemNumericSeriesType extends ItemType
 {
     private ?string $name = null;
-
     private ?string $agenda = null;
-
     private ?int $year = null;
 
     /**

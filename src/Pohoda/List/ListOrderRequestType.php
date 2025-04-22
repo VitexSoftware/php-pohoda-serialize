@@ -23,7 +23,6 @@ namespace Pohoda\List;
 class ListOrderRequestType
 {
     private ?string $version = null;
-
     private ?string $orderType = null;
 
     /**

@@ -23,16 +23,18 @@ class Addressbook extends AddressbookType
     use \Pohoda\Xml\ser;
 
     /**
-     * 
      * @return array<Pohoda\AddressBook\AddressbookType>
      */
-    public function get(): array  {
+    public function get(): array
+    {
         $items = [];
+
         foreach ($this->getItems() as $responsePackItem) {
             foreach ($responsePackItem->getListAddressBook() as $listAddressBook) {
                 $items = array_merge($items, $listAddressBook->getAddressBook());
             }
         }
+
         return $items;
     }
 }

@@ -31,7 +31,6 @@ class NumberADType
      * Prefix číselné řady.
      */
     private ?string $ids = null;
-
     private ?\Pohoda\Type\NumberADType\NumberRequestedAType $numberRequested = null;
 
     /**

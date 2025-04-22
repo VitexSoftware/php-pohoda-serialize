@@ -23,15 +23,10 @@ namespace Pohoda\MKasa;
 class ConfigurationType
 {
     private ?string $pohodaSNID = null;
-
     private ?int $pohodaPackNum = null;
-
     private ?\Pohoda\MKasa\CompanyInfoType $companyInfo = null;
-
     private ?\Pohoda\MKasa\KasaInfoType $kasaInfo = null;
-
     private ?\Pohoda\MKasa\PohodaRestrictionType $pohodaRestriction = null;
-
     private ?\Pohoda\MKasa\ConfigurationType\GlobalSettingsAType $globalSettings = null;
 
     /**

@@ -23,9 +23,7 @@ namespace Pohoda\Type;
 class ContUrlAddressType
 {
     private ?string $name = null;
-
     private ?string $url = null;
-
     private ?\DateTime $dateOfChanged = null;
 
     /**

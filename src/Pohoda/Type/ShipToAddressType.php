@@ -32,21 +32,13 @@ class ShipToAddressType
      * ID dodací adresy.
      */
     private ?int $id = null;
-
     private ?string $extId = null;
-
     private ?string $company = null;
-
     private ?string $division = null;
-
     private ?string $name = null;
-
     private ?string $city = null;
-
     private ?string $street = null;
-
     private ?string $zip = null;
-
     private ?\Pohoda\Type\RefType $country = null;
 
     /**

@@ -24,15 +24,10 @@ namespace Pohoda\Parameter;
 class UserCodePartType
 {
     private ?string $codeEngine = null;
-
     private ?string $part0 = null;
-
     private ?string $part1 = null;
-
     private ?string $part2 = null;
-
     private ?string $part3 = null;
-
     private ?string $part4 = null;
 
     /**

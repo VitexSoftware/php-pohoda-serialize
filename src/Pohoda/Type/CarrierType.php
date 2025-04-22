@@ -23,7 +23,6 @@ namespace Pohoda\Type;
 class CarrierType
 {
     private ?int $id = null;
-
     private ?string $ids = null;
 
     /**

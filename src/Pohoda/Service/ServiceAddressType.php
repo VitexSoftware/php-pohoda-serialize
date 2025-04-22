@@ -23,7 +23,6 @@ namespace Pohoda\Service;
 class ServiceAddressType
 {
     private ?int $refAD = null;
-
     private ?string $company = null;
 
     /**

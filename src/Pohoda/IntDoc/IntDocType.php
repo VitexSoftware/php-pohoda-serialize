@@ -23,13 +23,9 @@ namespace Pohoda\IntDoc;
 class IntDocType
 {
     private ?string $version = null;
-
     private ?\Pohoda\IntDoc\TaxDocumentType $taxDocument = null;
-
     private ?\Pohoda\IntDoc\IntDocHeaderType $intDocHeader = null;
-
     private ?\Pohoda\IntDoc\IntDocDetailType $intDocDetail = null;
-
     private ?\Pohoda\IntDoc\IntDocSummaryType $intDocSummary = null;
 
     /**

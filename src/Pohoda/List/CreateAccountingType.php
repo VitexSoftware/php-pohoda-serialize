@@ -23,13 +23,9 @@ namespace Pohoda\List;
 class CreateAccountingType
 {
     private ?string $code = null;
-
     private ?string $accounting = null;
-
     private ?string $agenda = null;
-
     private ?string $debit = null;
-
     private ?string $credit = null;
 
     /**

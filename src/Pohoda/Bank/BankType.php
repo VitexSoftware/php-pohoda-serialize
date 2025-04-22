@@ -23,11 +23,8 @@ namespace Pohoda\Bank;
 class BankType
 {
     private ?string $version = null;
-
     private ?\Pohoda\Bank\BankHeaderType $bankHeader = null;
-
     private ?\Pohoda\Bank\BankDetailType $bankDetail = null;
-
     private ?\Pohoda\Bank\BankSummaryType $bankSummary = null;
 
     /**

@@ -22,8 +22,6 @@ class ResponsePack extends ResponsePackType
 {
     /**
      * Get the items from the response pack.
-     *
-     * @return array
      */
     public function getResponsePackItems(): array
     {

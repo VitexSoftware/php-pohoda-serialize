@@ -23,7 +23,6 @@ namespace Pohoda\List;
 class ListOfferRequestType
 {
     private ?string $version = null;
-
     private ?string $offerType = null;
 
     /**

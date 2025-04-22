@@ -24,13 +24,9 @@ namespace Pohoda\Parameter;
 class CtrlDefType
 {
     private ?string $name = null;
-
     private ?string $label = null;
-
     private ?\Pohoda\Type\RectangleType $rect = null;
-
     private ?string $type = null;
-
     private ?int $style = null;
 
     /**

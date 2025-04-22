@@ -28,7 +28,6 @@ class StockType
      * Typ práce s dokladem. Výchozí hodnota je přidání nového dokladu.
      */
     private ?\Pohoda\Stock\ActionTypeType $actionType = null;
-
     private ?\Pohoda\Stock\StockHeaderType $stockHeader = null;
 
     /**

@@ -23,7 +23,6 @@ namespace Pohoda\Establishment;
 class EstablishmentType
 {
     private ?string $version = null;
-
     private ?\Pohoda\Establishment\EstablishmentHeaderType $establishmentHeader = null;
 
     /**

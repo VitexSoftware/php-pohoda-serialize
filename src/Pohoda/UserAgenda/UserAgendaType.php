@@ -23,16 +23,13 @@ namespace Pohoda\UserAgenda;
 class UserAgendaType
 {
     private ?string $version = null;
-
     private ?int $userAgendaId = null;
-
     private ?string $userAgendaIds = null;
 
     /**
      * Typ práce se záznamem. Výchozí hodnota je přidání nového záznamu.
      */
     private ?\Pohoda\UserAgenda\ActionTypeType $actionType = null;
-
     private ?\Pohoda\UserAgenda\UserAgendaHeaderType $userAgendaHeader = null;
 
     /**

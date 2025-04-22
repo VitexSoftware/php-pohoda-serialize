@@ -51,7 +51,6 @@ class RoundingItemType
      * Historická sazba v procentech. Povoluje se v Globálním nastavení.
      */
     private ?float $percentVAT = null;
-
     private ?\Pohoda\Type\TypeCurrencyHomeItemRoundingType $homeCurrency = null;
 
     /**

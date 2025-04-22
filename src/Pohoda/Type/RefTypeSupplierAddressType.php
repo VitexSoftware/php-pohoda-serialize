@@ -24,7 +24,6 @@ namespace Pohoda\Type;
 class RefTypeSupplierAddressType
 {
     private ?int $id = null;
-
     private ?string $ids = null;
 
     /**

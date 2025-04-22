@@ -23,11 +23,8 @@ namespace Pohoda\Documentresponse;
 class ListVersionType
 {
     private ?string $version = null;
-
     private ?\DateTime $dateTimeStamp = null;
-
     private ?\DateTime $dateValidFrom = null;
-
     private ?string $state = null;
 
     /**

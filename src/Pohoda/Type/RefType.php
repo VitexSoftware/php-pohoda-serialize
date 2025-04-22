@@ -24,14 +24,12 @@ namespace Pohoda\Type;
 class RefType
 {
     private ?int $id = null;
-
     private ?string $ids = null;
 
     /**
      * Identifikátor externího systému.
      */
     private ?\Pohoda\Type\ExtIdType $extId = null;
-
     private ?string $valueType = null;
 
     /**

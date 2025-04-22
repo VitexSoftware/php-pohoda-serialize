@@ -43,8 +43,8 @@ XSD Taken from https://www.stormware.cz/xml/schema/all_schema_ver2.zip
 ### Serialize an Invoice Object to XML
 
 ```php
-use Pohoda\Invoice\InvoiceType;
-use JMS\Serializer\SerializerBuilder;
+use Pohoda\Invoice\Invoice;
+use Pohoda\XML\SerializerBuilder;
 
 // Create an instance of the serializer
 $serializer = SerializerBuilder::create()->build();
@@ -64,7 +64,7 @@ echo $xmlContent;
 
 ```php
 use Pohoda\Invoice\InvoiceType;
-use JMS\Serializer\SerializerBuilder;
+use Pohoda\XML\SerializerBuilder;
 
 // Create an instance of the serializer
 $serializer = SerializerBuilder::create()->build();
@@ -82,7 +82,7 @@ print_r($invoice);
 
 ```php
 use Pohoda\Xml\Helper;
-use JMS\Serializer\SerializerBuilder;
+use Pohoda\XML\SerializerBuilder;
 
 $serializer = SerializerBuilder::create()->build();
 $xmlContent = file_get_contents('path/to/faktury_03_v2.0.xml');

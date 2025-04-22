@@ -23,7 +23,6 @@ namespace Pohoda\NumericalSeries;
 class NumericalSeriesType
 {
     private ?string $version = null;
-
     private ?\Pohoda\NumericalSeries\NumericalSeriesHeaderType $numericalSeriesHeader = null;
 
     /**

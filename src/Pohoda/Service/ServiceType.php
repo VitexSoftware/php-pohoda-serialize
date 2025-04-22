@@ -23,9 +23,7 @@ namespace Pohoda\Service;
 class ServiceType
 {
     private ?string $version = null;
-
     private ?\Pohoda\Service\ServiceHeaderType $serviceHeader = null;
-
     private ?\Pohoda\Service\ServiceSubjectType $serviceSubject = null;
 
     /**
@@ -37,7 +35,6 @@ class ServiceType
      * @var \Pohoda\Service\ItemType[]
      */
     private ?array $serviceItems = null;
-
     private ?\Pohoda\Service\ServiceSummaryType $serviceSummary = null;
 
     /**

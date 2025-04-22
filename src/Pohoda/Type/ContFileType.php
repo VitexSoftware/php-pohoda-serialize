@@ -23,7 +23,6 @@ namespace Pohoda\Type;
 class ContFileType
 {
     private ?string $name = null;
-
     private ?string $type = null;
 
     /**

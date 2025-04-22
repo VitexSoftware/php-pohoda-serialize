@@ -21,7 +21,6 @@ namespace Pohoda\Invoice\InvoiceHeaderType;
 class PaymentAccountAType
 {
     private ?string $accountNo = null;
-
     private ?string $bankCode = null;
 
     /**

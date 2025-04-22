@@ -23,13 +23,9 @@ namespace Pohoda\Response;
 class ResponsePackType
 {
     private ?string $version = null;
-
     private ?string $id = null;
-
     private ?string $state = null;
-
     private ?string $note = null;
-
     private ?string $programVersion = null;
 
     /**
@@ -41,7 +37,6 @@ class ResponsePackType
      * Jedinečný identifikátor účetnictví firmy, která XML zpracovala.
      */
     private ?string $key = null;
-
     private ?\DateTime $dateTimeStamp = null;
 
     /**

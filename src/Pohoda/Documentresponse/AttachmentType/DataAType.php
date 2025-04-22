@@ -21,9 +21,7 @@ namespace Pohoda\Documentresponse\AttachmentType;
 class DataAType
 {
     private ?string $__value = null;
-
     private ?string $fileName = null;
-
     private ?string $code = null;
 
     /**

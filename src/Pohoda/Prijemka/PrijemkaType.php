@@ -32,11 +32,8 @@ class PrijemkaType
      *  - Přijaté faktury.
      */
     private ?\Pohoda\Type\LinksType $links = null;
-
     private ?\Pohoda\Prijemka\PrijemkaHeaderType $prijemkaHeader = null;
-
     private ?\Pohoda\Prijemka\PrijemkaDetailType $prijemkaDetail = null;
-
     private ?\Pohoda\Prijemka\PrijemkaSummaryType $prijemkaSummary = null;
 
     /**

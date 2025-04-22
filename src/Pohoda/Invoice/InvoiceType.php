@@ -48,7 +48,6 @@ class InvoiceType
      *  Vložený doklad lze upravit pomocí jednotlivých elementů v invoiceHeader (ostatní elementy budou ignorovány).
      */
     private ?\Pohoda\Type\CorrectiveDocumentType $correctiveDocument = null;
-
     private ?\Pohoda\Invoice\InvoiceHeaderType $invoiceHeader = null;
 
     /**
@@ -57,9 +56,7 @@ class InvoiceType
      * @var \Pohoda\Invoice\InvoiceRetentionType[]
      */
     private ?array $invoiceRetentions = null;
-
     private ?\Pohoda\Invoice\InvoiceDetailType $invoiceDetail = null;
-
     private ?\Pohoda\Invoice\InvoiceSummaryType $invoiceSummary = null;
 
     /**
@@ -78,7 +75,6 @@ class InvoiceType
      * Záznamy ze záložky "Dokumenty".
      */
     private ?\Pohoda\Type\AttachmentsType $attachments = null;
-
     private ?\Pohoda\Type\EETType $eET = null;
 
     /**

@@ -33,7 +33,6 @@ class ListAccountancyRequestType
      * Omezení počtu exportovaných záznamů.
      */
     private ?\Pohoda\Filter\LimitType $limit = null;
-
     private ?\Pohoda\Filter\RequestAccountancyType $requestAccountancy = null;
 
     /**

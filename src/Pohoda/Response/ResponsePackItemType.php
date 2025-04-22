@@ -23,11 +23,8 @@ namespace Pohoda\Response;
 class ResponsePackItemType
 {
     private ?string $version = null;
-
     private ?string $id = null;
-
     private ?string $state = null;
-
     private ?string $note = null;
 
     /**

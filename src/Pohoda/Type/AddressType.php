@@ -30,37 +30,26 @@ class AddressType
      *  K vytvoření vazby adresy dokladu na Adresář dojde pouze tehdy, pokud bude nalezena pouze 1 adresa.
      */
     private ?bool $linkToAddress = null;
-
     private ?string $company = null;
-
     private ?string $division = null;
-
     private ?string $name = null;
-
     private ?string $city = null;
-
     private ?string $street = null;
-
     private ?string $zip = null;
-
     private ?string $ico = null;
-
     private ?string $dic = null;
 
     /**
      * Typ plátce DPH.
      */
     private ?string $vATPayerType = null;
-
     private ?string $icDph = null;
-
     private ?\Pohoda\Type\RefType $country = null;
 
     /**
      * Pouze pro agendy vydané nabídky, přijaté nabídky, vydané poptávky, přijaté poptávky, vydané objednávky, přijaté objednávky, vydané faktury, vydané zálohové faktury, ostatní pohledávky, servis, interní doklady, prodejky, výdejky a zakázky.
      */
     private ?string $phone = null;
-
     private ?string $mobilPhone = null;
 
     /**

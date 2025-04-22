@@ -20,7 +20,8 @@ namespace Pohoda\Invoice;
  */
 class Invoice extends InvoiceType
 {
-    public function getInvoiceNumber() {
+    public function getInvoiceNumber()
+    {
         return $this->getInvoiceHeader()->getNumber();
     }
 }

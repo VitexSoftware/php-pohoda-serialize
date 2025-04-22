@@ -27,9 +27,7 @@ class LabelType
      * Vytvoření nebo smazání štítku na záznamu. Výchozí hodnota = add. Smazání štítku na záznamu je povoleno pouze v agendách: (Zásoby, Adresář).
      */
     private ?string $actionType = null;
-
     private ?int $id = null;
-
     private ?string $ids = null;
 
     /**

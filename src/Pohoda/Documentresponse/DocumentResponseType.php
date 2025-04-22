@@ -23,7 +23,6 @@ namespace Pohoda\Documentresponse;
 class DocumentResponseType
 {
     private ?string $state = null;
-
     private ?string $version = null;
 
     /**
@@ -37,7 +36,6 @@ class DocumentResponseType
      * Informace o vytvořeném dokladu.
      */
     private ?\Pohoda\Documentresponse\ProducedDetailsType $producedDetails = null;
-
     private ?\Pohoda\Documentresponse\PrintDetailsType $printDetails = null;
 
     /**

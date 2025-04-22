@@ -33,9 +33,7 @@ class ListStoreRequestType
      * Omezení počtu exportovaných záznamů.
      */
     private ?\Pohoda\Filter\LimitType $limit = null;
-
     private ?\Pohoda\Filter\RequestStoreType $requestStore = null;
-
     private ?\Pohoda\List\RestrictionDataStoreType $restrictionData = null;
 
     /**

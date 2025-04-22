@@ -15,31 +15,32 @@ declare(strict_types=1);
 
 namespace Pohoda\Xml;
 
-trait ser {
-
+trait ser
+{
     private \Pohoda\Response\ResponsePack $responsePack;
 
-    public function __construct(\Pohoda\Response\ResponsePack $responsePack) {
+    public function __construct(\Pohoda\Response\ResponsePack $responsePack)
+    {
         $this->responsePack = $responsePack;
     }
 
-    protected function getResponsePack(): \Pohoda\Response\ResponsePack {
-        return $this->responsePack;
-    }
-
     /**
-     * Get Items in Array
-     * 
-     * @return array
+     * Get Items in Array.
      */
-    public function getItems(): array {
+    public function getItems(): array
+    {
         return $this->getResponsePack()->getResponsePackItem();
     }
 
     /**
-     * Return one result form response;
+     * Return one result form response;.
      */
-    public function getItem() {
-        
+    public function getItem(): void
+    {
+    }
+
+    protected function getResponsePack(): \Pohoda\Response\ResponsePack
+    {
+        return $this->responsePack;
     }
 }

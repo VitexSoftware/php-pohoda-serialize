@@ -28,7 +28,6 @@ class ListIntParamRequestType
      * Omezení počtu exportovaných záznamů.
      */
     private ?\Pohoda\Filter\LimitType $limit = null;
-
     private ?\Pohoda\List\RequestIntParamType $requestIntParam = null;
 
     /**

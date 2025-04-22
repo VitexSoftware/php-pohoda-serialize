@@ -31,7 +31,6 @@ class NumberTypeContractType
      * Prefix číselné řady.
      */
     private ?string $ids = null;
-
     private ?\Pohoda\Type\NumberTypeContractType\NumberRequestedAType $numberRequested = null;
 
     /**

@@ -24,9 +24,7 @@ namespace Pohoda\Type;
 class LiquidationType
 {
     private ?\DateTime $date = null;
-
     private ?float $amountHome = null;
-
     private ?float $amountForeign = null;
 
     /**

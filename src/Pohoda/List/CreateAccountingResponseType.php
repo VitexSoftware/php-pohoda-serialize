@@ -23,7 +23,6 @@ namespace Pohoda\List;
 class CreateAccountingResponseType extends ItemAccountingTypeDoubleEntryType
 {
     private ?string $state = null;
-
     private ?string $note = null;
 
     /**

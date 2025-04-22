@@ -37,16 +37,13 @@ class ProdejkaType
      *  - Přijaté objednávky (pro typ Prodejka).
      */
     private ?\Pohoda\Type\LinksType $links = null;
-
     private ?\Pohoda\Prodejka\ProdejkaHeaderType $prodejkaHeader = null;
-
     private ?\Pohoda\Prodejka\ProdejkaDetailType $prodejkaDetail = null;
 
     /**
      * @var \Pohoda\Prodejka\PaymentItemType[]
      */
     private ?array $prodejkaPayments = null;
-
     private ?\Pohoda\Prodejka\ProdejkaSummaryType $prodejkaSummary = null;
 
     /**
@@ -58,7 +55,6 @@ class ProdejkaType
      * Záznamy ze záložky "Dokumenty".
      */
     private ?\Pohoda\Type\AttachmentsType $attachments = null;
-
     private ?\Pohoda\Type\EETType $eET = null;
 
     /**

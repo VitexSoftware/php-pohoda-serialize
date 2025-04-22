@@ -23,7 +23,6 @@ namespace Pohoda\ProductRequirement;
 class ProductRequirementType
 {
     private ?string $version = null;
-
     private ?\Pohoda\ProductRequirement\ProductRequirementHeaderType $productRequirementHeader = null;
 
     /**

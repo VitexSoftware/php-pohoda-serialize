@@ -23,7 +23,6 @@ namespace Pohoda\Data;
 class DataPackItemType
 {
     private ?string $version = null;
-
     private ?string $id = null;
 
     /**

@@ -32,11 +32,8 @@ class VydejkaType
      *  - Vydané faktury.
      */
     private ?\Pohoda\Type\LinksType $links = null;
-
     private ?\Pohoda\Vydejka\VydejkaHeaderType $vydejkaHeader = null;
-
     private ?\Pohoda\Vydejka\VydejkaDetailType $vydejkaDetail = null;
-
     private ?\Pohoda\Vydejka\VydejkaSummaryType $vydejkaSummary = null;
 
     /**

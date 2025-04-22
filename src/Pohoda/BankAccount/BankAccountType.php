@@ -28,7 +28,6 @@ class BankAccountType
      * Typ práce s dokladem. Výchozí hodnota je přidání nového dokladu.
      */
     private ?\Pohoda\BankAccount\ActionTypeType $actionType = null;
-
     private ?\Pohoda\BankAccount\BankAccountHeaderType $bankAccountHeader = null;
 
     /**

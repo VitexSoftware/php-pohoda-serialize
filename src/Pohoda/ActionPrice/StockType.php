@@ -23,7 +23,6 @@ namespace Pohoda\ActionPrice;
 class StockType
 {
     private ?int $id = null;
-
     private ?\Pohoda\Type\ExtIdType $extId = null;
 
     /**

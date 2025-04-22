@@ -33,7 +33,6 @@ class ListCategoryRequestType
      * Omezení počtu exportovaných záznamů.
      */
     private ?\Pohoda\Filter\LimitType $limit = null;
-
     private ?\Pohoda\List\RequestCategoryType $requestCategory = null;
 
     /**

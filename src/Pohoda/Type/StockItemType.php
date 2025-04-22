@@ -37,7 +37,6 @@ class StockItemType
      * Výrobní číslo.
      */
     private ?string $serialNumber = null;
-
     private ?\Pohoda\Type\ExtIdType $serialNumberExtId = null;
 
     /**

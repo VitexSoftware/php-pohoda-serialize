@@ -23,7 +23,6 @@ namespace Pohoda\Documentresponse;
 class ItemType
 {
     private ?string $actionType = null;
-
     private ?string $extId = null;
 
     /**

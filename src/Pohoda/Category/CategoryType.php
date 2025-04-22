@@ -58,7 +58,6 @@ class CategoryType
      * Název obrázku. Soubor se musí nacházet v adresáři Dokumenty\firma\Obrázky\. Název obrázku se uvádí bez cesty.
      */
     private ?string $picture = null;
-
     private ?string $note = null;
 
     /**
@@ -70,7 +69,6 @@ class CategoryType
      * @var \Pohoda\Category\CategoryType[]
      */
     private ?array $subCategories = null;
-
     private ?\Pohoda\Category\InternetParamsType $internetParams = null;
 
     /**

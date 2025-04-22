@@ -36,16 +36,13 @@ class SendMailType
      * @var string[]
      */
     private ?array $bcc = null;
-
     private ?string $subject = null;
-
     private ?string $body = null;
 
     /**
      * @var string[]
      */
     private ?array $attachments = null;
-
     private ?string $priority = null;
 
     /**

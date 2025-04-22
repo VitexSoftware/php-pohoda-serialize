@@ -29,11 +29,8 @@ class TypeRoundType
      */
     private array $priceRound = [
     ];
-
     private ?float $rateVATround = null;
-
     private ?float $priceRoundSum = null;
-
     private ?float $priceRoundSumVAT = null;
 
     /**

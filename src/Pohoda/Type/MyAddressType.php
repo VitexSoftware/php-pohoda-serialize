@@ -23,7 +23,6 @@ namespace Pohoda\Type;
 class MyAddressType
 {
     private ?\Pohoda\Type\AddressInternetType $address = null;
-
     private ?\Pohoda\Type\EstablishmentType $establishment = null;
 
     /**

@@ -31,7 +31,6 @@ class VyrobaType
      *  - Výrobní požadavky (do agendy Výroba).
      */
     private ?\Pohoda\Type\LinksType $links = null;
-
     private ?\Pohoda\Vyroba\VyrobaHeaderType $vyrobaHeader = null;
 
     /**

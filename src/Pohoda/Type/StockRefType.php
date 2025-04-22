@@ -36,15 +36,10 @@ class StockRefType
      * Umožní ignorovat uživatelský filtr na sklady, které je možné v GUI Pohody nastavit v agendě SKLAD/SKLADY. Při nastavení atributu: True – použít nastavený filtr na sklad z programu POHODA, False – ignorovat nastavený filtr na sklad z programu POHODA.
      */
     private ?bool $applyUserSettingsFilterOnTheStore = null;
-
     private ?int $id = null;
-
     private ?string $ids = null;
-
     private ?\Pohoda\Type\ExtIdType $extId = null;
-
     private ?string $eAN = null;
-
     private ?int $pLU = null;
 
     /**

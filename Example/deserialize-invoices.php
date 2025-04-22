@@ -40,15 +40,16 @@ $phpClassName = Helper::xml2ns($xmlContent);
 if ($phpClassName) {
     // Deserialize the XML into the detected PHP class
     $responsePack = $serializer->deserialize($xmlContent, $phpClassName, 'xml');
-    foreach ($responsePack->getResponsePackItem() as $responsePackItem){
-        foreach ($responsePackItem->getListInvoice() as $invoiceList){
+
+    foreach ($responsePack->getResponsePackItem() as $responsePackItem) {
+        foreach ($responsePackItem->getListInvoice() as $invoiceList) {
             $invoices = $invoiceList->getInvoice();
+
             foreach ($invoices as $invoice) {
-                echo '# '.$invoice->getInvoiceHeader()->getNumber()->getNumberRequested() .' ' . $invoice->getInvoiceHeader()->getSymVar().' = '. $invoice->getInvoiceSummary()->getHomeCurrency()->getPriceHighSum() ."\n";
+                echo '# '.$invoice->getInvoiceHeader()->getNumber()->getNumberRequested().' '.$invoice->getInvoiceHeader()->getSymVar().' = '.$invoice->getInvoiceSummary()->getHomeCurrency()->getPriceHighSum()."\n";
             }
         }
     }
-    
 } else {
     echo "Namespace not found for the root element.\n";
 }

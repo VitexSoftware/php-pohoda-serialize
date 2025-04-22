@@ -25,7 +25,6 @@ use Pohoda\Documentresponse\ListVersionType;
 class MKasaResponseType extends ListVersionType
 {
     private ?\Pohoda\MKasa\ConfigurationType $configuration = null;
-
     private ?\Pohoda\MKasa\ImportResponseType $importResponse = null;
 
     /**

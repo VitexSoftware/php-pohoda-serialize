@@ -23,7 +23,6 @@ namespace Pohoda\ActionPrice;
 class ActionPriceType
 {
     private ?string $version = null;
-
     private ?\Pohoda\ActionPrice\ActionPriceHeaderType $actionPriceHeader = null;
 
     /**

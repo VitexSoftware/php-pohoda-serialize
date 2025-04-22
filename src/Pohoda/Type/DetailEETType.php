@@ -166,7 +166,6 @@ class DetailEETType
      * UUID datové zprávy evidované tržby, je generováno pokladním zařízením poplatníka.
      */
     private ?string $uUID = null;
-
     private ?int $protocolVersion = null;
 
     /**

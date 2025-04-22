@@ -23,7 +23,6 @@ namespace Pohoda\MKasa;
 class ExportRequestType
 {
     private ?string $name = null;
-
     private ?string $deviceGuid = null;
 
     /**
@@ -32,7 +31,6 @@ class ExportRequestType
      *  Pokud se Guid liší a element je false nebo agenda není Kasa, vrací se chyba.
      */
     private ?string $overwriteDeviceGuid = null;
-
     private ?string $agenda = null;
 
     /**

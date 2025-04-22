@@ -21,7 +21,6 @@ namespace Pohoda\Bank\BankHeaderType;
 class PaymentAccountAType
 {
     private ?string $accountNo = null;
-
     private ?string $bankCode = null;
 
     /**

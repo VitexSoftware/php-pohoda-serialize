@@ -23,7 +23,6 @@ namespace Pohoda\Filter;
 class QueryFilterType
 {
     private ?string $filter = null;
-
     private ?string $textName = null;
 
     /**

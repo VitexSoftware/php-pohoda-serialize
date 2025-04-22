@@ -26,7 +26,6 @@ class EnquiryItemType
      * ID položky dokladu (jen pro export).
      */
     private ?int $id = null;
-
     private ?string $extId = null;
 
     /**

@@ -26,11 +26,8 @@ class ParameterListItemType
      * ID záznamu (jen pro export).
      */
     private ?int $id = null;
-
     private ?string $name = null;
-
     private ?string $description = null;
-
     private ?int $sequence = null;
 
     /**

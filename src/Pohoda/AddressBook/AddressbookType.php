@@ -28,14 +28,12 @@ class AddressbookType
      * Typ práce s dokladem. Výchozí hodnota je přidání nového dokladu.
      */
     private ?\Pohoda\AddressBook\ActionTypeType $actionType = null;
-
     private ?\Pohoda\AddressBook\AddressbookHeaderType $addressbookHeader = null;
 
     /**
      * @var \Pohoda\AddressBook\AccountItemType[]
      */
     private ?array $addressbookAccount = null;
-
     private ?\Pohoda\AddressBook\AddressbookGDPRType $addressbookGDPR = null;
 
     /**

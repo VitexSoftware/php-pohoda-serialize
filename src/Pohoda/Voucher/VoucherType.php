@@ -29,18 +29,14 @@ class VoucherType
      *  Vložený doklad lze upravit pomocí jednotlivých elementů v voucherHeader (ostatní elementy budou ignorovány).
      */
     private ?\Pohoda\Type\CancelDocumentType $cancelDocument = null;
-
     private ?\Pohoda\Voucher\VoucherHeaderType $voucherHeader = null;
-
     private ?\Pohoda\Voucher\VoucherDetailType $voucherDetail = null;
-
     private ?\Pohoda\Voucher\VoucherSummaryType $voucherSummary = null;
 
     /**
      * Záznamy ze záložky "Dokumenty".
      */
     private ?\Pohoda\Type\AttachmentsType $attachments = null;
-
     private ?\Pohoda\Type\EETType $eET = null;
 
     /**

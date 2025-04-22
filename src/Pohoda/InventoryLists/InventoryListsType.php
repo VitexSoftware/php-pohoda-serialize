@@ -23,7 +23,6 @@ namespace Pohoda\InventoryLists;
 class InventoryListsType
 {
     private ?string $version = null;
-
     private ?\Pohoda\InventoryLists\InventoryListsHeaderType $inventoryListsHeader = null;
 
     /**

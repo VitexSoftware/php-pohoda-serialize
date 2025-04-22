@@ -23,26 +23,18 @@ namespace Pohoda\List;
 class ListVersionTypeTaxType
 {
     private ?string $version = null;
-
     private ?\DateTime $dateTimeStamp = null;
-
     private ?\DateTime $dateValidFrom = null;
-
     private ?string $state = null;
-
     private ?string $db = null;
-
     private ?string $format = null;
-
     private ?string $contID = null;
-
     private ?string $rqFormat = null;
 
     /**
      * @var \Pohoda\Documentresponse\DetailType[]
      */
     private ?array $importDetails = null;
-
     private ?string $importData = null;
 
     /**

@@ -23,7 +23,6 @@ namespace Pohoda\List;
 class ItemType
 {
     private ?int $id = null;
-
     private ?string $code = null;
 
     /**

@@ -27,7 +27,6 @@ class LiquidationItemType
      * ID likvidace.
      */
     private ?int $id = null;
-
     private ?string $extId = null;
 
     /**

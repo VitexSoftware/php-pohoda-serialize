@@ -48,7 +48,6 @@ class DataPackType
      * Textový popis, hodnota se zobrazí v poli "Aplikace" v agendě XML Import.
      */
     private ?string $application = null;
-
     private ?string $programVersion = null;
 
     /**

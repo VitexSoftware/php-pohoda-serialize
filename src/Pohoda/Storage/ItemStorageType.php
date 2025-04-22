@@ -52,7 +52,6 @@ class ItemStorageType
      * Nabízet dynamickými záložkami.
      */
     private ?string $offerTo = null;
-
     private ?\Pohoda\Storage\SubStoragesType $subStorages = null;
 
     /**

@@ -52,26 +52,18 @@ class ParameterDefType
      * Definice počítaného sloupce.
      */
     private ?string $definition = null;
-
     private ?\Pohoda\Type\RefType $list = null;
-
     private ?string $write = null;
 
     /**
      * Řádek v tabulce položek dokladu.
      */
     private ?int $row = null;
-
     private ?string $use0 = null;
-
     private ?string $use1 = null;
-
     private ?string $use2 = null;
-
     private ?string $use3 = null;
-
     private ?string $use4 = null;
-
     private ?string $use5 = null;
 
     /**

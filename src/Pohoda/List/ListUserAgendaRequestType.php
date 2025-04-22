@@ -23,9 +23,7 @@ namespace Pohoda\List;
 class ListUserAgendaRequestType
 {
     private ?int $userAgendaId = null;
-
     private ?string $userAgendaIds = null;
-
     private ?string $version = null;
 
     /**

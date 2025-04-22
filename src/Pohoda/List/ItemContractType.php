@@ -23,9 +23,7 @@ namespace Pohoda\List;
 class ItemContractType
 {
     private ?int $id = null;
-
     private ?string $code = null;
-
     private ?string $name = null;
 
     /**

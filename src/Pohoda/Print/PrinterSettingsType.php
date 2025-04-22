@@ -36,7 +36,6 @@ class PrinterSettingsType
      * Uložení tiskové sestavy do PDF souboru.
      */
     private ?\Pohoda\Print\PDFType $pdf = null;
-
     private ?\Pohoda\Print\ParametersType $parameters = null;
 
     /**

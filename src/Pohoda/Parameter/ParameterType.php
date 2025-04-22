@@ -42,7 +42,6 @@ class ParameterType
      * ID uživatelské agendy (jen pro export).
      */
     private ?int $id = null;
-
     private ?\Pohoda\Parameter\UserAgendaDefType $userAgendaDef = null;
 
     /**
@@ -60,9 +59,7 @@ class ParameterType
      */
     private array $userForm = [
     ];
-
     private ?string $userCode = null;
-
     private ?\Pohoda\Parameter\UserCodePartType $userCodePart = null;
 
     /**

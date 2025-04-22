@@ -52,7 +52,6 @@ class GroupStocksHeaderType
      * Název obrázku. Soubor se musí nacházet v adresáři Dokumenty\firma\Obrázky\. Název obrázku se uvádí bez cesty.
      */
     private ?string $picture = null;
-
     private ?string $note = null;
 
     /**

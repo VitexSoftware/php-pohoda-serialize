@@ -23,9 +23,7 @@ namespace Pohoda\MKasa;
 class MKasaRequestType
 {
     private ?string $version = null;
-
     private ?\Pohoda\MKasa\ExportRequestType $export = null;
-
     private ?\Pohoda\MKasa\ImportRequestType $import = null;
 
     /**

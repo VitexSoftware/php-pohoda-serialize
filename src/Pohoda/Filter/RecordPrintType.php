@@ -33,7 +33,6 @@ class RecordPrintType
      * Seznam polí podle kterých se bude filtrovat.
      */
     private ?\Pohoda\Filter\FilterIDType $filter = null;
-
     private ?\Pohoda\Filter\QueryFilterType $queryFilter = null;
 
     /**

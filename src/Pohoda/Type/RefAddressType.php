@@ -24,9 +24,7 @@ namespace Pohoda\Type;
 class RefAddressType
 {
     private ?int $refAD = null;
-
     private ?\Pohoda\Type\ExtIdType $extId = null;
-
     private ?\Pohoda\Type\AddressType $address = null;
 
     /**

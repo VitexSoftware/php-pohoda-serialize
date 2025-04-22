@@ -24,11 +24,8 @@ namespace Pohoda\Type;
 class EstablishmentType
 {
     private ?string $company = null;
-
     private ?string $city = null;
-
     private ?string $street = null;
-
     private ?string $zip = null;
 
     /**

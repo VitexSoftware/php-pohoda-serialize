@@ -24,23 +24,14 @@ namespace Pohoda\List;
 class ListUserCodeType
 {
     private ?string $version = null;
-
     private ?\DateTime $dateTimeStamp = null;
-
     private ?\DateTime $dateValidFrom = null;
-
     private ?string $state = null;
-
     private ?int $id = null;
-
     private ?int $usrId = null;
-
     private ?string $code = null;
-
     private ?string $name = null;
-
     private ?string $constants = null;
-
     private ?string $submenu = null;
 
     /**

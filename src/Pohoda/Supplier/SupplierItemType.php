@@ -23,41 +23,23 @@ namespace Pohoda\Supplier;
 class SupplierItemType
 {
     private ?bool $default = null;
-
     private ?\Pohoda\Type\ActionTypeItemType $actionType = null;
-
     private ?int $id = null;
-
     private ?\Pohoda\Type\RefTypeSupplierAddressType $refAd = null;
-
     private ?string $orderCode = null;
-
     private ?string $orderName = null;
-
     private ?float $purchasingPrice = null;
-
     private ?\Pohoda\Type\RefType $currency = null;
-
     private ?float $rate = null;
-
     private ?string $payVAT = null;
-
     private ?string $ean = null;
-
     private ?string $printEAN = null;
-
     private ?string $unitEAN = null;
-
     private ?float $unitCoefEAN = null;
-
     private ?int $deliveryTime = null;
-
     private ?\Pohoda\Type\RefType $deliveryPeriod = null;
-
     private ?float $minQuantity = null;
-
     private ?string $unit = null;
-
     private ?string $note = null;
 
     /**

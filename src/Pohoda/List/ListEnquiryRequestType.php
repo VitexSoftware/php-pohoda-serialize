@@ -23,7 +23,6 @@ namespace Pohoda\List;
 class ListEnquiryRequestType
 {
     private ?string $version = null;
-
     private ?string $enquiryType = null;
 
     /**

@@ -26,7 +26,6 @@ class TextType
      * Textová hodnota.
      */
     private ?string $value = null;
-
     private ?string $name = null;
 
     /**

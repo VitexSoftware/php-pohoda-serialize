@@ -31,9 +31,7 @@ class PDFType
      * Odeslat PDF emailem.
      */
     private ?\Pohoda\Print\SendMailType $sendMail = null;
-
     private ?\Pohoda\Print\BinaryDataType $binaryData = null;
-
     private ?\Pohoda\Print\IsdocType $isdoc = null;
 
     /**

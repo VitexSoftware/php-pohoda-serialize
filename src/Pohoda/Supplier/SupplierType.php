@@ -23,7 +23,6 @@ namespace Pohoda\Supplier;
 class SupplierType
 {
     private ?string $version = null;
-
     private ?\Pohoda\Type\StockItemType $stockItem = null;
 
     /**

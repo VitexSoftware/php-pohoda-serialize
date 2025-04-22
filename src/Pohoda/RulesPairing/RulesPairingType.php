@@ -23,7 +23,6 @@ namespace Pohoda\RulesPairing;
 class RulesPairingType
 {
     private ?string $version = null;
-
     private ?\Pohoda\RulesPairing\RulesPairingHeaderType $rulesPairingHeader = null;
 
     /**

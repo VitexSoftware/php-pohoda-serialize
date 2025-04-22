@@ -23,7 +23,6 @@ namespace Pohoda\List;
 class ListInvoiceRequestType
 {
     private ?string $version = null;
-
     private ?string $invoiceType = null;
 
     /**

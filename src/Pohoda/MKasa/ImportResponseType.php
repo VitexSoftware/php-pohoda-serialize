@@ -23,9 +23,7 @@ namespace Pohoda\MKasa;
 class ImportResponseType
 {
     private ?int $mKasaPackNum = null;
-
     private ?string $name = null;
-
     private ?string $deviceGuid = null;
 
     /**

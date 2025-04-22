@@ -33,7 +33,6 @@ class ListGroupStocksRequestType
      * Omezení počtu exportovaných záznamů.
      */
     private ?\Pohoda\Filter\LimitType $limit = null;
-
     private ?\Pohoda\Filter\RequestGroupStocksType $requestGroupStocks = null;
 
     /**

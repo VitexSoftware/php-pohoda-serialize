@@ -23,7 +23,6 @@ namespace Pohoda\RecyclingContrib;
 class RecyclingContribType
 {
     private ?string $version = null;
-
     private ?\Pohoda\RecyclingContrib\RecyclingContribHeaderType $recyclingContribHeader = null;
 
     /**

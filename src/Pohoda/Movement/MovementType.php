@@ -23,7 +23,6 @@ namespace Pohoda\Movement;
 class MovementType
 {
     private ?string $version = null;
-
     private ?\Pohoda\Movement\MovementHeaderType $movementHeader = null;
 
     /**

@@ -23,14 +23,12 @@ namespace Pohoda\IntParam;
 class ParameterSettingsType
 {
     private ?string $unit = null;
-
     private ?int $length = null;
 
     /**
      * @var \Pohoda\IntParam\ParameterListItemType[]
      */
     private ?array $parameterList = null;
-
     private ?\Pohoda\Type\RefType $currency = null;
 
     /**

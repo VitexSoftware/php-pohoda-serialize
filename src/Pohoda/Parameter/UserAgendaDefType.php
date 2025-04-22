@@ -62,11 +62,8 @@ class UserAgendaDefType
      * Uživatelská agenda obsahuje evidenci dokumentů.
      */
     private ?string $documents = null;
-
     private ?string $list = null;
-
     private ?string $listIDS = null;
-
     private ?string $listSText = null;
 
     /**

@@ -28,7 +28,6 @@ class CashRegisterType
      * Typ práce s dokladem. Výchozí hodnota je přidání nového dokladu.
      */
     private ?\Pohoda\CashRegister\ActionTypeType $actionType = null;
-
     private ?\Pohoda\CashRegister\CashRegisterHeaderType $cashRegisterHeader = null;
 
     /**

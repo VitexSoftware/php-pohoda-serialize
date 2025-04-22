@@ -21,11 +21,8 @@ namespace Pohoda\Type\StockItemRegNumberType;
 class StockItemAType
 {
     private ?int $id = null;
-
     private ?\Pohoda\Type\ExtIdType $extId = null;
-
     private ?string $ids = null;
-
     private ?string $name = null;
 
     /**
