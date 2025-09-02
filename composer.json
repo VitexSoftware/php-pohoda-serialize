@@ -942,7 +942,7 @@
         "phpunit/phpunit": "12.2.x-dev",
         "goetas-webservices/xsd2php": "^0.4",
         "friendsofphp/php-cs-fixer": "^3.64",
-        "ergebnis/composer-normalize": "^2.45",
+        "ergebnis/composer-normalize": "^2.48",
         "ergebnis/php-cs-fixer-config": "^6.53",
         "rector/rector": "dev-main"
     },
