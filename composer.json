@@ -941,7 +941,7 @@
         "phpstan/phpstan": "2.1.x-dev",
         "phpunit/phpunit": "12.2.x-dev",
         "goetas-webservices/xsd2php": "^0.4",
-        "friendsofphp/php-cs-fixer": "^3.64",
+        "friendsofphp/php-cs-fixer": "^3.87",
         "ergebnis/composer-normalize": "^2.48",
         "ergebnis/php-cs-fixer-config": "^6.54",
         "rector/rector": "dev-main"
