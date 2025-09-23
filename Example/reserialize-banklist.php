@@ -12,37 +12,25 @@ declare(strict_types=1);
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-use JMS\Serializer\Handler\HandlerRegistryInterface;
 
-require_once '../vendor/autoload.php';
+require_once dirname(__DIR__).'/vendor/autoload.php';
 
-$serializerBuilder = \Pohoda\Xml\SerializerBuilder::create();
+use Pohoda\Helper;
 
-$serializer = $serializerBuilder->build();
+$serializer = Helper::getSerializer();
 
-$xmlContent = file_get_contents(__DIR__.'/banklist.xml');
+$xmlContent = file_get_contents(__DIR__.'/bank_01_v2.0.xml');
 
-// Use Helper::xml2ns to detect the PHP class name
-$phpClassName = \Pohoda\Xml\Helper::xml2ns($xmlContent);
+$phpClassName = Helper::xml2php($xmlContent);
+
 if ($phpClassName) {
     // Deserialize the XML into the detected PHP class
-    $responsePack = $serializer->deserialize($xmlContent, $phpClassName, 'xml');
+    $listBank = $serializer->deserialize($xmlContent, $phpClassName, 'xml');
 
-    foreach ($responsePack->getResponsePackItem() as $responsePackItem) {
-        foreach ($responsePackItem->getListBank() as $invoiceList) {
-            $transfers = $invoiceList->getBank();
+    $xmlReContent = $serializer->serialize($listBank, 'xml');
 
-            foreach ($transfers as $invoice) {
-                echo '# '.$invoice->getBankHeader()->getNumber().' '.$invoice->getBankHeader()->getSymVar().' = '.$invoice->getBankSummary()->getHomeCurrency()->getPriceHighSum()."\n";
-            }
-        }
-    }
-    
-    
-    
-    $newXml = $serializer->serialize($responsePack, 'xml');
-    echo $newXml;
-    file_put_contents(__DIR__.'/banklist2.xml',$newXml);
+    echo $xmlReContent;
+
 } else {
     echo "Namespace not found for the root element.\n";
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack id="pr001" ico="12345678" application="StwTest" version = "2.0" note="Import prodejky"
+xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd"
+xmlns:pro="http://www.stormware.cz/schema/version_2/prodejka.xsd"
+xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd">
+  <dat:dataPackItem id="PRO001" version="2.0">
+  <!-- prodejka s polo\x9ekami -->
+    <pro:prodejka version="2.0">
+      <pro:prodejkaHeader>
+        <pro:date>2019-10-14</pro:date>
+        <pro:accounting>
+          <typ:ids>1Pp</typ:ids>
+        </pro:accounting>
+        <pro:text>Prodejka ze skladu</pro:text>
+        <!--adresa bez vazby na programu POHODA-->
+		  <pro:partnerIdentity>
+          <typ:address>
+            <typ:company>ZET s.r.o.</typ:company>
+            <typ:division>Obchodn\xed odd\xeclen\xed</typ:division>
+            <typ:name>Ond\xf8ej Mar\x9a\xedk</typ:name>
+            <typ:city>Praha 3</typ:city>
+            <typ:street>Zahradn\xed</typ:street>
+            <typ:zip>56801</typ:zip>
+            <typ:ico>1111</typ:ico>
+            <typ:dic>330-11111</typ:dic>
+          </typ:address>
+        </pro:partnerIdentity>
+        <pro:paymentType>
+          <typ:paymentType>cash</typ:paymentType>
+        </pro:paymentType>
+        <pro:centre>
+          <typ:ids>BRNO</typ:ids>
+        </pro:centre>
+        <pro:note>Na\xe8teno z XML.</pro:note>
+		<pro:intNote>Import prodejky z polo\x9ekami.</pro:intNote>
+      </pro:prodejkaHeader>
+      <pro:prodejkaDetail>
+		<!--textova polozka-->
+        <pro:prodejkaItem>
+          <pro:text>Baln\xe9</pro:text>
+          <pro:quantity>1</pro:quantity>
+          <pro:unit>ks</pro:unit>
+          <pro:coefficient>1</pro:coefficient>
+          <pro:rateVAT>high</pro:rateVAT>
+          <pro:discountPercentage>0</pro:discountPercentage>
+          <pro:homeCurrency>
+            <typ:unitPrice>50</typ:unitPrice>
+          </pro:homeCurrency>
+          <pro:note>Textov\xe1 pozn\xe1mka polo\x9eky.</pro:note>
+          <pro:guarantee>24</pro:guarantee>
+          <pro:guaranteeType>month</pro:guaranteeType>
+        </pro:prodejkaItem>
+		<!--skladova polozka-->
+        <pro:prodejkaItem>
+          <pro:quantity>3</pro:quantity>
+          <pro:unit>ks</pro:unit>
+          <pro:coefficient>1</pro:coefficient>
+          <pro:rateVAT>high</pro:rateVAT>
+          <pro:discountPercentage>0</pro:discountPercentage>
+          <pro:guarantee>24</pro:guarantee>
+          <pro:guaranteeType>month</pro:guaranteeType>
+          <pro:stockItem>
+            <typ:stockItem>
+              <typ:ids>K\xf81320</typ:ids>
+            </typ:stockItem>
+          </pro:stockItem>
+        </pro:prodejkaItem>
+
+      </pro:prodejkaDetail>
+      <pro:prodejkaSummary>
+        <pro:roundingDocument>math2one</pro:roundingDocument>
+      </pro:prodejkaSummary>
+    </pro:prodejka>
+  </dat:dataPackItem>
+</dat:dataPack>

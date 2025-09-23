@@ -153,7 +153,24 @@ class Helper
      */
     public static function findListItems($data): array
     {
-        $baseClassName = (new \ReflectionClass($data))->getShortName();
+        $listItems = [];
+        $reflection = new \ReflectionClass($data);
+        $methods = $reflection->getMethods(\ReflectionMethod::IS_PUBLIC);
+
+        foreach ($methods as $method) {
+            $methodName = $method->getName();
+            if (strpos($methodName, 'get') === 0 && $method->getNumberOfParameters() === 0) {
+                $propertyName = lcfirst(substr($methodName, 3));
+                if (strpos($propertyName, 'list') === 0 || strpos($propertyName, 'List') === 0) {
+                    $items = $data->{$methodName}();
+                    if (is_iterable($items)) {
+                        foreach ($items as $item) {
+                            $listItems[] = $item;
+                        }
+                    }
+                }
+            }
+        }
 
         return $listItems;
     }
