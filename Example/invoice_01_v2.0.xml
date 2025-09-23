@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+
+<dat:dataPack id="fa001" ico="12345678" application="StwTest" version = "2.0" note="Import FA"
+xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd"
+xmlns:inv="http://www.stormware.cz/schema/version_2/invoice.xsd"
+xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd" >
+
+<dat:dataPackItem id="AD001" version="2.0">
+<!-- faktura bez polozky a bez adresy -->
+		<inv:invoice version="2.0">
+			<inv:invoiceHeader>
+				<inv:invoiceType>issuedInvoice</inv:invoiceType>
+				<inv:date>2019-10-14</inv:date>
+				<inv:accounting>
+					<typ:ids>3Fv</typ:ids>
+				</inv:accounting>
+				<inv:classificationVAT>
+					<typ:classificationVATType>inland</typ:classificationVATType>
+				</inv:classificationVAT>
+				<inv:text>Faktura za zbo\x9e\xed bez adresy</inv:text>
+				<inv:paymentType>
+					<typ:paymentType>draft</typ:paymentType>
+				</inv:paymentType>
+				<inv:account>
+					<typ:ids>KB</typ:ids>
+				</inv:account>
+				<inv:note>Import XML.</inv:note>
+				<inv:intNote>Tento doklad byl vytvo\xf8en importem p\xf8es XML.</inv:intNote>
+			</inv:invoiceHeader>
+			<inv:invoiceSummary>
+				<inv:roundingDocument>math2one</inv:roundingDocument>
+				<inv:homeCurrency>
+					<typ:priceNone>3018</typ:priceNone>
+					<typ:priceLow>60000</typ:priceLow>
+					<typ:priceHighSum>557</typ:priceHighSum>
+					<typ:round>
+						<typ:priceRound>0</typ:priceRound>
+					</typ:round>
+				</inv:homeCurrency>
+			</inv:invoiceSummary>
+		</inv:invoice>
+	</dat:dataPackItem>
+
+	<dat:dataPackItem id="AD002" version="2.0">
+	<!-- faktura bez polozky s adresou, ale bez vazby na adresar -->
+		<inv:invoice version="2.0">
+			<inv:invoiceHeader>
+				<inv:invoiceType>issuedInvoice</inv:invoiceType>
+				<inv:symVar>1212</inv:symVar>
+				<inv:date>2019-10-14</inv:date>
+				<inv:dateTax>2019-10-14</inv:dateTax>
+				<inv:dateAccounting>2019-10-14</inv:dateAccounting>
+				<inv:dateDue>2019-10-20</inv:dateDue>
+				<inv:accounting>
+					<typ:ids>3FV</typ:ids>
+				</inv:accounting>
+				<inv:classificationVAT>
+					<typ:classificationVATType>inland</typ:classificationVATType>
+				</inv:classificationVAT>
+				<inv:text>Faktura za zbo\x9e\xed s adresou bez vazby na Adres\xe1\xf8</inv:text>
+				<inv:partnerIdentity>
+					<typ:address>
+						<typ:company>firma</typ:company>
+						<typ:division>Obchodn\xed odd\xeclen\xed</typ:division>
+						<typ:name>Petr Nov\xe1k</typ:name>
+						<typ:city>Brno</typ:city>
+						<typ:street>Nov\xe1 5</typ:street>
+						<typ:zip>50000</typ:zip>
+						<typ:ico>789456</typ:ico>
+						<typ:dic>CZ789456</typ:dic>
+					</typ:address>
+					<typ:shipToAddress>
+						<typ:name>Soukop Bohumil</typ:name>
+						<typ:city>Praha</typ:city>
+						<typ:street>Nov\xe1 1475</typ:street>
+					</typ:shipToAddress>
+				</inv:partnerIdentity>
+				<inv:numberOrder>obj 2006010457</inv:numberOrder>
+				<inv:dateOrder>2019-10-02</inv:dateOrder>
+				<inv:paymentType>
+					<typ:ids>Master Card</typ:ids>
+				</inv:paymentType>
+				<inv:account>
+					<typ:accountNo>1117780287</typ:accountNo>
+					<typ:bankCode>0300</typ:bankCode>
+				</inv:account>
+				<inv:note>Na\xe8teno z XML</inv:note>
+				<inv:intNote>Tento doklad byl vytvo\xf8en importem p\xf8es XML.</inv:intNote>
+				<inv:centre>
+					<typ:ids>BRNO</typ:ids>
+				</inv:centre>
+				<inv:activity>
+					<typ:ids>SLU\x8eBY</typ:ids>
+				</inv:activity>
+				<inv:contract>
+					<typ:ids>10Zak00002</typ:ids>
+				</inv:contract>
+			</inv:invoiceHeader>
+			<inv:invoiceSummary>
+				<inv:roundingDocument>math2one</inv:roundingDocument>
+				<inv:homeCurrency>
+					<typ:priceNone>100</typ:priceNone>
+					<typ:priceLow>200</typ:priceLow>
+					<typ:priceHighSum>550</typ:priceHighSum>
+				</inv:homeCurrency>
+			</inv:invoiceSummary>
+		</inv:invoice>
+	</dat:dataPackItem>
+
+	<dat:dataPackItem id="AD003" version="2.0">
+		<!-- faktura bez polozky, adresa s vazbou na adresar -->
+		<inv:invoice version="2.0">
+			<inv:invoiceHeader>
+				<inv:invoiceType>issuedInvoice</inv:invoiceType>
+				<inv:date>2019-10-14</inv:date>
+				<inv:accounting>
+					<typ:ids>3Fv</typ:ids>
+				</inv:accounting>
+				<inv:classificationVAT>
+					<typ:classificationVATType>inland</typ:classificationVATType>
+				</inv:classificationVAT>
+				<inv:text>Faktura za zbo\x9e\xed, adresa s vazbou na Adres\xe1\xf8</inv:text>
+				<inv:partnerIdentity>
+					<typ:id>25</typ:id>
+				</inv:partnerIdentity>
+				<inv:paymentType>
+					<typ:paymentType>draft</typ:paymentType>
+				</inv:paymentType>
+				<inv:account>
+					<typ:ids>KB</typ:ids>
+				</inv:account>
+				<inv:note>Na\xe8teno z XML.</inv:note>
+				<inv:intNote>Tento doklad byl vytvo\xf8en importem p\xf8es XML.</inv:intNote>
+			</inv:invoiceHeader>
+			<inv:invoiceSummary>
+				<inv:roundingDocument>math2one</inv:roundingDocument>
+				<inv:homeCurrency>
+					<typ:priceNone>1000</typ:priceNone>
+				</inv:homeCurrency>
+			</inv:invoiceSummary>
+		</inv:invoice>
+	</dat:dataPackItem>
+</dat:dataPack>

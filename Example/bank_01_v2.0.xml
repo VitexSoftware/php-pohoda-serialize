@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack version="2.0" id="Usr01" ico="12345678" key="cfd28cfa-aac5-405c-b755-f0999a7b1198" programVersion="13001.2 (21.12.2021)" application="STW" note="Import bankovniho pohybu" xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd" xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd"  xmlns:bnk="http://www.stormware.cz/schema/version_2/bank.xsd">
+	<dat:dataPackItem version="2.0" id="Usr01 (001)">
+		<bnk:bank version="2.0">
+			<bnk:bankHeader>
+        <!--Bankovni pohyb typu p\xf8\xedjem CZK-->
+				<bnk:bankType>receipt</bnk:bankType>
+        <!--bankovni ucet-->
+        <bnk:account>
+					<typ:ids>KB</typ:ids>
+				</bnk:account>
+				<bnk:symVar>456</bnk:symVar>
+				<bnk:dateStatement>2021-12-20</bnk:dateStatement>
+				<bnk:datePayment>2021-11-22</bnk:datePayment>
+				<bnk:text>STORMWARE s.r.o.</bnk:text>
+				<!--protiucet-->
+        <bnk:paymentAccount>
+					<typ:accountNo>4660550217</typ:accountNo>
+					<typ:bankCode>5500</typ:bankCode>
+				</bnk:paymentAccount>
+				<bnk:symConst>555</bnk:symConst>
+				<bnk:symSpec>666</bnk:symSpec>
+			</bnk:bankHeader>
+			<bnk:bankSummary>
+				<bnk:roundingDocument>none</bnk:roundingDocument>
+				<bnk:roundingVAT>none</bnk:roundingVAT>
+				<bnk:homeCurrency>
+					<typ:priceNone>500</typ:priceNone>
+				</bnk:homeCurrency>
+			</bnk:bankSummary>
+		</bnk:bank>
+	</dat:dataPackItem>
+</dat:dataPack>
