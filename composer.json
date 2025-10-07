@@ -22,7 +22,7 @@
     },
     "require-dev": {
         "phpstan/phpstan": "^1.0",
-        "phpunit/phpunit": "^12.3",
+        "phpunit/phpunit": "^12.4",
         "goetas-webservices/xsd2php": "^0.4",
         "friendsofphp/php-cs-fixer": "^3.0",
         "ergebnis/composer-normalize": "^2.0",
