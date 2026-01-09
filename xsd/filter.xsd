@@ -319,17 +319,23 @@
     </xsd:complexType>
 
     <!-- ******************************************************************************
-    Filtr používaný pro export záznamù -->
+    Filtr používaný pro vyhledání èinnosti pøi exportu/aktualizaci nebo mazání.-->
     <xsd:complexType name="requestActivityType">
         <xsd:group ref="ftr:groupFilter_2"/>
     </xsd:complexType>
 
     <!-- ******************************************************************************
-    Filtr používaný pro export záznamù -->
+    Filtr používaný pro vyhledání støediska pøi exportu/aktualizaci nebo mazání.-->
     <xsd:complexType name="requestCentreType">
         <xsd:group ref="ftr:groupFilter_2"/>
     </xsd:complexType>
 
+    <!-- ******************************************************************************
+    Filtr používaný pro vyhledání GPSR pøi exportu/aktualizaci nebo mazání.-->
+    <xsd:complexType name="requestGPSRType">
+        <xsd:group ref="ftr:groupFilter_2"/>
+    </xsd:complexType>
+	
     <!-- ****************************************************************************** -->
     <xsd:group name="groupFilter_1">
         <xsd:all>

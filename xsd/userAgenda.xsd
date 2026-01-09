@@ -47,6 +47,7 @@
         </xsd:annotation>
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="2.0"/>
+            <xsd:enumeration value="2.1"/>
         </xsd:restriction>
     </xsd:simpleType>
 
@@ -73,6 +74,11 @@
             <xsd:element name="markRecord" type="typ:boolean" minOccurs="0" default="true">
                 <xsd:annotation>
                     <xsd:documentation>Oznaèení záznamu v programu POHODA, sloupec "X". Výchozí hodnota je "oznaèený záznam".</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="labels" type="typ:labelsType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Štítky záznamu.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
             <xsd:element name="parameters" type="typ:parametersType" minOccurs="0">

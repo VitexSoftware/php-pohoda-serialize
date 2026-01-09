@@ -43,6 +43,7 @@
             xmlns:srv="http://www.stormware.cz/schema/version_2/service.xsd"            
             xmlns:rul="http://www.stormware.cz/schema/version_2/rulesPairing.xsd"            
             xmlns:uag="http://www.stormware.cz/schema/version_2/userAgenda.xsd"            
+            xmlns:gps="http://www.stormware.cz/schema/version_2/GPSR.xsd"            
             xmlns="http://www.stormware.cz/schema/version_2/list.xsd"
             targetNamespace="http://www.stormware.cz/schema/version_2/list.xsd"
             elementFormDefault="qualified"
@@ -90,6 +91,7 @@
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/service.xsd" schemaLocation="service.xsd"/>
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/rulesPairing.xsd" schemaLocation="rulesPairing.xsd"/>
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/userAgenda.xsd" schemaLocation="userAgenda.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/GPSR.xsd" schemaLocation="GPSR.xsd"/>
 
     <!-- ************************************************************************** -->
     <!-- root element REQUEST - požadavek na export -->
@@ -143,6 +145,7 @@
     <xsd:element name="listServiceRequest" type="lst:listServiceRequestType"/>
     <xsd:element name="listRulesPairingRequest" type="lst:listRulesPairingRequestType"/>
     <xsd:element name="listUserAgendaRequest" type="lst:listUserAgendaRequestType"/>
+    <xsd:element name="listGPSRRequest" type="lst:listRequestGPSRType"/>
 
     <!-- ************************************************************************** -->
     <!-- root element RESPONSE  - odpovìï na export seznamù -->
@@ -199,6 +202,7 @@
     <xsd:element name="listService" type="lst:listServiceType"/>
     <xsd:element name="listRulesPairing" type="lst:listRulesPairingType"/>
     <xsd:element name="listUserAgenda" type="lst:listUserAgendaType"/>
+    <xsd:element name="listGPSR" type="lst:listGPSRType"/>
 
     <!-- **************************************************************************
            base types
@@ -271,8 +275,9 @@
 
 
     <!-- ****************************************************************************** -->
+    <!-- Hotovostní pokladny -->
     <xsd:complexType name="listCashRegisterRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -303,8 +308,9 @@
     </xsd:simpleType>
 
     <!-- ****************************************************************************** -->
+    <!-- Bankovní úèty -->
     <xsd:complexType name="listBankAccountRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -336,8 +342,9 @@
 
 
     <!-- ****************************************************************************** -->
+    <!-- Faktury -->
     <xsd:complexType name="listInvoiceRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -402,7 +409,7 @@
     <!-- ****************************************************************************** -->
     <!-- Interní doklady -->
     <xsd:complexType name="listIntDocRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -440,7 +447,7 @@
     <!-- ****************************************************************************** -->
     <!-- Objednávky -->
     <xsd:complexType name="listOrderRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -479,7 +486,7 @@
     <!-- ****************************************************************************** -->
     <!-- Prodejky -->
     <xsd:complexType name="listProdejkaRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -517,7 +524,7 @@
     <!-- ****************************************************************************** -->
     <!-- Výroba -->
     <xsd:complexType name="listVyrobaRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -563,9 +570,9 @@
     </xsd:simpleType>
 
     <!-- ****************************************************************************** -->
-    <!-- Prodejky -->
+    <!-- Pøevodky -->
     <xsd:complexType name="listPrevodkaRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -603,7 +610,7 @@
     <!-- ****************************************************************************** -->
     <!-- Pokladna -->
     <xsd:complexType name="listVoucherRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -641,7 +648,7 @@
     <!-- ****************************************************************************** -->
     <!-- Nabídky -->
     <xsd:complexType name="listOfferRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -680,7 +687,7 @@
     <!-- ****************************************************************************** -->
     <!-- Poptávky -->
     <xsd:complexType name="listEnquiryRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -719,7 +726,7 @@
     <!-- ****************************************************************************** -->
     <!-- Výdejky -->
     <xsd:complexType name="listVydejkaRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -757,7 +764,7 @@
     <!-- ****************************************************************************** -->
     <!-- Pøíjemky -->
     <xsd:complexType name="listPrijemkaRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -879,7 +886,7 @@
     <!-- ****************************************************************************** -->
     <!-- Individuální slevy zásoby -->
     <xsd:complexType name="listIndividualPriceRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -912,7 +919,7 @@
     <!-- ****************************************************************************** -->
     <!-- Dodavatelé zásoby -->
     <xsd:complexType name="listSupplierRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1078,7 +1085,7 @@
     <!-- ****************************************************************************** -->
     <!-- Inventurní seznamy -->
     <xsd:complexType name="listInventoryListsRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1106,7 +1113,7 @@
     <!-- ****************************************************************************** -->
     <!-- Cenové akce -->
     <xsd:complexType name="listActionPriceRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1134,7 +1141,7 @@
     <!-- ****************************************************************************** -->  
     <!-- Formy úhrady -->
     <xsd:complexType name="listPaymentRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1161,9 +1168,8 @@
 
     <!-- ****************************************************************************** -->
     <!-- Èíselné øady -->
- 
     <xsd:complexType name="listNumericalSeriesRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1190,9 +1196,8 @@
 
     <!-- ****************************************************************************** -->
     <!-- Dùvody zpracování dat GDPR -->
-
     <xsd:complexType name="listGDPRRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1219,9 +1224,8 @@
   
     <!-- ****************************************************************************** -->
     <!-- Provozovny -->
-
     <xsd:complexType name="listEstablishmentRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1249,7 +1253,7 @@
     <!-- ****************************************************************************** -->
     <!-- Zaúètování forem úhrad-->
     <xsd:complexType name="listAccountingFormOfPaymentRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1277,7 +1281,7 @@
     <!-- ****************************************************************************** -->
     <!-- Požadavek na export globálního nastavení -->
     <xsd:complexType name="listGlobalSettingsRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1305,7 +1309,7 @@
     <!-- ****************************************************************************** -->
     <!-- Seznam èlenìní DPH-->
     <xsd:complexType name="listClassificationVATRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1333,7 +1337,7 @@
     <!-- ****************************************************************************** -->
     <!-- Evidenèní èísla -->
     <xsd:complexType name="listRegistrationNumberRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1366,7 +1370,7 @@
     <!-- ****************************************************************************** -->
     <!-- Požadavek na export výrobních požadavkù -->
     <xsd:complexType name="listProductRequirementRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1397,9 +1401,9 @@
     </xsd:simpleType>  
   
     <!-- ****************************************************************************** -->
-    <!-- Požadavek na export pohybù-->
+    <!-- Požadavek na export pohybù -->
     <xsd:complexType name="listMovementRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1427,7 +1431,7 @@
     <!-- ****************************************************************************** -->
     <!-- Požadavek na export z agendy Servis -->
     <xsd:complexType name="listServiceRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1460,7 +1464,7 @@
     <!-- ****************************************************************************** -->
     <!-- Požadavek na export pravidel párování pohybù -->
     <xsd:complexType name="listRulesPairingRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1488,7 +1492,7 @@
     <!-- ****************************************************************************** -->
     <!-- Požadavek na export recyklaèních pøíspìvkù-->
     <xsd:complexType name="listRecyclingContribRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1516,7 +1520,7 @@
     <!-- ****************************************************************************** -->
     <!-- Požadavek na export uživatelské agendy -->
     <xsd:complexType name="listUserAgendaRequestType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -1546,8 +1550,40 @@
         <xsd:restriction base="xsd:string">
             <xsd:enumeration value="2.0"/>
         </xsd:restriction>
-    </xsd:simpleType>  
+    </xsd:simpleType>
 
+    <!-- ****************************************************************************** -->
+    <!-- Požadavek na export GPSR -->
+    <xsd:complexType name="listRequestGPSRType">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
+            <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="requestGPSR" type="ftr:requestGPSRType"/>
+            <xsd:element name="restrictionData" type="lst:restrictionDocParamType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Omezení exportu dat.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="version" type="lst:listRequestGPSRVerType" use="required"/>
+        <xsd:attribute name="GPSRVersion" type="gps:GPSRVersionType" use="required">
+            <xsd:annotation>
+                <xsd:documentation>Požadovaná verze GPSR dokumentu.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:simpleType name="listRequestGPSRVerType">
+        <xsd:annotation>
+            <xsd:documentation>Verze, které jsou dostupné.. Podrobnosti k jednotlivým verzím najdete na www.stormware.cz/xml</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="2.0"/>
+        </xsd:restriction>
+    </xsd:simpleType>	
 	
     <!-- ****************************************************************************** -->
     <xsd:complexType name="listCentreType">
@@ -2060,15 +2096,21 @@
         </xsd:complexContent>
     </xsd:complexType>
 
-	
-    <!-- ****************************************************************************** -->
-    <xsd:complexType name="requestParameterType">
-        <xsd:attribute name="idsAgenda" type="typ:parameterAgendaType" use="required"/>
-        <xsd:attribute name="idsUserAgenda" type="typ:string10"/>
+    <!-- GPRS -->
+    <xsd:complexType name="listGPSRType">
+        <xsd:complexContent>
+            <xsd:extension base="rdc:listVersionType">
+                <xsd:choice>
+                    <xsd:element name="GPSR" type="gps:GPSRType" minOccurs="0" maxOccurs="unbounded"/>
+                </xsd:choice>
+            </xsd:extension>
+        </xsd:complexContent>
     </xsd:complexType>
 
+    <!-- ****************************************************************************** -->
+    <!-- Volitelné parametry -->
     <xsd:complexType name="listParameterRequestType">
-        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="0" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -2086,6 +2128,11 @@
                 <xsd:documentation>Požadovaná verze dokladu.</xsd:documentation>
             </xsd:annotation>
         </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="requestParameterType">
+        <xsd:attribute name="idsAgenda" type="typ:parameterAgendaType" use="required"/>
+        <xsd:attribute name="idsUserAgenda" type="typ:string10"/>
     </xsd:complexType>
 
     <xsd:simpleType name="listParameterRequestVerType">
@@ -2107,12 +2154,10 @@
         </xsd:complexContent>
     </xsd:complexType>
 
-    <xsd:complexType name="requestUserCodeType">
-        <xsd:attribute name="code" type="xsd:string" use="required"/>
-    </xsd:complexType>
-
+    <!-- ****************************************************************************** -->
+    <!-- Uživatelské seznamy -->
     <xsd:complexType name="listUserCodeRequestType">
-        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="0" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
@@ -2130,6 +2175,10 @@
                 <xsd:documentation>Požadovaná verze dokladu.</xsd:documentation>
             </xsd:annotation>
         </xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="requestUserCodeType">
+        <xsd:attribute name="code" type="xsd:string" use="required"/>
     </xsd:complexType>
 
     <xsd:complexType name="listUserCodeType">
@@ -2171,11 +2220,14 @@
             <xsd:element name="importData"  type="xsd:string" minOccurs="0"/>
         </xsd:sequence>
         <xsd:attribute name="version" type="xsd:string" use="required"/>
+        <xsd:attribute name="ic" type="xsd:string" use="required"/>
+        <xsd:attribute name="year" type="xsd:string" use="required"/>
         <xsd:attribute name="dateTimeStamp" type="xsd:dateTime" use="required"/>
         <xsd:attribute name="dateValidFrom" type="xsd:date" use="required"/>
         <xsd:attribute name="state" type="typ:stavType2" use="required"/>
         <xsd:attribute name="db" type="xsd:string" use="required"/>
         <xsd:attribute name="format" type="xsd:string" use="required"/>
+        <xsd:attribute name="PhVer" type="xsd:string" use="required"/>
         <xsd:attribute name="contID" type="xsd:string" use="required"/>
         <xsd:attribute name="rqFormat" type="xsd:string" use="required"/>
     </xsd:complexType>

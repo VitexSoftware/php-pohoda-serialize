@@ -117,6 +117,11 @@
                     <xsd:documentation>Požadovat oznámení o pøeètení.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="removeFile" type="typ:boolean" minOccurs="0" default="true">
+                <xsd:annotation>
+                    <xsd:documentation>Odstranit vytvoøený soubor.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
         </xsd:all>
     </xsd:complexType>
 

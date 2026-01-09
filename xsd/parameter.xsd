@@ -140,7 +140,7 @@
 
     <xsd:complexType name="parameterItemListType">
         <xsd:annotation>
-            <xsd:documentation>Seznam definic volitelných parametrù. U bìžných agend je poèet programovì omezen na 92, uživatelské agendy mají maximálnì 128 polí.</xsd:documentation>
+            <xsd:documentation>Seznam definic volitelných parametrù. U bìžných agend je poèet programovì omezen na 128, uživatelské agendy mají maximálnì 128 polí.</xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
             <xsd:element name="parameterDef" type="prm:parameterDefType" minOccurs="0" maxOccurs="128"/>

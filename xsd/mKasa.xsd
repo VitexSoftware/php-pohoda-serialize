@@ -90,6 +90,8 @@
             <xsd:enumeration value="AD"/>
             <xsd:enumeration value="FormUh"/>
             <xsd:enumeration value="CIN"/>
+            <xsd:enumeration value="STR"/>
+            <xsd:enumeration value="ZAK"/>
             <xsd:enumeration value="CRady"/>
             <xsd:enumeration value="SkCeny"/>
             <xsd:enumeration value="SkSt"/>

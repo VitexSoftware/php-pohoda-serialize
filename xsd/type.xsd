@@ -796,6 +796,11 @@
                     <xsd:documentation>Neplátce DPH.</xsd:documentation>
                 </xsd:annotation>
             </xsd:enumeration>
+            <xsd:enumeration value="identified-person">
+                <xsd:annotation>
+                    <xsd:documentation>Identifikovaná osoba.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
             <xsd:enumeration value="">
                 <xsd:annotation>
                     <xsd:documentation>Neuvedeno (výchozí hodnota).</xsd:documentation>
@@ -1004,6 +1009,40 @@
             <xsd:element name="city" type="typ:string45" minOccurs="0"/>
             <xsd:element name="street" type="typ:string64" minOccurs="0"/>
             <xsd:element name="zip" type="typ:string15" minOccurs="0"/>
+        </xsd:all>
+    </xsd:complexType>
+
+    <xsd:complexType name="gpsrAddress">
+        <xsd:sequence>
+            <xsd:element name="id" type="typ:idType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Identifikátor adresy.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="extId" type="typ:extIdType" minOccurs="0" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation>Identifikátor externího systému.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="address" type="typ:gpsrAddressType" minOccurs="0" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="gpsrAddressType">
+        <xsd:annotation>
+            <xsd:documentation>Adresa.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:all>
+            <xsd:element name="company" type="typ:stringCompany" minOccurs="0"/>
+            <xsd:element name="name" type="typ:string64" minOccurs="0"/>
+            <xsd:element name="city" type="typ:string45" minOccurs="0"/>
+            <xsd:element name="street" type="typ:string64" minOccurs="0"/>
+            <xsd:element name="zip" type="typ:string15" minOccurs="0"/>
+            <xsd:element name="country" type="typ:refType" minOccurs="0"/>
+            <xsd:element name="phone" type="typ:string40" minOccurs="0"/>
+            <xsd:element name="mobilPhone" type="typ:string24" minOccurs="0"/>
+            <xsd:element name="email" type="typ:string98" minOccurs="0"/>
+            <xsd:element name="www" type="typ:string96" minOccurs="0"/>
         </xsd:all>
     </xsd:complexType>
 
@@ -2754,7 +2793,7 @@
 
     <xsd:complexType name="parametersType">
         <xsd:sequence>
-            <xsd:element name="parameter" type="typ:parameterDocType" minOccurs="0" maxOccurs="92"/>
+            <xsd:element name="parameter" type="typ:parameterDocType" minOccurs="0" maxOccurs="128"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -3080,6 +3119,11 @@
                     <xsd:documentation>Nastavení pøíznaku "Vyøízeno" na výdejce pøi vazbì: "Výdejka -> Prodejka pøes položky dokladu".</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="linkIssueSlipItemToService" type="typ:linkIssueSlipItemToServiceType" default="setFlagExecuted">
+                <xsd:annotation>
+                    <xsd:documentation>Nastavení pøíznaku "Vyøízeno" na výdejce pøi vazbì: "Výdejka -> Položky servisu".</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="linkIssuedInvoiceToIssueSlip" type="typ:linkIssuedInvoiceToIssueSlipType" default="setFlagExecuted">
                 <xsd:annotation>
                     <xsd:documentation>Nastavení pøíznaku "Vyøízeno" na vydané faktuøe pøi vazbì: "Vydané faktura -> výdejka pøes položky dokladu".</xsd:documentation>
@@ -3098,6 +3142,11 @@
             <xsd:element name="linkProductRequirementItemToProduction" type="typ:linkProductRequirementItemToProductionType" default="setFlagExecuted">
                 <xsd:annotation>
                     <xsd:documentation>Nastavení pøíznaku "Vyøízeno" na výrobním požadavku pøi vazbì: "Výrobní požadavek -> výroba pøes položky dokladu".</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="linkReceivedInvoiceToReceiptVoucher" type="typ:linkReceivedInvoiceToReceiptVoucherType" default="setFlagExecuted">
+                <xsd:annotation>
+                    <xsd:documentation>Nastavení pøíznaku "Vyøízeno" na pøijaté faktuøe pøi vazbì: "Pøijatá faktura -> pøíjemka pøes položky dokladu".</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
         </xsd:choice>
@@ -3177,8 +3226,16 @@
 	
     <xsd:simpleType name="linkProductRequirementItemToProductionType">
         <xsd:restriction base="linkItemSettingType"/>
-    </xsd:simpleType>	
-  
+    </xsd:simpleType>
+
+    <xsd:simpleType name="linkIssueSlipItemToServiceType">
+        <xsd:restriction base="linkItemSettingType"/>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="linkReceivedInvoiceToReceiptVoucherType">
+        <xsd:restriction base="linkItemSettingType"/>
+    </xsd:simpleType>
+	
     <!--Vazba položky exportovaného dokladu na jiný doklad. Vazba je tvoøena pøes položky dokladù.-->
     <xsd:complexType name="linkedDocumentType">
         <xsd:all>
@@ -3199,6 +3256,28 @@
             </xsd:element>
         </xsd:all>
     </xsd:complexType>
+
+    <xsd:complexType name="linkItemServiceSubjectType">
+        <xsd:all>
+            <xsd:element name="sourceAgenda" type="typ:agendaType">
+                <xsd:annotation>
+                    <xsd:documentation>Agenda zdrojového dokladu.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sourceItemId" type="typ:idType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>ID položky dokladu.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="sourceItemExtId" type="typ:extIdType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Externí identifikátor položky dokladu.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+
+
 
     <xsd:complexType name="sourceDocumentItemType">
         <xsd:all>
@@ -3831,6 +3910,80 @@
         </xsd:all>
     </xsd:complexType>
 
+    <xsd:simpleType name="transactionTaxTypeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="exclude">
+                <xsd:annotation>
+                    <xsd:documentation>Nezahrnovat.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="transfer">
+                <xsd:annotation>
+                    <xsd:documentation>Prevod.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="withDrawal">
+                <xsd:annotation>
+                    <xsd:documentation>Výber.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="costReAccounting">
+                <xsd:annotation>
+                    <xsd:documentation>Preúètovanie nákl.(1).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
     <!-- **************************************************************************-->
 
+    <xsd:complexType name="wageType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">Information about a specific employee, year, and month of a specific salary.</xsd:documentation>
+            <xsd:documentation>Údaje o konkrétním zamìstnanci, roku a mìsíci konkrétní mzdy.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice>
+            <xsd:element name="id" type="typ:idType">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en">Link to record ID.</xsd:documentation>
+                    <xsd:documentation>Odkaz na id záznamu.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:sequence>
+                <xsd:element name="employment" type="typ:refType">
+                    <xsd:annotation>
+                        <xsd:documentation xml:lang="en">Employment.</xsd:documentation>
+                        <xsd:documentation>Pracovní pomìr.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="month" type="monthType">
+                    <xsd:annotation>
+                        <xsd:documentation xml:lang="en">Specific month of issued salaries</xsd:documentation>
+                        <xsd:documentation>Konkrétní mìsíc vystavených mezd.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="year" type="yearType">
+                    <xsd:annotation>
+                        <xsd:documentation xml:lang="en">Specific year of issued salaries.</xsd:documentation>
+                        <xsd:documentation>Konkrétní rok vystavených mezd.</xsd:documentation>
+                    </xsd:annotation>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:choice>
+    </xsd:complexType>
+
+    <xsd:simpleType name="yearType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1999"/>
+            <xsd:maxInclusive value = "2099"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="monthType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value = "12"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+	
 </xsd:schema>

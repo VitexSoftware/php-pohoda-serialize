@@ -277,6 +277,11 @@
                     <xsd:documentation>Stav zásoby (jen pro export).</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="countIssue" type="xsd:float" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Stav zásoby k výdeji (jen pro export).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="countReceivedOrders" type="xsd:float" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Objednávky (jen pro export).</xsd:documentation>
@@ -287,7 +292,7 @@
                     <xsd:documentation>Rezervace (jen pro export).</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element name="supplier" type="typ:companyType" minOccurs="0">
+            <xsd:element name="supplier" type="typ:companyType" nillable="true" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Dodavatel.</xsd:documentation>
                 </xsd:annotation>
@@ -324,6 +329,11 @@
                     <xsd:documentation>Zkrácený název skladové položky - napø. pøi tisku na registraèní pokladnì.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="GPSR" type="typ:refType" nillable="true" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>GPSR.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="typeRP" type="typ:refType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Pøíznak pro registraèní pokladnu.</xsd:documentation>
@@ -352,6 +362,21 @@
             <xsd:element name="coefficientOfMeasure" type="xsd:float" minOccurs="0" nillable="true">
                 <xsd:annotation>
                     <xsd:documentation>Koeficient pro pøepoèet jednotky mìrné ceny.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="centre" type="typ:refType" nillable="true" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Støedisko.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="activity" type="typ:refType" nillable="true" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Èinnost.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="contract" type="typ:refType" nillable="true" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Zakázka.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
             <xsd:element name="EETItem" type="typ:EETItemType" minOccurs="0">
@@ -698,7 +723,15 @@
     <!-- popis Kategorie(description categories) -->
     <xsd:complexType name="categoriesType">
         <xsd:sequence>
-            <xsd:element name="idCategory" type="xsd:integer" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="idCategory" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:simpleContent>
+                        <xsd:extension base="xsd:integer">
+                            <xsd:attribute name="main" type="xsd:boolean" use="optional"/>
+                        </xsd:extension>
+                    </xsd:simpleContent>
+                </xsd:complexType>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
 

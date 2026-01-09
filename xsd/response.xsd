@@ -59,6 +59,10 @@
             xmlns:srv="http://www.stormware.cz/schema/version_2/service.xsd"
             xmlns:uag="http://www.stormware.cz/schema/version_2/userAgenda.xsd"
             xmlns:apf="http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd"
+            xmlns:abs="http://www.stormware.cz/schema/version_2/absence.xsd"
+            xmlns:wge="http://www.stormware.cz/schema/version_2/wageElements.xsd"			
+            xmlns:gps="http://www.stormware.cz/schema/version_2/GPSR.xsd"
+            xmlns:wld="http://www.stormware.cz/schema/version_2/workLoad.xsd"			
             xmlns="http://www.stormware.cz/schema/version_2/response.xsd"
             targetNamespace="http://www.stormware.cz/schema/version_2/response.xsd"
             elementFormDefault="qualified"
@@ -122,6 +126,11 @@
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/service.xsd" schemaLocation="service.xsd"/>
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/userAgenda.xsd" schemaLocation="userAgenda.xsd"/>
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd" schemaLocation="advancePartFulfilment.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/absence.xsd" schemaLocation="absence.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/wageElements.xsd" schemaLocation="wageElements.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/GPSR.xsd" schemaLocation="GPSR.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/workLoad.xsd" schemaLocation="workLoad.xsd"/>
+
 
     <!-- **************************************************************************
                root element must be <responsePack>
@@ -205,6 +214,11 @@
             <xsd:element ref="uag:userAgendaResponse"/>
             <xsd:element ref="acv:activityResponse"/>
             <xsd:element ref="cen:centreResponse"/>
+            <xsd:element ref="rec:recyclingContribResponse"/>
+            <xsd:element ref="abs:absenceResponse"/>
+            <xsd:element ref="wge:wageElementsResponse"/>
+            <xsd:element ref="gps:GPSRResponse"/>
+            <xsd:element ref="wld:workLoadResponse"/>
 
             <!-- export dat z programu -->
             <xsd:element ref="lst:listCentre"/>
@@ -265,6 +279,7 @@
             <xsd:element ref="lst:listService"/>
             <xsd:element ref="lst:listRulesPairing"/>
             <xsd:element ref="lst:listUserAgenda"/>
+            <xsd:element ref="lst:listGPSR"/>
 
             <xsd:element name="errorDetail" type="rsp:errorDetailType">
                 <xsd:annotation>

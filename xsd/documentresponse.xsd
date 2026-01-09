@@ -102,7 +102,7 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element name="itemDetails"  type="rdc:itemDetailsType" minOccurs="0">
+            <xsd:element name="itemDetails"  type="rdc:itemDetailsType" minOccurs="0" maxOccurs="unbounded">
                 <xsd:annotation>
                     <xsd:documentation>Výsledek importu položek.</xsd:documentation>
                 </xsd:annotation>

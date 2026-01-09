@@ -148,6 +148,11 @@
                     <xsd:documentation>Èlenìní KV DPH (pouze SK verze).</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="transactionTaxType" type="typ:transactionTaxTypeType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Transakèní daò  (pouze SK verze).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="numberKHDPH" type="typ:string32" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Evidenèní èíslo KH DPH. Pokud není uvedeno, nebude na dokladu nastaveno (pouze CZ verze).</xsd:documentation>

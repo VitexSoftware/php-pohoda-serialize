@@ -429,8 +429,15 @@
             <xsd:element name="postponedIssue" type="typ:boolean" minOccurs="0" default="false">
                 <xsd:annotation>
                     <xsd:documentation>Odložený výdej. Hodnota 'true' nastaví vkládání skladových zásob ve formì textových položek (s vazbou na agendu Zásoby). 
-                        Takto vložená položka nevytváøí ve faktuøe skladový pohyb. Ve stavovém øádku vydané faktury je oznaèena jako Textová položka (s vazbou na agendu Zásoby). Používá se jen v agendì Vydané faktury.
-                        .</xsd:documentation>
+                        Takto vložená položka nevytváøí ve faktuøe skladový pohyb. Ve stavovém øádku vydané faktury je oznaèena jako Textová položka (s vazbou na agendu Zásoby). Používá se jen v agendì Vydané faktury.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="postponedReceive" type="typ:boolean" minOccurs="0" default="false">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Odložený pøíjem. Hodnota 'true' nastaví vkládání skladových zásob ve formì textových položek (s vazbou na agendu Zásoby).
+                        Takto vložená položka nevytváøí ve faktuøe skladový pohyb. Ve stavovém øádku pøijaté faktury je oznaèena jako Textová položka (s vazbou na agendu Zásoby). Používá se jen v agendì pøijaté faktury.
+                    </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
         </xsd:all>

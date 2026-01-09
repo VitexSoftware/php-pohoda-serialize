@@ -55,6 +55,11 @@
             xmlns:apf="http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd"
             xmlns:acv="http://www.stormware.cz/schema/version_2/activity.xsd"
             xmlns:cen="http://www.stormware.cz/schema/version_2/centre.xsd"
+            xmlns:rec="http://www.stormware.cz/schema/version_2/recyclingContrib.xsd"
+            xmlns:abs="http://www.stormware.cz/schema/version_2/absence.xsd"
+            xmlns:wge="http://www.stormware.cz/schema/version_2/wageElements.xsd"
+            xmlns:gps="http://www.stormware.cz/schema/version_2/GPSR.xsd"
+            xmlns:wld="http://www.stormware.cz/schema/version_2/workLoad.xsd"
             xmlns="http://www.stormware.cz/schema/version_2/data.xsd"
 			
             targetNamespace="http://www.stormware.cz/schema/version_2/data.xsd"
@@ -112,7 +117,12 @@
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd" schemaLocation="advancePartFulfilment.xsd"/>
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/centre.xsd" schemaLocation="centre.xsd"/>
     <xsd:import namespace="http://www.stormware.cz/schema/version_2/activity.xsd" schemaLocation="activity.xsd"/>
-
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/recyclingContrib.xsd" schemaLocation="recyclingContrib.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/absence.xsd" schemaLocation="absence.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/wageElements.xsd" schemaLocation="wageElements.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/GPSR.xsd" schemaLocation="GPSR.xsd"/>
+    <xsd:import namespace="http://www.stormware.cz/schema/version_2/workLoad.xsd" schemaLocation="workLoad.xsd"/>
+	
     <!-- **************************************************************************
            root element must be <dataPack>
     ************************************************************************** -->
@@ -246,6 +256,11 @@
             <xsd:element ref="uag:userAgenda"/>
             <xsd:element ref="cen:centre"/>
             <xsd:element ref="acv:activity"/>
+            <xsd:element ref="rec:recyclingContrib"/>
+            <xsd:element ref="abs:absence"/>
+            <xsd:element ref="gps:GPSR"/>
+            <xsd:element ref="wge:wageElements"/>
+            <xsd:element ref="wld:workLoad"/>
             <!--  export dokladù -->
             <xsd:element ref="lst:listAccountancyRequest"/>
             <xsd:element ref="lAdb:listAddressBookRequest"/>
@@ -257,6 +272,7 @@
             <xsd:element ref="lst:listParameterRequest"/>
             <xsd:element ref="lst:listVydejkaRequest"/>
             <xsd:element ref="lst:listPrijemkaRequest"/>
+            <xsd:element ref="lst:listPrevodkaRequest"/>
             <xsd:element ref="lst:listBalanceRequest"/>
             <xsd:element ref="lst:listProductRequirementRequest"/>
             <xsd:element ref="lst:listBankRequest"/>
@@ -290,6 +306,7 @@
             <xsd:element ref="lCen:listCentreRequest"/>
             <xsd:element ref="lAcv:listActivityRequest"/>
             <xsd:element ref="lst:listClassificationVATRequest"/>
+            <xsd:element ref="lst:listAccountingFormOfPaymentRequest"/>
             <xsd:element ref="mKasa:mKasaRequest"/>
             <xsd:element ref="prn:print"/>
             <xsd:element ref="lck:lock"/>
@@ -308,6 +325,7 @@
             <xsd:element ref="lst:listSupplierRequest"/>
             <xsd:element ref="lst:listUserAgendaRequest"/>
             <xsd:element ref="apf:advancePartFulfilment"/>
+            <xsd:element ref="lst:listGPSRRequest"/>
         </xsd:choice>
         <xsd:attribute name="version" type="dat:dataPackItemVersionType" use="required"/>
         <xsd:attribute name="id" type="typ:string64" use="required"/>

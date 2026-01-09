@@ -124,6 +124,11 @@
                     <xsd:documentation>Èlenìní KV DPH (pouze SK verze).</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="transactionTaxType" type="typ:transactionTaxTypeType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Transakèní daò  (pouze SK verze).</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="text" type="typ:string96" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Text dokladu.</xsd:documentation>
@@ -294,6 +299,13 @@
                 </xsd:annotation>
             </xsd:element>
             <xsd:element name="extId" type="typ:string64" minOccurs="0"/>
+            <xsd:element name="liquidatedDocument" type="typ:linkedDocumentType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Vazba na likvidovaný doklad. Informace o vazbì položky exportovaného dokladu na likvidovaný doklad (pouze pro export).
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="text" type="typ:string90" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Text položky.</xsd:documentation>

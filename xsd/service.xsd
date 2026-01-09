@@ -19,6 +19,17 @@
   
     <xsd:complexType name="serviceType">
         <xsd:sequence>
+            <xsd:element name="links" type="typ:linksType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Pomocí tohoto bloku lze vložit položky servisu z dokladu výdejky. Pokud nejsou specifikovány položky, vloží se celý doklad na záložku položky servisu.
+                        Vložený doklad lze upravit pomocí jednotlivých elementù u dokladu, je nutné uvést položky pøedmìtu servisu.
+
+                        Povolené jsou vazby z agendy:
+                        - Výdejky (do agendy Servis)
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="serviceHeader" type="srv:serviceHeaderType" minOccurs="1"/>      
             <xsd:element name="serviceSubject" type="srv:serviceSubjectType" minOccurs="1"/>
             <xsd:element name="serviceStates" type="srv:serviceStatesType" minOccurs="0" maxOccurs="unbounded"/>
@@ -281,6 +292,14 @@
 
     <xsd:complexType name="subjectType">
         <xsd:all>
+            <xsd:element name="link" type="typ:linkItemServiceSubjectType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Pomocí tohoto bloku lze vytvoøit položku z jiného dokladu. Vložený doklad lze upravit pomocí zadaných parametrù u dokladu. Lze vložit použe jednu položku.
+                        Povolené jsou vazby: - výdejka do servisu.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="id" type="typ:idType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>ID položky dokladu (jen pro export).</xsd:documentation>
@@ -455,6 +474,14 @@
     </xsd:complexType>
     <xsd:complexType name="itemType">
         <xsd:all>
+            <xsd:element name="link" type="typ:linkItemType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Pomocí tohoto bloku lze vytvoøit položku z jiného dokladu. Vložený doklad lze upravit pomocí zadaných parametrù u dokladu.
+                        Povolené jsou vazby: - výdejka do servisu.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="id" type="typ:idType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>ID položky dokladu (jen pro export).</xsd:documentation>

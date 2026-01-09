@@ -396,7 +396,32 @@
                 <xsd:annotation>
                     <xsd:documentation>Kód banky.</xsd:documentation>
                 </xsd:annotation>
-            </xsd:element>		
+            </xsd:element>
+            <xsd:element name="description" type="typ:string30" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Popis.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="bankName" type="typ:string35" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Název banky pøíjemce.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="bankStreet" type="typ:string35" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Ulice banky pøíjemce.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="bankCity" type="typ:string45" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Obec banky pøíjemce.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="bankState" type="typ:refType" nillable="true" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Stát banky pøíjemce.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
             <xsd:element name="defaultAccount" type="typ:boolean" minOccurs="0" default="false">
                 <xsd:annotation>
                     <xsd:documentation>Výchozí úèet.</xsd:documentation>

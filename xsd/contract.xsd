@@ -22,6 +22,7 @@
     <xsd:complexType name="contractType">
         <xsd:sequence minOccurs="1" maxOccurs="1">
             <xsd:element name="contractDesc" type="con:contractDescType"/>
+            <xsd:element name="contractPlan" type="con:contractPlanType" minOccurs="0"/>
             <xsd:element name="attachments" type="typ:attachmentsType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Záznamy ze záložky "Dokumenty".</xsd:documentation>
@@ -129,11 +130,95 @@
             </xsd:element>
             <xsd:element name="parameters" type="typ:parametersType" minOccurs="0">
                 <xsd:annotation>
-                    <xsd:documentation>Volitelný parametr.</xsd:documentation>
+                    <xsd:documentation>Volitelné parametry.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
         </xsd:all>
     </xsd:complexType>
+
+    <xsd:complexType name="contractPlanType">
+        <xsd:sequence>
+            <xsd:element name="contractPlanItem" type="con:contractPlanItemType" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="contractPlanItemType">
+        <xsd:all>
+            <xsd:element name="id" type="typ:idType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Používá se pouze pøi exportu.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="date" type="xsd:date" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Datum plánovaného zahájení.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="typeOfOperation" type="con:typeOfOperationType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Druh operace.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="title" type="typ:string100" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Název zakázky.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="source" type="typ:string100" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Zdroj zakázky.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="quantity" type="xsd:float" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Množství.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="unit" type="typ:unitType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Mìrná jednotka.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="price" type="typ:currencyType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Èástka.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="note" type="xsd:string" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Poznámka.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="parameters" type="typ:parametersType" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Volitelné parametry.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
+
+    <xsd:simpleType name="typeOfOperationType">
+        <xsd:annotation>
+            <xsd:documentation>Druh operace položky výrobního plánu.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="cost">
+                <xsd:annotation>
+                    <xsd:documentation>Náklad.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="revenue">
+                <xsd:annotation>
+                    <xsd:documentation>Výnos.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="other">
+                <xsd:annotation>
+                    <xsd:documentation>Ostatní.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
 
     <!-- Stav zakázky  -->
     <xsd:complexType name="statusType">

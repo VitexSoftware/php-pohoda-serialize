@@ -17,8 +17,9 @@
     <!-- REQUEST -->
     <xsd:element name="listCentreRequest" type="lCen:listRequestCentreType"/>
 
+    <!-- Støediska -->
     <xsd:complexType name="listRequestCentreType">
-        <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+        <xsd:sequence minOccurs="1" maxOccurs="255">
             <xsd:element name="limit" type="ftr:limitType" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>Omezení poètu exportovaných záznamù.</xsd:documentation>
