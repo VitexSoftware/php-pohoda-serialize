@@ -18,7 +18,6 @@ set -e
 case "$1" in
     configure)
 
-        composer-global-update deb/pohoda-ser
 
     ;;
 
