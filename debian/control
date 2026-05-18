@@ -1,5 +1,5 @@
 Source: php-vitexsoftware-pohodaser
-Section: unknown
+Section: php
 Priority: optional
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Build-Depends:
@@ -13,12 +13,12 @@ Vcs-Git: git@github.com:VitexSoftware/pohodaser.git
 Vcs-Browser: https://github.com/VitexSoftware/pohodaser
 
 Package: php-vitexsoftware-pohodaser
-Architecture: any
+Architecture: all
 Multi-Arch: foreign
 Depends:
  ${misc:Depends},
- ${shlibs:Depends},
- composer
+ composer,
+ php-symfony-yaml
 Description: Stormware's Pohoda XML/PHP serialization
  This library provides a PHP-based solution for serializing
  and deserializing XML data for Stormware's Pohoda accounting
