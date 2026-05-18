@@ -17,7 +17,7 @@
     },
     "require": {
         "goetas-webservices/xsd2php-runtime": "^0.2",
-        "jms/serializer": "^3.0",
+        "jms/serializer": "^3.32",
         "symfony/yaml": "^7.3"
     },
     "require-dev": {
