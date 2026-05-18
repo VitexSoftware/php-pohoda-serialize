@@ -25,7 +25,7 @@
         "phpunit/phpunit": "^12.4",
         "goetas-webservices/xsd2php": "^0.4",
         "friendsofphp/php-cs-fixer": "^3.92",
-        "ergebnis/composer-normalize": "^2.0",
+        "ergebnis/composer-normalize": "^2.52",
         "ergebnis/php-cs-fixer-config": "^6.60",
         "rector/rector": "^0.15"
     },
