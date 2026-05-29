@@ -30,596 +30,497 @@ class ResponsePackItemType
     /**
      * @var \Pohoda\AddressBook\AddressbookResponse[]
      */
-    private array $addressbookResponse = [
-    ];
+    private array $addressbookResponse = [];
 
     /**
      * @var \Pohoda\Invoice\InvoiceResponse[]
      */
-    private array $invoiceResponse = [
-    ];
+    private array $invoiceResponse = [];
 
     /**
      * @var \Pohoda\NumericalSeries\NumericalSeriesResponse[]
      */
-    private array $numericalSeriesResponse = [
-    ];
+    private array $numericalSeriesResponse = [];
 
     /**
      * @var \Pohoda\Voucher\VoucherResponse[]
      */
-    private array $voucherResponse = [
-    ];
+    private array $voucherResponse = [];
 
     /**
      * @var \Pohoda\IntDoc\IntDocResponse[]
      */
-    private array $intDocResponse = [
-    ];
+    private array $intDocResponse = [];
 
     /**
      * @var \Pohoda\Vydejka\VydejkaResponse[]
      */
-    private array $vydejkaResponse = [
-    ];
+    private array $vydejkaResponse = [];
 
     /**
      * @var \Pohoda\Prijemka\PrijemkaResponse[]
      */
-    private array $prijemkaResponse = [
-    ];
+    private array $prijemkaResponse = [];
 
     /**
      * @var \Pohoda\Prodejka\ProdejkaResponse[]
      */
-    private array $prodejkaResponse = [
-    ];
+    private array $prodejkaResponse = [];
 
     /**
      * @var \Pohoda\Stock\StockItemResponse[]
      */
-    private array $stockItemResponse = [
-    ];
+    private array $stockItemResponse = [];
 
     /**
      * @var \Pohoda\Order\OrderResponse[]
      */
-    private array $orderResponse = [
-    ];
+    private array $orderResponse = [];
 
     /**
      * @var \Pohoda\Enquiry\EnquiryResponse[]
      */
-    private array $enquiryResponse = [
-    ];
+    private array $enquiryResponse = [];
 
     /**
      * @var \Pohoda\Offer\OfferResponse[]
      */
-    private array $offerResponse = [
-    ];
+    private array $offerResponse = [];
 
     /**
      * @var \Pohoda\Vyroba\VyrobaResponse[]
      */
-    private array $vyrobaResponse = [
-    ];
+    private array $vyrobaResponse = [];
 
     /**
      * @var \Pohoda\Prevodka\PrevodkaResponse[]
      */
-    private array $prevodkaResponse = [
-    ];
+    private array $prevodkaResponse = [];
 
     /**
      * @var \Pohoda\Parameter\ParameterItemResponse[]
      */
-    private array $parameterItemResponse = [
-    ];
+    private array $parameterItemResponse = [];
 
     /**
      * @var \Pohoda\Contract\ContractResponse[]
      */
-    private array $contractResponse = [
-    ];
+    private array $contractResponse = [];
 
     /**
      * @var \Pohoda\Storage\StorageResponse[]
      */
-    private array $storageResponse = [
-    ];
+    private array $storageResponse = [];
 
     /**
      * @var \Pohoda\IntParam\IntParamResponse[]
      */
-    private array $intParamResponse = [
-    ];
+    private array $intParamResponse = [];
 
     /**
      * @var \Pohoda\IndividualPrice\IndividualPriceResponse[]
      */
-    private array $individualPriceResponse = [
-    ];
+    private array $individualPriceResponse = [];
 
     /**
      * @var \Pohoda\Store\StoreResponse[]
      */
-    private array $storeResponse = [
-    ];
+    private array $storeResponse = [];
 
     /**
      * @var \Pohoda\GroupStocks\GroupStocksResponse[]
      */
-    private array $groupStocksResponse = [
-    ];
+    private array $groupStocksResponse = [];
 
     /**
      * @var \Pohoda\Print\PrintResponse[]
      */
-    private array $printResponse = [
-    ];
+    private array $printResponse = [];
 
     /**
      * @var \Pohoda\Lock\LockResponse[]
      */
-    private array $lockResponse = [
-    ];
+    private array $lockResponse = [];
 
     /**
      * @var \Pohoda\Isdoc\IsdocResponse[]
      */
-    private array $isdocResponse = [
-    ];
+    private array $isdocResponse = [];
 
     /**
      * @var \Pohoda\SendEET\SendEETResponse[]
      */
-    private array $sendEETResponse = [
-    ];
+    private array $sendEETResponse = [];
 
     /**
      * @var \Pohoda\MKasa\MKasaResponse[]
      */
-    private array $mKasaResponse = [
-    ];
+    private array $mKasaResponse = [];
 
     /**
      * @var \Pohoda\InventoryLists\InventoryListsResponse[]
      */
-    private array $inventoryListsResponse = [
-    ];
+    private array $inventoryListsResponse = [];
 
     /**
      * @var \Pohoda\List\ListUserCodeResponse[]
      */
-    private array $listUserCodeResponse = [
-    ];
+    private array $listUserCodeResponse = [];
 
     /**
      * @var \Pohoda\Supplier\SupplierResponse[]
      */
-    private array $supplierResponse = [
-    ];
+    private array $supplierResponse = [];
 
     /**
      * @var \Pohoda\Category\CategoryResponse[]
      */
-    private array $categoryResponse = [
-    ];
+    private array $categoryResponse = [];
 
     /**
      * @var \Pohoda\Gdpr\GDPRResponse[]
      */
-    private array $gDPRResponse = [
-    ];
+    private array $gDPRResponse = [];
 
     /**
      * @var \Pohoda\AccountingSalesVouchers\AccountingSalesVouchersResponse[]
      */
-    private array $accountingSalesVouchersResponse = [
-    ];
+    private array $accountingSalesVouchersResponse = [];
 
     /**
      * @var \Pohoda\ProductRequirement\ProductRequirementResponse[]
      */
-    private array $productRequirementResponse = [
-    ];
+    private array $productRequirementResponse = [];
 
     /**
      * @var \Pohoda\Bank\BankResponse[]
      */
-    private array $bankResponse = [
-    ];
+    private array $bankResponse = [];
 
     /**
      * @var \Pohoda\BankAccount\BankAccountResponse[]
      */
-    private array $bankAccountResponse = [
-    ];
+    private array $bankAccountResponse = [];
 
     /**
      * @var \Pohoda\RulesPairing\RulesPairingResponse[]
      */
-    private array $rulesPairingResponse = [
-    ];
+    private array $rulesPairingResponse = [];
 
     /**
      * @var \Pohoda\LiquidationWithoutLink\LiquidationWithoutLinkResponse[]
      */
-    private array $liquidationWithoutLinkResponse = [
-    ];
+    private array $liquidationWithoutLinkResponse = [];
 
     /**
      * @var \Pohoda\AdvancePartFulfilment\AdvancePartFulfilmentResponse[]
      */
-    private array $advancePartFulfilmentResponse = [
-    ];
+    private array $advancePartFulfilmentResponse = [];
 
     /**
      * @var \Pohoda\Discount\DiscountResponse[]
      */
-    private array $discountResponse = [
-    ];
+    private array $discountResponse = [];
 
     /**
      * @var \Pohoda\AutomaticLiquidationResponse[]
      */
-    private array $automaticLiquidationResponse = [
-    ];
+    private array $automaticLiquidationResponse = [];
 
     /**
      * @var \Pohoda\Service\ServiceResponse[]
      */
-    private array $serviceResponse = [
-    ];
+    private array $serviceResponse = [];
 
     /**
      * @var \Pohoda\UserAgenda\UserAgendaResponse[]
      */
-    private array $userAgendaResponse = [
-    ];
+    private array $userAgendaResponse = [];
 
     /**
      * @var \Pohoda\Activity\ActivityResponse[]
      */
-    private array $activityResponse = [
-    ];
+    private array $activityResponse = [];
 
     /**
      * @var \Pohoda\Centre\CentreResponse[]
      */
-    private array $centreResponse = [
-    ];
+    private array $centreResponse = [];
 
     /**
      * @var \Pohoda\ListCentre\ListCentre[]
      */
-    private array $listCentre = [
-    ];
+    private array $listCentre = [];
 
     /**
      * @var \Pohoda\ListActivity\ListActivity[]
      */
-    private array $listActivity = [
-    ];
+    private array $listActivity = [];
 
     /**
      * @var \Pohoda\ListContract\ListContract[]
      */
-    private array $listContract = [
-    ];
+    private array $listContract = [];
 
     /**
      * @var \Pohoda\List\ListCash[]
      */
-    private array $listCash = [
-    ];
+    private array $listCash = [];
 
     /**
      * @var \Pohoda\List\ListCashRegister[]
      */
-    private array $listCashRegister = [
-    ];
+    private array $listCashRegister = [];
 
     /**
      * @var \Pohoda\List\ListBankAccount[]
      */
-    private array $listBankAccount = [
-    ];
+    private array $listBankAccount = [];
 
     /**
      * @var \Pohoda\List\ListAccountingSingleEntry[]
      */
-    private array $listAccountingSingleEntry = [
-    ];
+    private array $listAccountingSingleEntry = [];
 
     /**
      * @var \Pohoda\List\ListAccountingDoubleEntry[]
      */
-    private array $listAccountingDoubleEntry = [
-    ];
+    private array $listAccountingDoubleEntry = [];
 
     /**
      * @var \Pohoda\List\ListAccount[]
      */
-    private array $listAccount = [
-    ];
+    private array $listAccount = [];
 
     /**
      * @var \Pohoda\List\ListStorage[]
      */
-    private array $listStorage = [
-    ];
+    private array $listStorage = [];
 
     /**
      * @var \Pohoda\List\ListSellingPrice[]
      */
-    private array $listSellingPrice = [
-    ];
+    private array $listSellingPrice = [];
 
     /**
      * @var \Pohoda\List\ListNumericSeries[]
      */
-    private array $listNumericSeries = [
-    ];
+    private array $listNumericSeries = [];
 
     /**
      * @var \Pohoda\List\CreateAccountingDoubleEntryResponse[]
      */
-    private array $createAccountingDoubleEntryResponse = [
-    ];
+    private array $createAccountingDoubleEntryResponse = [];
 
     /**
      * @var \Pohoda\Accountingunit\ListAccountingUnit[]
      */
-    private array $listAccountingUnit = [
-    ];
+    private array $listAccountingUnit = [];
 
     /**
      * @var \Pohoda\ListStock\ListStock[]
      */
-    private array $listStock = [
-    ];
+    private array $listStock = [];
 
     /**
      * @var \Pohoda\List\ListInvoice[]
      */
-    private array $listInvoice = [
-    ];
+    private array $listInvoice = [];
 
     /**
      * @var \Pohoda\ListAddBook\ListAddressBook[]
      */
-    private array $listAddressBook = [
-    ];
+    private array $listAddressBook = [];
 
     /**
      * @var \Pohoda\List\ListOrder[]
      */
-    private array $listOrder = [
-    ];
+    private array $listOrder = [];
 
     /**
      * @var \Pohoda\List\ListEnquiry[]
      */
-    private array $listEnquiry = [
-    ];
+    private array $listEnquiry = [];
 
     /**
      * @var \Pohoda\List\ListOffer[]
      */
-    private array $listOffer = [
-    ];
+    private array $listOffer = [];
 
     /**
      * @var \Pohoda\List\ListParameter[]
      */
-    private array $listParameter = [
-    ];
+    private array $listParameter = [];
 
     /**
      * @var \Pohoda\List\ListUserCodePack[]
      */
-    private array $listUserCodePack = [
-    ];
+    private array $listUserCodePack = [];
 
     /**
      * @var \Pohoda\List\ListVydejka[]
      */
-    private array $listVydejka = [
-    ];
+    private array $listVydejka = [];
 
     /**
      * @var \Pohoda\List\ListPrijemka[]
      */
-    private array $listPrijemka = [
-    ];
+    private array $listPrijemka = [];
 
     /**
      * @var \Pohoda\List\ListBalance[]
      */
-    private array $listBalance = [
-    ];
+    private array $listBalance = [];
 
     /**
      * @var \Pohoda\List\ListCategory[]
      */
-    private array $listCategory = [
-    ];
+    private array $listCategory = [];
 
     /**
      * @var \Pohoda\List\ListIntParam[]
      */
-    private array $listIntParam = [
-    ];
+    private array $listIntParam = [];
 
     /**
      * @var \Pohoda\List\ListIntDoc[]
      */
-    private array $listIntDoc = [
-    ];
+    private array $listIntDoc = [];
 
     /**
      * @var \Pohoda\List\ListProdejka[]
      */
-    private array $listProdejka = [
-    ];
+    private array $listProdejka = [];
 
     /**
      * @var \Pohoda\List\ListVoucher[]
      */
-    private array $listVoucher = [
-    ];
+    private array $listVoucher = [];
 
     /**
      * @var \Pohoda\List\ListPrevodka[]
      */
-    private array $listPrevodka = [
-    ];
+    private array $listPrevodka = [];
 
     /**
      * @var \Pohoda\List\ListVyroba[]
      */
-    private array $listVyroba = [
-    ];
+    private array $listVyroba = [];
 
     /**
      * @var \Pohoda\List\TaxDataResponse[]
      */
-    private array $taxDataResponse = [
-    ];
+    private array $taxDataResponse = [];
 
     /**
      * @var \Pohoda\List\ListIndividualPrice[]
      */
-    private array $listIndividualPrice = [
-    ];
+    private array $listIndividualPrice = [];
 
     /**
      * @var \Pohoda\List\ListBank[]
      */
-    private array $listBank = [
-    ];
+    private array $listBank = [];
 
     /**
      * @var \Pohoda\List\ListAccountancy[]
      */
-    private array $listAccountancy = [
-    ];
+    private array $listAccountancy = [];
 
     /**
      * @var \Pohoda\List\ListStore[]
      */
-    private array $listStore = [
-    ];
+    private array $listStore = [];
 
     /**
      * @var \Pohoda\List\ListSupplier[]
      */
-    private array $listSupplier = [
-    ];
+    private array $listSupplier = [];
 
     /**
      * @var \Pohoda\List\ListGroupStocks[]
      */
-    private array $listGroupStocks = [
-    ];
+    private array $listGroupStocks = [];
 
     /**
      * @var \Pohoda\List\ListActionPrice[]
      */
-    private array $listActionPrice = [
-    ];
+    private array $listActionPrice = [];
 
     /**
      * @var \Pohoda\List\ListInventoryLists[]
      */
-    private array $listInventoryLists = [
-    ];
+    private array $listInventoryLists = [];
 
     /**
      * @var \Pohoda\List\ListPayment[]
      */
-    private array $listPayment = [
-    ];
+    private array $listPayment = [];
 
     /**
      * @var \Pohoda\List\ListNumericalSeries[]
      */
-    private array $listNumericalSeries = [
-    ];
+    private array $listNumericalSeries = [];
 
     /**
      * @var \Pohoda\List\ListGDPR[]
      */
-    private array $listGDPR = [
-    ];
+    private array $listGDPR = [];
 
     /**
      * @var \Pohoda\List\ListEstablishment[]
      */
-    private array $listEstablishment = [
-    ];
+    private array $listEstablishment = [];
 
     /**
      * @var \Pohoda\List\ListAccountingFormOfPayment[]
      */
-    private array $listAccountingFormOfPayment = [
-    ];
+    private array $listAccountingFormOfPayment = [];
 
     /**
      * @var \Pohoda\List\ListClassificationVAT[]
      */
-    private array $listClassificationVAT = [
-    ];
+    private array $listClassificationVAT = [];
 
     /**
      * @var \Pohoda\List\ListGlobalSettings[]
      */
-    private array $listGlobalSettings = [
-    ];
+    private array $listGlobalSettings = [];
 
     /**
      * @var \Pohoda\List\ListRegistrationNumber[]
      */
-    private array $listRegistrationNumber = [
-    ];
+    private array $listRegistrationNumber = [];
 
     /**
      * @var \Pohoda\List\ListProductRequirement[]
      */
-    private array $listProductRequirement = [
-    ];
+    private array $listProductRequirement = [];
 
     /**
      * @var \Pohoda\List\ListMovement[]
      */
-    private array $listMovement = [
-    ];
+    private array $listMovement = [];
 
     /**
      * @var \Pohoda\List\ListRecyclingContrib[]
      */
-    private array $listRecyclingContrib = [
-    ];
+    private array $listRecyclingContrib = [];
 
     /**
      * @var \Pohoda\List\ListService[]
      */
-    private array $listService = [
-    ];
+    private array $listService = [];
 
     /**
      * @var \Pohoda\List\ListRulesPairing[]
      */
-    private array $listRulesPairing = [
-    ];
+    private array $listRulesPairing = [];
 
     /**
      * @var \Pohoda\List\ListUserAgenda[]
      */
-    private array $listUserAgenda = [
-    ];
+    private array $listUserAgenda = [];
 
     /**
      * Zobrazení podrobností o chybě.

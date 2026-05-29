@@ -42,8 +42,7 @@ class ResponsePackType
     /**
      * @var \Pohoda\Response\ResponsePackItemType[]
      */
-    private array $responsePackItem = [
-    ];
+    private array $responsePackItem = [];
 
     /**
      * Gets as version.

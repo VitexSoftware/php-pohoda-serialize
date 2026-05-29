@@ -32,8 +32,7 @@ class InternetParamsType
      *
      * @var \Pohoda\Type\RefTypeLongType[]
      */
-    private array $intParameter = [
-    ];
+    private array $intParameter = [];
 
     /**
      * Gets as idInternetParams.

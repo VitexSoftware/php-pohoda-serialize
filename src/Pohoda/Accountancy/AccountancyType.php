@@ -29,8 +29,7 @@ class AccountancyType
      *
      * @var \Pohoda\Accountancy\AccountingItemType[]
      */
-    private array $accountingItem = [
-    ];
+    private array $accountingItem = [];
 
     /**
      * Záznamy ze záložky "Dokumenty", která je společná pro celou agendu.

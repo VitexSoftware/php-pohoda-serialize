@@ -25,8 +25,7 @@ class VyrobaDetailType
     /**
      * @var \Pohoda\Vyroba\VyrobaItemType[]
      */
-    private array $vyrobaItem = [
-    ];
+    private array $vyrobaItem = [];
 
     /**
      * Adds as vyrobaItem.

@@ -25,8 +25,7 @@ class CategoriesType
     /**
      * @var int[]
      */
-    private array $idCategory = [
-    ];
+    private array $idCategory = [];
 
     /**
      * Adds as idCategory.

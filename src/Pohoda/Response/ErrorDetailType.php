@@ -25,8 +25,7 @@ class ErrorDetailType
     /**
      * @var \Pohoda\Response\RecordDuplicityType[]
      */
-    private array $recordDuplicity = [
-    ];
+    private array $recordDuplicity = [];
 
     /**
      * Adds as recordDuplicity.

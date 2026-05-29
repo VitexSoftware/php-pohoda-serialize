@@ -27,8 +27,7 @@ class ListActionPriceType extends ListVersionType
     /**
      * @var \Pohoda\ActionPrice\ActionPriceType[]
      */
-    private array $actionPrice = [
-    ];
+    private array $actionPrice = [];
 
     /**
      * Adds as actionPrice.

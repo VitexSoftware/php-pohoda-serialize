@@ -27,8 +27,7 @@ class ListStorageType extends ListVersionType
     /**
      * @var \Pohoda\List\ItemStorageType[]
      */
-    private array $itemStorage = [
-    ];
+    private array $itemStorage = [];
 
     /**
      * Adds as itemStorage.

@@ -34,14 +34,12 @@ class ListMovementRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestMovementType[]
      */
-    private array $requestMovement = [
-    ];
+    private array $requestMovement = [];
 
     /**
      * Gets as version.

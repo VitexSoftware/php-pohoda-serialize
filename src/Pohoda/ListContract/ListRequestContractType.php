@@ -34,22 +34,19 @@ class ListRequestContractType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestContractType[]
      */
-    private array $requestContract = [
-    ];
+    private array $requestContract = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\ListContract\RestrictionDataType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

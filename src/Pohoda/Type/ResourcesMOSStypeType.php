@@ -25,8 +25,7 @@ class ResourcesMOSStypeType
     /**
      * @var string[]
      */
-    private array $ids = [
-    ];
+    private array $ids = [];
 
     /**
      * Adds as ids.

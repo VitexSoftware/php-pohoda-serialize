@@ -27,16 +27,14 @@ class LockSettingsType
      *
      * @var string[]
      */
-    private array $lock1 = [
-    ];
+    private array $lock1 = [];
 
     /**
      * Zámek, uzamknout (v E1 verzi označení Zámek II). Uzamčení dokladů pro uživatele s vyšším oprávněním. Takto uzamčené doklady nelze editovat.
      *
      * @var string[]
      */
-    private array $lock2 = [
-    ];
+    private array $lock2 = [];
 
     /**
      * Adds as lock1.

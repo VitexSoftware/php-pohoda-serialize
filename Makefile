@@ -29,7 +29,7 @@ codingstandards: ## Use phpcs to reformat code to PSR12
 
 .PHONY: xsd2php
 xsd2php: ## Generate PHP Classes form XSD files
-	rm -rf src/Pohoda src/metadata
+	rm -rf src/Pohoda metadata
 	composer install
-	vendor/bin/xsd2php -v convert xsd2php.yml doc/xsd/*.xsd
+	vendor/bin/xsd2php -v convert xsd2php.yml xsd/*.xsd
 	phpcbf --colors --standard=PSR12 --extensions=php --ignore=vendor/ src/

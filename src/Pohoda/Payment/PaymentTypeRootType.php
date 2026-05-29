@@ -27,8 +27,7 @@ class PaymentTypeRootType
     /**
      * @var \Pohoda\Payment\PaymentHeaderType[]
      */
-    private array $paymentHeader = [
-    ];
+    private array $paymentHeader = [];
 
     /**
      * Gets as version.

@@ -39,22 +39,19 @@ class ListIntDocRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestIntDocType[]
      */
-    private array $requestIntDoc = [
-    ];
+    private array $requestIntDoc = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\List\RestrictionDocParamType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

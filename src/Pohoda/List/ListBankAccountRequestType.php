@@ -39,14 +39,12 @@ class ListBankAccountRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestBankAccountType[]
      */
-    private array $requestBankAccount = [
-    ];
+    private array $requestBankAccount = [];
 
     /**
      * Gets as version.

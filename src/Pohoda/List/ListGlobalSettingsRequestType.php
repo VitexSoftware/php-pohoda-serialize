@@ -34,14 +34,12 @@ class ListGlobalSettingsRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\List\RequestrequestGlobalSettingsType[]
      */
-    private array $requestGlobalSettings = [
-    ];
+    private array $requestGlobalSettings = [];
 
     /**
      * Gets as version.

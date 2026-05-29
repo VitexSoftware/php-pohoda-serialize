@@ -27,8 +27,7 @@ class ListCategoryType extends ListVersionType
     /**
      * @var \Pohoda\Category\CategoryDetailType[]
      */
-    private array $categoryDetail = [
-    ];
+    private array $categoryDetail = [];
 
     /**
      * Adds as categoryDetail.

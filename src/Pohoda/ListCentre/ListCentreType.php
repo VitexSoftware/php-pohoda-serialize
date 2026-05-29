@@ -27,8 +27,7 @@ class ListCentreType extends ListVersionType
     /**
      * @var \Pohoda\Centre\CentreType[]
      */
-    private array $centre = [
-    ];
+    private array $centre = [];
 
     /**
      * Adds as centre.

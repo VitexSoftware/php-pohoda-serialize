@@ -32,8 +32,7 @@ class BankliquidationItemType
      *
      * @var \Pohoda\Bank\LiquidationItemType[]
      */
-    private array $liquidationItem = [
-    ];
+    private array $liquidationItem = [];
 
     /**
      * Gets as settingsLiquidation.

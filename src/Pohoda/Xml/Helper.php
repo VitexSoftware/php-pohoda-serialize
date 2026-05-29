@@ -89,6 +89,10 @@ class Helper
         'http://www.stormware.cz/schema/version_2/vyroba.xsd' => 'Pohoda\Vyroba',
         'http://www.stormware.cz/schema/version_2/userAgenda.xsd' => 'Pohoda\UserAgenda',
         'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd' => 'Pohoda\AdvancePartFulfilment',
+        'http://www.stormware.cz/schema/version_2/GPSR.xsd' => 'Pohoda\Gpsr',
+        'http://www.stormware.cz/schema/version_2/absence.xsd' => 'Pohoda\Absence',
+        'http://www.stormware.cz/schema/version_2/wageElements.xsd' => 'Pohoda\WageElements',
+        'http://www.stormware.cz/schema/version_2/workLoad.xsd' => 'Pohoda\WorkLoad',
     ];
 
     /**
@@ -100,22 +104,20 @@ class Helper
      */
     public static function xml2ns(string $xmlContent): ?string
     {
-        $xml = new \SimpleXMLElement($xmlContent);
+        $dom = new \DOMDocument();
 
-        // Get the root element name
-        $rootElementName = $xml->getName();
-
-        // Extract the namespace URI from the root element
-        $namespaces = $xml->getNamespaces(true);
-
-        foreach ($namespaces as $prefix => $namespaceUri) {
-            // Map the namespace URI to the PHP namespace
-            if (isset(self::$namespaceMap[$namespaceUri])) {
-                return self::$namespaceMap[$namespaceUri].'\\'.ucfirst($rootElementName);
-            }
+        if (!@$dom->loadXML($xmlContent) || !$dom->documentElement) {
+            return null;
         }
 
-        return null; // Namespace not found
+        $namespaceURI = $dom->documentElement->namespaceURI;
+        $rootElementName = $dom->documentElement->localName;
+
+        if (!$namespaceURI || !isset(self::$namespaceMap[$namespaceURI])) {
+            return null;
+        }
+
+        return self::$namespaceMap[$namespaceURI].'\\'.ucfirst($rootElementName);
     }
 
     /**
@@ -159,10 +161,13 @@ class Helper
 
         foreach ($methods as $method) {
             $methodName = $method->getName();
-            if (strpos($methodName, 'get') === 0 && $method->getNumberOfParameters() === 0) {
+
+            if (str_starts_with($methodName, 'get') && $method->getNumberOfParameters() === 0) {
                 $propertyName = lcfirst(substr($methodName, 3));
-                if (strpos($propertyName, 'list') === 0 || strpos($propertyName, 'List') === 0) {
+
+                if (str_starts_with($propertyName, 'list') || str_starts_with($propertyName, 'List')) {
                     $items = $data->{$methodName}();
+
                     if (is_iterable($items)) {
                         foreach ($items as $item) {
                             $listItems[] = $item;

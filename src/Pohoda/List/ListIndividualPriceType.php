@@ -27,8 +27,7 @@ class ListIndividualPriceType extends ListVersionType
     /**
      * @var \Pohoda\IndividualPrice\IndividualPriceType[]
      */
-    private array $individualPrice = [
-    ];
+    private array $individualPrice = [];
 
     /**
      * Adds as individualPrice.

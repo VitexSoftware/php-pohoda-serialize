@@ -34,14 +34,12 @@ class ListRequestActivityType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestActivityType[]
      */
-    private array $requestActivity = [
-    ];
+    private array $requestActivity = [];
 
     /**
      * Gets as version.

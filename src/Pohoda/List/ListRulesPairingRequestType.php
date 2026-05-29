@@ -34,14 +34,12 @@ class ListRulesPairingRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestRulesPairingType[]
      */
-    private array $requestRulesPairing = [
-    ];
+    private array $requestRulesPairing = [];
 
     /**
      * Gets as version.

@@ -25,8 +25,7 @@ class EmailsType
     /**
      * @var string[]
      */
-    private array $email = [
-    ];
+    private array $email = [];
 
     /**
      * Adds as email.

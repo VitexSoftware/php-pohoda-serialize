@@ -39,14 +39,12 @@ class ListIndividualPriceRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestIndividualPriceType[]
      */
-    private array $requestIndividualPrice = [
-    ];
+    private array $requestIndividualPrice = [];
 
     /**
      * Gets as version.

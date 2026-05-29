@@ -27,8 +27,7 @@ class ListUserAgendaType extends ListVersionType
     /**
      * @var \Pohoda\UserAgenda\UserAgendaType[]
      */
-    private array $userAgenda = [
-    ];
+    private array $userAgenda = [];
 
     /**
      * Adds as userAgenda.

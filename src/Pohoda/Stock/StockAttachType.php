@@ -25,8 +25,7 @@ class StockAttachType
     /**
      * @var \Pohoda\Stock\AttachItemType[]
      */
-    private array $attachItem = [
-    ];
+    private array $attachItem = [];
 
     /**
      * Adds as attachItem.

@@ -27,8 +27,7 @@ class ListGroupStocksType extends ListVersionType
     /**
      * @var \Pohoda\GroupStocks\GroupStocksType[]
      */
-    private array $groupStocks = [
-    ];
+    private array $groupStocks = [];
 
     /**
      * Adds as groupStocks.

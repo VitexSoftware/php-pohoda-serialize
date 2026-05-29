@@ -57,8 +57,7 @@ class ParameterType
     /**
      * @var \Pohoda\Parameter\FormItemListType[]
      */
-    private array $userForm = [
-    ];
+    private array $userForm = [];
     private ?string $userCode = null;
     private ?\Pohoda\Parameter\UserCodePartType $userCodePart = null;
 

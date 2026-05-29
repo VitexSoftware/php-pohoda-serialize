@@ -25,8 +25,7 @@ class InventoryListsDetailType
     /**
      * @var \Pohoda\InventoryLists\InventoryListsItemType[]
      */
-    private array $inventoryListsItem = [
-    ];
+    private array $inventoryListsItem = [];
 
     /**
      * Adds as inventoryListsItem.

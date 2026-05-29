@@ -27,8 +27,7 @@ class ListAccountingDoubleEntryType extends ListVersionType
     /**
      * @var \Pohoda\List\ItemAccountingTypeDoubleEntryType[]
      */
-    private array $itemAccounting = [
-    ];
+    private array $itemAccounting = [];
 
     /**
      * Adds as itemAccounting.

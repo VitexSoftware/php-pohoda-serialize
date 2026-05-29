@@ -25,8 +25,7 @@ class IntParametersType
     /**
      * @var \Pohoda\Stock\IntParameterType[]
      */
-    private array $intParameter = [
-    ];
+    private array $intParameter = [];
 
     /**
      * Adds as intParameter.

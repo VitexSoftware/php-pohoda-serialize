@@ -36,22 +36,19 @@ class ListUserAgendaRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestUserAgendaType[]
      */
-    private array $requestUserAgenda = [
-    ];
+    private array $requestUserAgenda = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\List\RestrictionDocParamType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as userAgendaId.

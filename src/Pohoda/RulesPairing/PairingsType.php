@@ -26,8 +26,7 @@ class PairingsType
     /**
      * @var string[]
      */
-    private array $pairing = [
-    ];
+    private array $pairing = [];
 
     /**
      * Adds as pairing.

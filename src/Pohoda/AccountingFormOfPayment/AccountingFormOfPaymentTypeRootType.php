@@ -27,8 +27,7 @@ class AccountingFormOfPaymentTypeRootType
     /**
      * @var \Pohoda\AccountingFormOfPayment\AccountingFormOfPaymentHeaderType[]
      */
-    private array $accountingFormOfPaymentHeader = [
-    ];
+    private array $accountingFormOfPaymentHeader = [];
 
     /**
      * Gets as version.

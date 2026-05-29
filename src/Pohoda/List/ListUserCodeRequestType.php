@@ -34,16 +34,14 @@ class ListUserCodeRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * Atributy určují výběr uživatelských seznamů pro export. Pokud není zadán žádný, vyexportují se všechny uživatelské seznamy.
      *
      * @var \Pohoda\List\RequestUserCodeType[]
      */
-    private array $requestUserCode = [
-    ];
+    private array $requestUserCode = [];
 
     /**
      * Gets as version.

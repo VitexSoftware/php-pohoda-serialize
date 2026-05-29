@@ -27,8 +27,7 @@ class ProductionListType
      *
      * @var \Pohoda\Vyroba\ProductionListItemType[]
      */
-    private array $productionListItem = [
-    ];
+    private array $productionListItem = [];
 
     /**
      * Adds as productionListItem.

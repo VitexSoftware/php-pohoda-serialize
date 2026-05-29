@@ -26,8 +26,7 @@ class RelatedStocksType
     /**
      * @var \Pohoda\Type\OrderStockItemType[]
      */
-    private array $idStocks = [
-    ];
+    private array $idStocks = [];
 
     /**
      * Adds as idStocks.

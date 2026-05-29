@@ -39,22 +39,19 @@ class ListVyrobaRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestVyrobaType[]
      */
-    private array $requestVyroba = [
-    ];
+    private array $requestVyroba = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\List\RestrictionDocParamType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

@@ -34,16 +34,14 @@ class ListParameterRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * Atributy určují výběr agend pro export parametrů. Pokud není zadán žádný, vyexportují se parametry všech agend.
      *
      * @var \Pohoda\List\RequestParameterType[]
      */
-    private array $requestParameter = [
-    ];
+    private array $requestParameter = [];
 
     /**
      * Gets as version.

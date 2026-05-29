@@ -27,8 +27,7 @@ class ListBalanceType extends ListVersionType
     /**
      * @var \Pohoda\Balance\BalanceType[]
      */
-    private array $balance = [
-    ];
+    private array $balance = [];
 
     /**
      * Adds as balance.

@@ -39,22 +39,19 @@ class ListPrijemkaRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestPrijemkaType[]
      */
-    private array $requestPrijemka = [
-    ];
+    private array $requestPrijemka = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\List\RestrictionDocParamType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

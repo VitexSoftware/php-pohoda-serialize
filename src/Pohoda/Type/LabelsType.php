@@ -26,8 +26,7 @@ class LabelsType
     /**
      * @var \Pohoda\Type\LabelType[]
      */
-    private array $label = [
-    ];
+    private array $label = [];
 
     /**
      * Adds as label.

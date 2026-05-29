@@ -18,7 +18,7 @@ namespace Pohoda\Stock\StockHeaderType;
 /**
  * Class representing SellingPriceAType.
  */
-class SellingPriceAType
+class SellingPriceAType implements \Stringable
 {
     private ?float $__value = null;
 

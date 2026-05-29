@@ -21,7 +21,7 @@ namespace Pohoda\Type;
  * Hodnota sazby DPH (jen pro export).
  * XSD Type: currencyVAT
  */
-class CurrencyVATType
+class CurrencyVATType implements \Stringable
 {
     private ?float $__value = null;
     private ?float $rate = null;

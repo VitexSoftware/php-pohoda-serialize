@@ -2,6 +2,17 @@
 
 declare(strict_types=1);
 
+/**
+ * This file is part of the PHP-Pohoda-Connector package
+ *
+ * https://github.com/VitexSoftware/PHP-Pohoda-Connector
+ *
+ * (c) VitexSoftware. <https://vitexsoftware.com/>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Pohoda\Xml;
 
 use GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
@@ -14,7 +25,7 @@ class SerializerBuilder
     public static function create(): JmsSerializerBuilder
     {
         $serializerBuilder = JmsSerializerBuilder::create();
-        $serializerBuilder->addMetadataDir(__DIR__ . '/../../../metadata', 'Pohoda');
+        $serializerBuilder->addMetadataDir(__DIR__.'/../../../metadata', 'Pohoda');
         $serializerBuilder->configureHandlers(static function (HandlerRegistryInterface $handler) use ($serializerBuilder): void {
             $serializerBuilder->addDefaultHandlers();
             $handler->registerSubscribingHandler(new BaseTypesHandler()); // XMLSchema List handling

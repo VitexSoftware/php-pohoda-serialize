@@ -27,8 +27,7 @@ class ListAccountancyType extends ListVersionType
     /**
      * @var \Pohoda\Accountancy\AccountancyType[]
      */
-    private array $accountancy = [
-    ];
+    private array $accountancy = [];
 
     /**
      * Adds as accountancy.

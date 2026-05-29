@@ -25,8 +25,7 @@ class StockDetailType
     /**
      * @var \Pohoda\Stock\StockItemType[]
      */
-    private array $stockItem = [
-    ];
+    private array $stockItem = [];
 
     /**
      * Adds as stockItem.

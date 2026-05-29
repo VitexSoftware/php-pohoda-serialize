@@ -27,28 +27,24 @@ class EnquiryType
     /**
      * @var \Pohoda\Enquiry\EnquiryHeaderType[]
      */
-    private array $enquiryHeader = [
-    ];
+    private array $enquiryHeader = [];
 
     /**
      * @var \Pohoda\Enquiry\EnquiryDetailType[]
      */
-    private array $enquiryDetail = [
-    ];
+    private array $enquiryDetail = [];
 
     /**
      * @var \Pohoda\Enquiry\EnquirySummaryType[]
      */
-    private array $enquirySummary = [
-    ];
+    private array $enquirySummary = [];
 
     /**
      * Záznamy ze záložky "Dokumenty".
      *
      * @var \Pohoda\Type\AttachmentsType[]
      */
-    private array $attachments = [
-    ];
+    private array $attachments = [];
 
     /**
      * Po vytvoření záznamu se provede jeho tisk.

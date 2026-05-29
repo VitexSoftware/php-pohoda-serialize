@@ -27,8 +27,7 @@ class GDPRType
     /**
      * @var \Pohoda\Gdpr\GDPRHeaderType[]
      */
-    private array $gDPRHeader = [
-    ];
+    private array $gDPRHeader = [];
 
     /**
      * Gets as version.

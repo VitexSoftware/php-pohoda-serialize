@@ -18,7 +18,7 @@ namespace Pohoda\Documentresponse\AttachmentType;
 /**
  * Class representing DataAType.
  */
-class DataAType
+class DataAType implements \Stringable
 {
     private ?string $__value = null;
     private ?string $fileName = null;

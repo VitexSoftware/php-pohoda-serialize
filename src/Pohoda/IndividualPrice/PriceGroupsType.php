@@ -27,8 +27,7 @@ class PriceGroupsType
      *
      * @var \Pohoda\IndividualPrice\PriceGroupItemType[]
      */
-    private array $priceGroupItem = [
-    ];
+    private array $priceGroupItem = [];
 
     /**
      * Adds as priceGroupItem.

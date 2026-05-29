@@ -39,14 +39,12 @@ class ListSupplierRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestStockType[]
      */
-    private array $requestSupplier = [
-    ];
+    private array $requestSupplier = [];
 
     /**
      * Gets as version.

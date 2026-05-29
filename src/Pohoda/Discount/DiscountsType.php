@@ -25,8 +25,7 @@ class DiscountsType
     /**
      * @var \Pohoda\Discount\DiscountsItemType[]
      */
-    private array $discountsItem = [
-    ];
+    private array $discountsItem = [];
 
     /**
      * Adds as discountsItem.

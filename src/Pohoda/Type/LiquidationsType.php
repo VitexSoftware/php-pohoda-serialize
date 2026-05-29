@@ -26,8 +26,7 @@ class LiquidationsType
     /**
      * @var \Pohoda\Type\LiquidationItemType[]
      */
-    private array $liquidation = [
-    ];
+    private array $liquidation = [];
 
     /**
      * Adds as liquidation.

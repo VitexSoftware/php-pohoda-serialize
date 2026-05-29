@@ -25,8 +25,7 @@ class AttachmentType
     /**
      * @var string[]
      */
-    private array $attachment = [
-    ];
+    private array $attachment = [];
 
     /**
      * Adds as attachment.

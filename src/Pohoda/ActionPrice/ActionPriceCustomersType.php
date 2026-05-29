@@ -26,8 +26,7 @@ class ActionPriceCustomersType
     /**
      * @var \Pohoda\ActionPrice\CustomerType[]
      */
-    private array $customer = [
-    ];
+    private array $customer = [];
 
     /**
      * Adds as customer.

@@ -34,8 +34,7 @@ class PrintType
      *
      * @var \Pohoda\Print\PrinterSettingsType[]
      */
-    private array $printerSettings = [
-    ];
+    private array $printerSettings = [];
 
     /**
      * Gets as version.

@@ -25,8 +25,7 @@ class ParametersUsrAgType
     /**
      * @var \Pohoda\Type\ParameterDocType[]
      */
-    private array $parameter = [
-    ];
+    private array $parameter = [];
 
     /**
      * Adds as parameter.

@@ -25,8 +25,7 @@ class ImportDetailsType
     /**
      * @var \Pohoda\Documentresponse\DetailType[]
      */
-    private array $detail = [
-    ];
+    private array $detail = [];
 
     /**
      * Adds as detail.

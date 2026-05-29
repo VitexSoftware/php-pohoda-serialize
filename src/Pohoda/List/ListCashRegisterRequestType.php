@@ -39,14 +39,12 @@ class ListCashRegisterRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestCashRegisterType[]
      */
-    private array $requestCashRegister = [
-    ];
+    private array $requestCashRegister = [];
 
     /**
      * Gets as version.

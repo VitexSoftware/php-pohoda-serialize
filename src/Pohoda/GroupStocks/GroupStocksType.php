@@ -29,14 +29,12 @@ class GroupStocksType
      *
      * @var \Pohoda\GroupStocks\ActionTypeType[]
      */
-    private array $actionType = [
-    ];
+    private array $actionType = [];
 
     /**
      * @var \Pohoda\GroupStocks\GroupStocksHeaderType[]
      */
-    private array $groupStocksHeader = [
-    ];
+    private array $groupStocksHeader = [];
 
     /**
      * @var \Pohoda\GroupStocks\VariantsItemType[]

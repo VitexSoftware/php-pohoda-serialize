@@ -27,8 +27,7 @@ class ListVydejkaType extends ListVersionType
     /**
      * @var \Pohoda\Vydejka\VydejkaType[]
      */
-    private array $vydejka = [
-    ];
+    private array $vydejka = [];
 
     /**
      * Adds as vydejka.

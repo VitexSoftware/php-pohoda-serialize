@@ -27,8 +27,7 @@ class ListMovementType extends ListVersionType
     /**
      * @var \Pohoda\Movement\MovementType[]
      */
-    private array $movement = [
-    ];
+    private array $movement = [];
 
     /**
      * Adds as movement.

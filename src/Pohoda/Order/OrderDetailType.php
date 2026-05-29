@@ -25,8 +25,7 @@ class OrderDetailType
     /**
      * @var \Pohoda\Order\OrderItemType[]
      */
-    private array $orderItem = [
-    ];
+    private array $orderItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).

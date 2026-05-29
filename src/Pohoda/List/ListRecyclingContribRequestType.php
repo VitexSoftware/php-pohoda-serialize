@@ -34,14 +34,12 @@ class ListRecyclingContribRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestRecyclingContribType[]
      */
-    private array $requestRecyclingContrib = [
-    ];
+    private array $requestRecyclingContrib = [];
 
     /**
      * Gets as version.

@@ -27,8 +27,7 @@ class SelectedNumbersType
      *
      * @var \Pohoda\Type\NumberType[]
      */
-    private array $number = [
-    ];
+    private array $number = [];
 
     /**
      * Adds as number.

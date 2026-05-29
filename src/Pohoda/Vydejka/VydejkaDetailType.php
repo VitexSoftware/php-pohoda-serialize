@@ -25,8 +25,7 @@ class VydejkaDetailType
     /**
      * @var \Pohoda\Vydejka\VydejkaItemType[]
      */
-    private array $vydejkaItem = [
-    ];
+    private array $vydejkaItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).

@@ -25,8 +25,7 @@ class RelatedLinksType
     /**
      * @var \Pohoda\Stock\RelatedLinkType[]
      */
-    private array $relatedLink = [
-    ];
+    private array $relatedLink = [];
 
     /**
      * Adds as relatedLink.

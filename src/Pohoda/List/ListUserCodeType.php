@@ -37,8 +37,7 @@ class ListUserCodeType
     /**
      * @var \Pohoda\List\ItemUserCodeType[]
      */
-    private array $itemUserCode = [
-    ];
+    private array $itemUserCode = [];
 
     /**
      * Gets as version.

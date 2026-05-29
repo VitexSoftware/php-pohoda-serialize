@@ -27,16 +27,14 @@ class LinksType
      *
      * @var \Pohoda\Type\LinkElemetType[]
      */
-    private array $link = [
-    ];
+    private array $link = [];
 
     /**
      * Vazba na doklad.
      *
      * @var \Pohoda\Type\ManualLinkElementType[]
      */
-    private array $manualLink = [
-    ];
+    private array $manualLink = [];
 
     /**
      * Adds as link.

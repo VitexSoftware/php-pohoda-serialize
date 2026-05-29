@@ -27,8 +27,7 @@ class ListSellingPriceType extends ListVersionType
     /**
      * @var \Pohoda\List\ItemSellingPriceType[]
      */
-    private array $itemSellingPrice = [
-    ];
+    private array $itemSellingPrice = [];
 
     /**
      * Adds as itemSellingPrice.

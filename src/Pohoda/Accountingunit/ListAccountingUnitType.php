@@ -27,8 +27,7 @@ class ListAccountingUnitType extends ListVersionType
     /**
      * @var \Pohoda\Accountingunit\ItemAccountingUnitType[]
      */
-    private array $itemAccountingUnit = [
-    ];
+    private array $itemAccountingUnit = [];
 
     /**
      * Adds as itemAccountingUnit.

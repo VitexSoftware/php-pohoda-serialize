@@ -27,8 +27,7 @@ class ListActivityType extends ListVersionType
     /**
      * @var \Pohoda\Activity\ActivityType[]
      */
-    private array $activity = [
-    ];
+    private array $activity = [];
 
     /**
      * Adds as activity.

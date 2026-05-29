@@ -27,8 +27,7 @@ class LinkedDocumentsType
      *
      * @var \Pohoda\AccountingSalesVouchers\LinkedDocumentType[]
      */
-    private array $linkedDocument = [
-    ];
+    private array $linkedDocument = [];
 
     /**
      * Adds as linkedDocument.

@@ -25,8 +25,7 @@ class UserAgendaDetailType
     /**
      * @var \Pohoda\UserAgenda\UserAgendaItemType[]
      */
-    private array $userAgendaItem = [
-    ];
+    private array $userAgendaItem = [];
 
     /**
      * Adds as userAgendaItem.

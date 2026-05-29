@@ -34,14 +34,12 @@ class ListClassificationVATRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\List\RequestClassificationVATType[]
      */
-    private array $requestClassificationVAT = [
-    ];
+    private array $requestClassificationVAT = [];
 
     /**
      * Gets as version.

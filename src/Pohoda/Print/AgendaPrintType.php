@@ -25,8 +25,7 @@ class AgendaPrintType
     /**
      * @var \Pohoda\Print\PrinterSettingsType[]
      */
-    private array $printerSettings = [
-    ];
+    private array $printerSettings = [];
 
     /**
      * Adds as printerSettings.

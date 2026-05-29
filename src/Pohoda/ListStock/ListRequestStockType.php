@@ -34,24 +34,21 @@ class ListRequestStockType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * Filtr pro export záznamů.
      *
      * @var \Pohoda\Filter\RequestStockType[]
      */
-    private array $requestStock = [
-    ];
+    private array $requestStock = [];
 
     /**
      * Omezení exportu dat.
      *
      * @var \Pohoda\ListStock\RestrictionDataType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

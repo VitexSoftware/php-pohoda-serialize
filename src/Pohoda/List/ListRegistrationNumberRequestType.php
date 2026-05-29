@@ -34,22 +34,19 @@ class ListRegistrationNumberRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestRegistrationNumberType[]
      */
-    private array $requestRegistrationNumber = [
-    ];
+    private array $requestRegistrationNumber = [];
 
     /**
      * Omezení exportu dat.
      *
      * @var \Pohoda\List\RestrictionDocParamType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

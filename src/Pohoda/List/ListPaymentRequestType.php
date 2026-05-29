@@ -34,14 +34,12 @@ class ListPaymentRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestPaymentType[]
      */
-    private array $requestPayment = [
-    ];
+    private array $requestPayment = [];
 
     /**
      * Gets as version.

@@ -25,8 +25,7 @@ class AttachmentsType
     /**
      * @var \Pohoda\Documentresponse\AttachmentType[]
      */
-    private array $attachment = [
-    ];
+    private array $attachment = [];
 
     /**
      * Adds as attachment.

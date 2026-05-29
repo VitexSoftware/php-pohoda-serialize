@@ -34,14 +34,12 @@ class ListAccountingFormOfPaymentRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\List\RequestAccountingFormOfPaymentType[]
      */
-    private array $requestAccountingFormOfPayment = [
-    ];
+    private array $requestAccountingFormOfPayment = [];
 
     /**
      * Gets as version.

@@ -28,8 +28,7 @@ class BalanceType
     /**
      * @var \Pohoda\Balance\BalanceItemType[]
      */
-    private array $balanceItem = [
-    ];
+    private array $balanceItem = [];
 
     /**
      * Gets as version.

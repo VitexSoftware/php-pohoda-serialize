@@ -27,8 +27,7 @@ class InvoiceRetentionsType
      *
      * @var \Pohoda\Invoice\InvoiceRetentionType[]
      */
-    private array $invoiceRetention = [
-    ];
+    private array $invoiceRetention = [];
 
     /**
      * Adds as invoiceRetention.

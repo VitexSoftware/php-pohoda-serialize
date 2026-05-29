@@ -27,8 +27,7 @@ class ListUserCodePackType extends ListVersionType
     /**
      * @var \Pohoda\List\ListUserCodeType[]
      */
-    private array $listUserCode = [
-    ];
+    private array $listUserCode = [];
 
     /**
      * Adds as listUserCode.

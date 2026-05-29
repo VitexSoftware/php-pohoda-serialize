@@ -27,8 +27,7 @@ class ArchiveType
     /**
      * @var \Pohoda\Archive\VariableType[]
      */
-    private array $variable = [
-    ];
+    private array $variable = [];
 
     /**
      * Gets as version.

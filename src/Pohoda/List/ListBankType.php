@@ -27,8 +27,7 @@ class ListBankType extends ListVersionType
     /**
      * @var \Pohoda\Bank\BankType[]
      */
-    private array $bank = [
-    ];
+    private array $bank = [];
 
     /**
      * Adds as bank.

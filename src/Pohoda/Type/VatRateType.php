@@ -20,7 +20,7 @@ namespace Pohoda\Type;
  *
  * XSD Type: vatRateType
  */
-class VatRateType
+class VatRateType implements \Stringable
 {
     private ?string $__value = null;
 

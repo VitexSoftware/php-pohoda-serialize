@@ -27,8 +27,7 @@ class ListPrijemkaType extends ListVersionType
     /**
      * @var \Pohoda\Prijemka\PrijemkaType[]
      */
-    private array $prijemka = [
-    ];
+    private array $prijemka = [];
 
     /**
      * Adds as prijemka.

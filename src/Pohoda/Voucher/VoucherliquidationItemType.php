@@ -32,8 +32,7 @@ class VoucherliquidationItemType
      *
      * @var \Pohoda\Voucher\LiquidationItemType[]
      */
-    private array $liquidationItem = [
-    ];
+    private array $liquidationItem = [];
 
     /**
      * Gets as settingsLiquidation.

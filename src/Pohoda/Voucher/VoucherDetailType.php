@@ -27,16 +27,14 @@ class VoucherDetailType
      *
      * @var \Pohoda\Voucher\VoucherItemType[]
      */
-    private array $voucherItem = [
-    ];
+    private array $voucherItem = [];
 
     /**
      * Definice položek pro likvidaci dokladu (Pohledávky/Závazku). Pouze pro import.
      *
      * @var \Pohoda\Voucher\VoucherliquidationItemType[]
      */
-    private array $voucherLiquidationItem = [
-    ];
+    private array $voucherLiquidationItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).

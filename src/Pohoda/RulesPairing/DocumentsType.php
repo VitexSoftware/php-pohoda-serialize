@@ -26,8 +26,7 @@ class DocumentsType
     /**
      * @var string[]
      */
-    private array $document = [
-    ];
+    private array $document = [];
 
     /**
      * Adds as document.

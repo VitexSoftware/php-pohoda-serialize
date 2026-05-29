@@ -39,22 +39,19 @@ class ListPrevodkaRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestPrevodkaType[]
      */
-    private array $requestPrevodka = [
-    ];
+    private array $requestPrevodka = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\List\RestrictionDocParamType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

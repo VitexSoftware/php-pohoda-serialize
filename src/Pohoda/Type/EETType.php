@@ -33,8 +33,7 @@ class EETType
      *
      * @var \Pohoda\Type\DetailEETType[]
      */
-    private array $detailEET = [
-    ];
+    private array $detailEET = [];
 
     /**
      * Profil EET, pod kterým bude tržba evidována na serveru EET.

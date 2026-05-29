@@ -25,8 +25,7 @@ class PrevodkaDetailType
     /**
      * @var \Pohoda\Prevodka\PrevodkaItemType[]
      */
-    private array $prevodkaItem = [
-    ];
+    private array $prevodkaItem = [];
 
     /**
      * Adds as prevodkaItem.

@@ -25,8 +25,7 @@ class ProductRequirementDetailType
     /**
      * @var \Pohoda\ProductRequirement\ProductRequirementItemType[]
      */
-    private array $productRequirementItem = [
-    ];
+    private array $productRequirementItem = [];
 
     /**
      * Adds as productRequirementItem.

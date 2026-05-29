@@ -27,8 +27,7 @@ class ListStockType extends ListVersionType
     /**
      * @var \Pohoda\Stock\StockType[]
      */
-    private array $stock = [
-    ];
+    private array $stock = [];
 
     /**
      * Adds as stock.

@@ -27,8 +27,7 @@ class ListServiceType extends ListVersionType
     /**
      * @var \Pohoda\Service\ServiceType[]
      */
-    private array $service = [
-    ];
+    private array $service = [];
 
     /**
      * Adds as service.

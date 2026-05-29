@@ -37,8 +37,7 @@ class FilesAttachmentsType
      *
      * @var \Pohoda\Type\ContFileType[]
      */
-    private array $file = [
-    ];
+    private array $file = [];
 
     /**
      * Gets as companyDocumentsFolder.

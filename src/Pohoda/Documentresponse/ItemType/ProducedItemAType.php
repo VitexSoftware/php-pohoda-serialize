@@ -23,8 +23,7 @@ class ProducedItemAType
     /**
      * @var string[]
      */
-    private array $id = [
-    ];
+    private array $id = [];
 
     /**
      * Adds as id.

@@ -25,8 +25,7 @@ class EnquiryDetailType
     /**
      * @var \Pohoda\Enquiry\EnquiryItemType[]
      */
-    private array $enquiryItem = [
-    ];
+    private array $enquiryItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).

@@ -27,28 +27,24 @@ class OfferType
     /**
      * @var \Pohoda\Offer\OfferHeaderType[]
      */
-    private array $offerHeader = [
-    ];
+    private array $offerHeader = [];
 
     /**
      * @var \Pohoda\Offer\OfferDetailType[]
      */
-    private array $offerDetail = [
-    ];
+    private array $offerDetail = [];
 
     /**
      * @var \Pohoda\Offer\OfferSummaryType[]
      */
-    private array $offerSummary = [
-    ];
+    private array $offerSummary = [];
 
     /**
      * Záznamy ze záložky "Dokumenty".
      *
      * @var \Pohoda\Type\AttachmentsType[]
      */
-    private array $attachments = [
-    ];
+    private array $attachments = [];
 
     /**
      * Po vytvoření záznamu se provede jeho tisk.

@@ -26,8 +26,7 @@ class ActionPriceStocksType
     /**
      * @var \Pohoda\ActionPrice\ActionPriceStockItemType[]
      */
-    private array $actionPriceStockItem = [
-    ];
+    private array $actionPriceStockItem = [];
 
     /**
      * Adds as actionPriceStockItem.

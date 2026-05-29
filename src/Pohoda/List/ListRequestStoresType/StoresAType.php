@@ -25,8 +25,7 @@ class StoresAType
      *
      * @var \Pohoda\Type\RefType[]
      */
-    private array $store = [
-    ];
+    private array $store = [];
 
     /**
      * Adds as store.

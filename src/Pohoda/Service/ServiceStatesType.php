@@ -25,8 +25,7 @@ class ServiceStatesType
     /**
      * @var \Pohoda\Service\StateType[]
      */
-    private array $state = [
-    ];
+    private array $state = [];
 
     /**
      * Adds as state.

@@ -27,8 +27,7 @@ class ListIntDocType extends ListVersionType
     /**
      * @var \Pohoda\IntDoc\IntDocType[]
      */
-    private array $intDoc = [
-    ];
+    private array $intDoc = [];
 
     /**
      * Adds as intDoc.

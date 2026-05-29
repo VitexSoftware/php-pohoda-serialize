@@ -29,14 +29,12 @@ class ActivityType
      *
      * @var \Pohoda\Activity\ActionTypeType[]
      */
-    private array $actionType = [
-    ];
+    private array $actionType = [];
 
     /**
      * @var \Pohoda\Activity\ActivityHeaderType[]
      */
-    private array $activityHeader = [
-    ];
+    private array $activityHeader = [];
 
     /**
      * Gets as version.

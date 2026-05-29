@@ -34,8 +34,7 @@ class IsdocType
      *
      * @var \Pohoda\Isdoc\IsdocSettingsType[]
      */
-    private array $isdocSettings = [
-    ];
+    private array $isdocSettings = [];
 
     /**
      * Gets as version.

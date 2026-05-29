@@ -27,8 +27,7 @@ class ListNumericSeriesType extends ListVersionType
     /**
      * @var \Pohoda\List\ItemNumericSeriesType[]
      */
-    private array $itemNumericSeries = [
-    ];
+    private array $itemNumericSeries = [];
 
     /**
      * Adds as itemNumericSeries.

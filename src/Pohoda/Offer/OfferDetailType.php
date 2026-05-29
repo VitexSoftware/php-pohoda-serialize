@@ -25,8 +25,7 @@ class OfferDetailType
     /**
      * @var \Pohoda\Offer\OfferItemType[]
      */
-    private array $offerItem = [
-    ];
+    private array $offerItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).

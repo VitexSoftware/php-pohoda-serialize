@@ -27,24 +27,21 @@ class PrijemkaDetailType
      *
      * @var \Pohoda\Prijemka\PrijemkaItemType[]
      */
-    private array $prijemkaItem = [
-    ];
+    private array $prijemkaItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).
      *
      * @var \Pohoda\Type\RoundingItemType[]
      */
-    private array $roundingItem = [
-    ];
+    private array $roundingItem = [];
 
     /**
      * Definice položky dokladu typu "Vedlejší náklady".
      *
      * @var \Pohoda\Prijemka\PrijemkaAccessoryChargesItemType[]
      */
-    private array $prijemkaAccessoryChargesItem = [
-    ];
+    private array $prijemkaAccessoryChargesItem = [];
 
     /**
      * Adds as prijemkaItem.

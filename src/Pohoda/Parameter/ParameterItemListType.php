@@ -26,8 +26,7 @@ class ParameterItemListType
     /**
      * @var \Pohoda\Parameter\ParameterDefType[]
      */
-    private array $parameterDef = [
-    ];
+    private array $parameterDef = [];
 
     /**
      * Adds as parameterDef.

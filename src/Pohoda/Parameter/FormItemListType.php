@@ -28,8 +28,7 @@ class FormItemListType
     /**
      * @var \Pohoda\Parameter\CtrlDefType[]
      */
-    private array $ctrlDef = [
-    ];
+    private array $ctrlDef = [];
 
     /**
      * Gets as formAgenda.

@@ -27,8 +27,7 @@ class ListNumericalSeriesType extends ListVersionType
     /**
      * @var \Pohoda\NumericalSeries\NumericalSeriesType[]
      */
-    private array $numericalSeries = [
-    ];
+    private array $numericalSeries = [];
 
     /**
      * Adds as numericalSeries.

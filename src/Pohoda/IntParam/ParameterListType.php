@@ -25,8 +25,7 @@ class ParameterListType
     /**
      * @var \Pohoda\IntParam\ParameterListItemType[]
      */
-    private array $parameterListItem = [
-    ];
+    private array $parameterListItem = [];
 
     /**
      * Adds as parameterListItem.

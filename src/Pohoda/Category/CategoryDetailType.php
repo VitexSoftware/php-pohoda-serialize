@@ -27,8 +27,7 @@ class CategoryDetailType
     /**
      * @var \Pohoda\Category\CategoryType[]
      */
-    private array $category = [
-    ];
+    private array $category = [];
 
     /**
      * Gets as version.

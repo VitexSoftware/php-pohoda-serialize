@@ -34,14 +34,12 @@ class ListActionPriceRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestActionPriceType[]
      */
-    private array $requestActionPrice = [
-    ];
+    private array $requestActionPrice = [];
 
     /**
      * Gets as version.

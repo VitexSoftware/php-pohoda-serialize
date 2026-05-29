@@ -25,8 +25,7 @@ class RelatedFilesType
     /**
      * @var \Pohoda\Stock\RelatedFileType[]
      */
-    private array $relatedFile = [
-    ];
+    private array $relatedFile = [];
 
     /**
      * Adds as relatedFile.

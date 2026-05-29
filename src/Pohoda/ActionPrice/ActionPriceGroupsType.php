@@ -26,8 +26,7 @@ class ActionPriceGroupsType
     /**
      * @var \Pohoda\ActionPrice\GroupType[]
      */
-    private array $group = [
-    ];
+    private array $group = [];
 
     /**
      * Adds as group.

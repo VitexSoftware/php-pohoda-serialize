@@ -25,8 +25,7 @@ class AddressbookAccountType
     /**
      * @var \Pohoda\AddressBook\AccountItemType[]
      */
-    private array $accountItem = [
-    ];
+    private array $accountItem = [];
 
     /**
      * Adds as accountItem.

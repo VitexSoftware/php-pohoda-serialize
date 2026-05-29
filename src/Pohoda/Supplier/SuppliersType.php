@@ -25,8 +25,7 @@ class SuppliersType
     /**
      * @var \Pohoda\Supplier\SupplierItemType[]
      */
-    private array $supplierItem = [
-    ];
+    private array $supplierItem = [];
 
     /**
      * Adds as supplierItem.

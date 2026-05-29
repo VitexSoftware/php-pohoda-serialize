@@ -25,8 +25,7 @@ class SubStoragesType
     /**
      * @var \Pohoda\List\ItemStorageType[]
      */
-    private array $itemStorage = [
-    ];
+    private array $itemStorage = [];
 
     /**
      * Adds as itemStorage.

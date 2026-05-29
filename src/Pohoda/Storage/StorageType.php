@@ -27,8 +27,7 @@ class StorageType
     /**
      * @var \Pohoda\Storage\ItemStorageType[]
      */
-    private array $itemStorage = [
-    ];
+    private array $itemStorage = [];
 
     /**
      * Gets as version.

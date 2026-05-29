@@ -27,8 +27,7 @@ class SelectedIcoType
      *
      * @var string[]
      */
-    private array $ico = [
-    ];
+    private array $ico = [];
 
     /**
      * Adds as ico.

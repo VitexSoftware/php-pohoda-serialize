@@ -25,8 +25,7 @@ class SubCategoriesType
     /**
      * @var \Pohoda\Category\CategoryType[]
      */
-    private array $category = [
-    ];
+    private array $category = [];
 
     /**
      * Adds as category.

@@ -27,8 +27,7 @@ class PaymentsType
      *
      * @var \Pohoda\Prodejka\PaymentItemType[]
      */
-    private array $paymentItem = [
-    ];
+    private array $paymentItem = [];
 
     /**
      * Adds as paymentItem.

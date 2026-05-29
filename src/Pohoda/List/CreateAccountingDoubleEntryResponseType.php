@@ -27,8 +27,7 @@ class CreateAccountingDoubleEntryResponseType extends DocumentResponseType
     /**
      * @var \Pohoda\List\CreateAccountingResponseType[]
      */
-    private array $createAccountingResponse = [
-    ];
+    private array $createAccountingResponse = [];
 
     /**
      * Adds as createAccountingResponse.

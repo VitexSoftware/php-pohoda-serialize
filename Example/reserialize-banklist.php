@@ -13,7 +13,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-require_once dirname(__DIR__).'/vendor/autoload.php';
+require_once \dirname(__DIR__).'/vendor/autoload.php';
 
 use Pohoda\Helper;
 
@@ -30,7 +30,6 @@ if ($phpClassName) {
     $xmlReContent = $serializer->serialize($listBank, 'xml');
 
     echo $xmlReContent;
-
 } else {
     echo "Namespace not found for the root element.\n";
 }

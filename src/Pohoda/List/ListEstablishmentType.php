@@ -27,8 +27,7 @@ class ListEstablishmentType extends ListVersionType
     /**
      * @var \Pohoda\Establishment\EstablishmentType[]
      */
-    private array $establishment = [
-    ];
+    private array $establishment = [];
 
     /**
      * Adds as establishment.

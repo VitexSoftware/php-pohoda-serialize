@@ -27,8 +27,7 @@ class ListInvoiceType extends ListVersionType
     /**
      * @var \Pohoda\Invoice\InvoiceType[]
      */
-    private array $invoice = [
-    ];
+    private array $invoice = [];
 
     /**
      * Adds as invoice.

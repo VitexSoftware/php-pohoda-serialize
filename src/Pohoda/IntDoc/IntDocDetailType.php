@@ -25,8 +25,7 @@ class IntDocDetailType
     /**
      * @var \Pohoda\IntDoc\IntDocItemType[]
      */
-    private array $intDocItem = [
-    ];
+    private array $intDocItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).

@@ -34,14 +34,12 @@ class ListInventoryListsRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestInventoryListsType[]
      */
-    private array $requestInventoryLists = [
-    ];
+    private array $requestInventoryLists = [];
 
     /**
      * Gets as version.

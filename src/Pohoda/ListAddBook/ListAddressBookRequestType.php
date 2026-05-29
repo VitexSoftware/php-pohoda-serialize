@@ -39,22 +39,19 @@ class ListAddressBookRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestAddressBookType[]
      */
-    private array $requestAddressBook = [
-    ];
+    private array $requestAddressBook = [];
 
     /**
      * Omezení exportu dat dokladů.
      *
      * @var \Pohoda\ListAddBook\RestrictionDataType[]
      */
-    private array $restrictionData = [
-    ];
+    private array $restrictionData = [];
 
     /**
      * Gets as version.

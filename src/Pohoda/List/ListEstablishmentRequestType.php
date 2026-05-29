@@ -34,14 +34,12 @@ class ListEstablishmentRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\List\RequestEstablishmentType[]
      */
-    private array $requestEstablishment = [
-    ];
+    private array $requestEstablishment = [];
 
     /**
      * Gets as version.

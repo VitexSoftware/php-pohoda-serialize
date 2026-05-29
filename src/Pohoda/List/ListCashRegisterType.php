@@ -27,8 +27,7 @@ class ListCashRegisterType extends ListVersionType
     /**
      * @var \Pohoda\CashRegister\CashRegisterType[]
      */
-    private array $cashRegister = [
-    ];
+    private array $cashRegister = [];
 
     /**
      * Adds as cashRegister.

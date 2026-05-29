@@ -27,8 +27,7 @@ class ProducedAccountingDocsType
      *
      * @var \Pohoda\AccountingSalesVouchers\AccountingDocumentType[]
      */
-    private array $accountingDocument = [
-    ];
+    private array $accountingDocument = [];
 
     /**
      * Adds as accountingDocument.

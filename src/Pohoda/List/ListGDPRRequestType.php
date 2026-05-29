@@ -34,14 +34,12 @@ class ListGDPRRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\List\RequestGDPRType[]
      */
-    private array $requestGDPR = [
-    ];
+    private array $requestGDPR = [];
 
     /**
      * Gets as version.

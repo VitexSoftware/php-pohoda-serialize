@@ -27,24 +27,21 @@ class InvoiceDetailType
      *
      * @var \Pohoda\Invoice\InvoiceItemType[]
      */
-    private array $invoiceItem = [
-    ];
+    private array $invoiceItem = [];
 
     /**
      * Definice položky dokladu typu "Odpočet zálohy"/"Ruční odpočet zálohy". Používá se pouze v agendě Vydaná, Přijatá faktura.
      *
      * @var \Pohoda\Invoice\InvoiceAdvancePaymentItemType[]
      */
-    private array $invoiceAdvancePaymentItem = [
-    ];
+    private array $invoiceAdvancePaymentItem = [];
 
     /**
      * Položka dokladu - výpočet DPH ze zaokrouhlení (pouze pro export).
      *
      * @var \Pohoda\Type\RoundingItemType[]
      */
-    private array $roundingItem = [
-    ];
+    private array $roundingItem = [];
 
     /**
      * Adds as invoiceItem.

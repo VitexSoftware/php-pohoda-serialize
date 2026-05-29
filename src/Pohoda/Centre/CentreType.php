@@ -29,14 +29,12 @@ class CentreType
      *
      * @var \Pohoda\Centre\ActionTypeType[]
      */
-    private array $actionType = [
-    ];
+    private array $actionType = [];
 
     /**
      * @var \Pohoda\Centre\CentreHeaderType[]
      */
-    private array $centreHeader = [
-    ];
+    private array $centreHeader = [];
 
     /**
      * Gets as version.

@@ -27,16 +27,14 @@ class RegistrationNumberType
     /**
      * @var \Pohoda\RegistrationNumber\RegistrationNumberHeaderType[]
      */
-    private array $registrationNumberHeader = [
-    ];
+    private array $registrationNumberHeader = [];
 
     /**
      * Záznamy ze záložky "Dokumenty".
      *
      * @var \Pohoda\Type\AttachmentsType[]
      */
-    private array $attachments = [
-    ];
+    private array $attachments = [];
 
     /**
      * Gets as version.

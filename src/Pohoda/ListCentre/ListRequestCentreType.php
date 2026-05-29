@@ -34,14 +34,12 @@ class ListRequestCentreType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestCentreType[]
      */
-    private array $requestCentre = [
-    ];
+    private array $requestCentre = [];
 
     /**
      * Gets as version.

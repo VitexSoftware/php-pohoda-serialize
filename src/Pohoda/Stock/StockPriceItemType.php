@@ -25,8 +25,7 @@ class StockPriceItemType
     /**
      * @var \Pohoda\Type\StockPriceType[]
      */
-    private array $stockPrice = [
-    ];
+    private array $stockPrice = [];
 
     /**
      * Adds as stockPrice.

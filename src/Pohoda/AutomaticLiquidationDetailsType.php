@@ -27,8 +27,7 @@ class AutomaticLiquidationDetailsType
      *
      * @var \Pohoda\AutomaticLiquidationDetailType[]
      */
-    private array $automaticLiquidationDetail = [
-    ];
+    private array $automaticLiquidationDetail = [];
 
     /**
      * Adds as automaticLiquidationDetail.

@@ -27,8 +27,7 @@ class DiscountType
     /**
      * @var \Pohoda\Discount\DiscountStockItemType[]
      */
-    private array $discountStockItem = [
-    ];
+    private array $discountStockItem = [];
 
     /**
      * Gets as version.

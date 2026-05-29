@@ -27,8 +27,7 @@ class ItemDetailsType
     /**
      * @var \Pohoda\Documentresponse\ItemType[]
      */
-    private array $item = [
-    ];
+    private array $item = [];
 
     /**
      * Gets as type.

@@ -27,8 +27,7 @@ class ListStoreType extends ListVersionType
     /**
      * @var \Pohoda\Store\StoreType[]
      */
-    private array $store = [
-    ];
+    private array $store = [];
 
     /**
      * Adds as store.

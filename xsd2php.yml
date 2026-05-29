@@ -70,6 +70,13 @@ xsd2php:
     'http://www.stormware.cz/schema/version_2/vyroba.xsd': 'Pohoda\Vyroba'
     'http://www.stormware.cz/schema/version_2/userAgenda.xsd': 'Pohoda\UserAgenda'
     'http://www.stormware.cz/schema/version_2/advancePartFulfilment.xsd': 'Pohoda\AdvancePartFulfilment'
+    'http://www.stormware.cz/schema/version_2/GPSR.xsd': 'Pohoda\Gpsr'
+    'http://www.stormware.cz/schema/version_2/absence.xsd': 'Pohoda\Absence'
+    'http://www.stormware.cz/schema/version_2/wageElements.xsd': 'Pohoda\WageElements'
+    'http://www.stormware.cz/schema/version_2/workLoad.xsd': 'Pohoda\WorkLoad'
+    # claim.xsd and TableExport.xsd listed on stormware.cz but not yet in downloadable package
+    # 'http://www.stormware.cz/schema/version_2/claim.xsd': 'Pohoda\Claim'
+    # 'http://www.stormware.cz/schema/version_2/TableExport.xsd': 'Pohoda\TableExport'
 
   # xmlns:
   #   rsp: 'http://www.stormware.cz/schema/version_2/response.xsd'

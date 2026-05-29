@@ -28,24 +28,21 @@ class AttachmentsType
      *
      * @var \Pohoda\Type\FilesAttachmentsType[]
      */
-    private array $files = [
-    ];
+    private array $files = [];
 
     /**
      * URL adresa.
      *
      * @var \Pohoda\Type\ContUrlAddressType[]
      */
-    private array $urlAddress = [
-    ];
+    private array $urlAddress = [];
 
     /**
      * Zástupce.
      *
      * @var \Pohoda\Type\ContShortcutType[]
      */
-    private array $shortcut = [
-    ];
+    private array $shortcut = [];
 
     /**
      * Adds as files.

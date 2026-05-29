@@ -25,16 +25,14 @@ class BankDetailType
     /**
      * @var \Pohoda\Bank\BankItemType[]
      */
-    private array $bankItem = [
-    ];
+    private array $bankItem = [];
 
     /**
      * Definice položek pro likvidaci dokladu (Pohledávky/Závazku). Pouze pro import.
      *
      * @var \Pohoda\Bank\BankliquidationItemType[]
      */
-    private array $bankLiquidationItem = [
-    ];
+    private array $bankLiquidationItem = [];
 
     /**
      * Adds as bankItem.

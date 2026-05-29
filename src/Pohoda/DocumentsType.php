@@ -25,8 +25,7 @@ class DocumentsType
     /**
      * @var \Pohoda\DocumentType[]
      */
-    private array $document = [
-    ];
+    private array $document = [];
 
     /**
      * Adds as document.

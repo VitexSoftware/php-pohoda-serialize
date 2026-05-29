@@ -34,14 +34,12 @@ class ListNumericalSeriesRequestType
      *
      * @var \Pohoda\Filter\LimitType[]
      */
-    private array $limit = [
-    ];
+    private array $limit = [];
 
     /**
      * @var \Pohoda\Filter\RequestNumericalSeriesType[]
      */
-    private array $requestNumericalSeries = [
-    ];
+    private array $requestNumericalSeries = [];
 
     /**
      * Gets as version.

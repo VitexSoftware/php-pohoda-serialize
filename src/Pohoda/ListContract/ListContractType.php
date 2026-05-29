@@ -27,8 +27,7 @@ class ListContractType extends ListVersionType
     /**
      * @var \Pohoda\Contract\ContractType[]
      */
-    private array $contract = [
-    ];
+    private array $contract = [];
 
     /**
      * Adds as contract.

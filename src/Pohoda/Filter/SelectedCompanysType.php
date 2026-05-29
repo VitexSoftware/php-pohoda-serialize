@@ -27,8 +27,7 @@ class SelectedCompanysType
      *
      * @var string[]
      */
-    private array $company = [
-    ];
+    private array $company = [];
 
     /**
      * Adds as company.

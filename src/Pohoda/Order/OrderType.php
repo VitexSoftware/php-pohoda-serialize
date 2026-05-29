@@ -32,50 +32,43 @@ class OrderType
      *
      * @var \Pohoda\Type\LinksType[]
      */
-    private array $links = [
-    ];
+    private array $links = [];
 
     /**
      * Typ práce s dokladem. Výchozí hodnota je přidání nového dokladu.
      *
      * @var \Pohoda\Order\ActionTypeType[]
      */
-    private array $actionType = [
-    ];
+    private array $actionType = [];
 
     /**
      * @var \Pohoda\Order\OrderHeaderType[]
      */
-    private array $orderHeader = [
-    ];
+    private array $orderHeader = [];
 
     /**
      * @var \Pohoda\Order\OrderDetailType[]
      */
-    private array $orderDetail = [
-    ];
+    private array $orderDetail = [];
 
     /**
      * @var \Pohoda\Order\OrderSummaryType[]
      */
-    private array $orderSummary = [
-    ];
+    private array $orderSummary = [];
 
     /**
      * Vazby na doklad. Informace o vazbách dokladu na jiné doklady (pouze pro export).
      *
      * @var \Pohoda\Type\LinksType[]
      */
-    private array $linkedDocuments = [
-    ];
+    private array $linkedDocuments = [];
 
     /**
      * Záznamy ze záložky "Dokumenty".
      *
      * @var \Pohoda\Type\AttachmentsType[]
      */
-    private array $attachments = [
-    ];
+    private array $attachments = [];
 
     /**
      * Po vytvoření záznamu se provede jeho tisk.

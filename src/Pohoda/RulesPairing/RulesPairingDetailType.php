@@ -25,8 +25,7 @@ class RulesPairingDetailType
     /**
      * @var \Pohoda\RulesPairing\RulesPairingItemType[]
      */
-    private array $rulesPairingItem = [
-    ];
+    private array $rulesPairingItem = [];
 
     /**
      * Adds as rulesPairingItem.

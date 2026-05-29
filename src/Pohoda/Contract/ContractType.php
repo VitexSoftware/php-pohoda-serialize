@@ -27,16 +27,14 @@ class ContractType
     /**
      * @var \Pohoda\Contract\ContractDescType[]
      */
-    private array $contractDesc = [
-    ];
+    private array $contractDesc = [];
 
     /**
      * Záznamy ze záložky "Dokumenty".
      *
      * @var \Pohoda\Type\AttachmentsType[]
      */
-    private array $attachments = [
-    ];
+    private array $attachments = [];
 
     /**
      * Po vytvoření záznamu se provede jeho tisk.

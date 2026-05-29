@@ -27,8 +27,7 @@ class CreateAccountingDoubleEntryType
     /**
      * @var \Pohoda\List\CreateAccountingType[]
      */
-    private array $createAccounting = [
-    ];
+    private array $createAccounting = [];
 
     /**
      * Gets as version.

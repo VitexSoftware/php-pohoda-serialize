@@ -65,8 +65,7 @@ class DataPackType
     /**
      * @var \Pohoda\Data\DataPackItemType[]
      */
-    private array $dataPackItem = [
-    ];
+    private array $dataPackItem = [];
 
     /**
      * Gets as version.

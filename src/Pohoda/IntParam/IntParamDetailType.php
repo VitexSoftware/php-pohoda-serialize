@@ -27,8 +27,7 @@ class IntParamDetailType
     /**
      * @var \Pohoda\IntParam\IntParamType[]
      */
-    private array $intParam = [
-    ];
+    private array $intParam = [];
 
     /**
      * Gets as version.

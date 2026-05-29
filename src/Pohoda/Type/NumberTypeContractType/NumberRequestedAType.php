@@ -18,7 +18,7 @@ namespace Pohoda\Type\NumberTypeContractType;
 /**
  * Class representing NumberRequestedAType.
  */
-class NumberRequestedAType
+class NumberRequestedAType implements \Stringable
 {
     private ?string $__value = null;
 

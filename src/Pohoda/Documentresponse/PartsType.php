@@ -26,8 +26,7 @@ class PartsType
     /**
      * @var string[]
      */
-    private array $part = [
-    ];
+    private array $part = [];
 
     /**
      * Adds as part.

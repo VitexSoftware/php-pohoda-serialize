@@ -25,8 +25,7 @@ class PicturesType
     /**
      * @var \Pohoda\Stock\PictureType[]
      */
-    private array $picture = [
-    ];
+    private array $picture = [];
 
     /**
      * Adds as picture.

@@ -27,8 +27,7 @@ class ListOfferType extends ListVersionType
     /**
      * @var \Pohoda\Offer\OfferType[]
      */
-    private array $offer = [
-    ];
+    private array $offer = [];
 
     /**
      * Adds as offer.

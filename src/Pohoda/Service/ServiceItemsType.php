@@ -25,8 +25,7 @@ class ServiceItemsType
     /**
      * @var \Pohoda\Service\ItemType[]
      */
-    private array $item = [
-    ];
+    private array $item = [];
 
     /**
      * Adds as item.

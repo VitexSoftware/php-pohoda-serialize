@@ -25,8 +25,7 @@ class AgendasAType
      *
      * @var string[]
      */
-    private array $agenda = [
-    ];
+    private array $agenda = [];
 
     /**
      * Adds as agenda.
